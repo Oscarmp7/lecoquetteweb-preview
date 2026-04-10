@@ -1,0 +1,279 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - banner [ref=e5]:
+      - generic [ref=e8]:
+        - list [ref=e10]:
+          - listitem [ref=e11]:
+            - generic [ref=e13]: 
+            - paragraph [ref=e15]:
+              - link "contact@lecoquetteluxspa.com" [ref=e16] [cursor=pointer]:
+                - /url: mailto:contact@lecoquetteluxspa.com
+          - listitem [ref=e17]:
+            - generic [ref=e19]: 
+            - paragraph [ref=e21]:
+              - link "(786) 599 - 8161" [ref=e22] [cursor=pointer]:
+                - /url: tel:7865998161
+        - generic [ref=e23]:
+          - link "" [ref=e25] [cursor=pointer]:
+            - /url: https://instagram.com/_u/lecoquette_spa/
+            - generic [ref=e26]: 
+          - link "Book now" [ref=e28] [cursor=pointer]:
+            - /url: contact.html
+      - navigation [ref=e29]:
+        - generic [ref=e31]:
+          - link [ref=e34] [cursor=pointer]:
+            - /url: index.html
+          - generic [ref=e35]:
+            - text: 
+            - list [ref=e36]:
+              - listitem [ref=e37]:
+                - link "Home" [ref=e38] [cursor=pointer]:
+                  - /url: index.html
+              - listitem [ref=e39]:
+                - link "Our Services" [ref=e40] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e41]:
+                - link "Pages" [ref=e42] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e43]:
+                - link "Shop" [ref=e44] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e45]:
+                - link "Contact" [ref=e46] [cursor=pointer]:
+                  - /url: contact.html
+          - generic [ref=e48]:
+            - link "" [ref=e50] [cursor=pointer]:
+              - /url: "#"
+            - link "" [ref=e52] [cursor=pointer]:
+              - /url: "#"
+    - generic [ref=e54]:
+      - generic [ref=e61]:
+        - paragraph [ref=e63]: Because self-care should feel like a vacation.
+        - heading "Escape the Ordinary" [level=2] [ref=e64]
+        - link "Book Your Experience" [ref=e66] [cursor=pointer]:
+          - /url: services.html
+      - generic:
+        - button "Go to slide 1" [ref=e67] [cursor=pointer]
+        - button "Go to slide 2" [ref=e68] [cursor=pointer]
+        - button "Go to slide 3" [ref=e69] [cursor=pointer]
+    - generic [ref=e79]:
+      - heading "Welcome to Le Coquette." [level=2] [ref=e81]:
+        - text: Welcome to
+        - paragraph [ref=e82]: Le Coquette.
+      - paragraph [ref=e83]: Inspired by the French art of elegance and self-care, Le Coquette offers a refined experience where timeless beauty and modern indulgence come together. Discover the essence of grace and charm that defines us—book your experience today to begin your journey with Le Coquette.
+      - list [ref=e84]:
+        - listitem [ref=e85]:
+          - generic [ref=e87]: 
+          - generic [ref=e88]:
+            - heading "Special Offers" [level=3] [ref=e89]
+            - paragraph [ref=e90]: 10% On your first visit.
+      - link "Schedule Today" [ref=e92] [cursor=pointer]:
+        - /url: services.html
+    - generic [ref=e95]:
+      - generic [ref=e96]: Our services
+      - heading "What We’re Offering" [level=2] [ref=e97]
+    - generic [ref=e103]:
+      - generic [ref=e105]:
+        - generic [ref=e106]:
+          - generic [ref=e107]: What else we do
+          - heading "Get An Incredible Spa Experience with Mellis Spa Center" [level=2] [ref=e108]
+        - link "" [ref=e110] [cursor=pointer]:
+          - /url: https://www.youtube.com/watch?v=Get7rqXYrbQ
+          - generic [ref=e112]: 
+      - generic [ref=e115]:
+        - list [ref=e116]:
+          - listitem [ref=e117]:
+            - generic [ref=e119]: 
+            - paragraph [ref=e120]: Aroma Therapy
+          - listitem [ref=e121]:
+            - generic [ref=e123]: 
+            - paragraph [ref=e124]: Sauna Relax
+          - listitem [ref=e125]:
+            - generic [ref=e127]: 
+            - paragraph [ref=e128]: Geothermal Spa
+          - listitem [ref=e129]:
+            - generic [ref=e131]: 
+            - paragraph [ref=e132]: Body Massage
+          - listitem [ref=e133]:
+            - generic [ref=e135]: 
+            - paragraph [ref=e136]: Body Wrap
+          - listitem [ref=e137]:
+            - generic [ref=e139]: 
+            - paragraph [ref=e140]: Hand & Feet
+        - list [ref=e141]:
+          - listitem [ref=e142]:
+            - generic [ref=e144]: 
+            - paragraph [ref=e145]: Face Masks
+          - listitem [ref=e146]:
+            - generic [ref=e148]: 
+            - paragraph [ref=e149]: Hydro Therapy
+          - listitem [ref=e150]:
+            - generic [ref=e152]: 
+            - paragraph [ref=e153]: Hot Stone
+          - listitem [ref=e154]:
+            - generic [ref=e156]: 
+            - paragraph [ref=e157]: Spring Water
+          - listitem [ref=e158]:
+            - generic [ref=e160]: 
+            - paragraph [ref=e161]: Manicure
+    - generic [ref=e166]:
+      - generic [ref=e168]:
+        - generic [ref=e170]: 
+        - generic [ref=e171]:
+          - heading "0" [level=3] [ref=e173]:
+            - generic [ref=e179]: "0"
+          - paragraph [ref=e180]: Years Experience
+      - generic [ref=e182]:
+        - generic [ref=e184]: 
+        - generic [ref=e185]:
+          - heading "0" [level=3] [ref=e187]:
+            - generic [ref=e193]: "0"
+          - paragraph [ref=e194]: Wellness & Spa
+      - generic [ref=e196]:
+        - generic [ref=e198]: 
+        - generic [ref=e199]:
+          - heading "0" [level=3] [ref=e201]:
+            - generic [ref=e207]: "0"
+          - paragraph [ref=e208]: Herbal Treatment
+      - generic [ref=e210]:
+        - generic [ref=e212]: 
+        - generic [ref=e213]:
+          - heading "0" [level=3] [ref=e215]:
+            - generic [ref=e221]: "0"
+          - paragraph [ref=e222]: Happy Clients
+    - generic [ref=e225]:
+      - generic [ref=e227]:
+        - generic [ref=e228]: 3 easy steps
+        - heading "How It Works?" [level=2] [ref=e229]
+      - generic [ref=e230]:
+        - generic [ref=e232]:
+          - heading "Meeting" [level=3] [ref=e236]:
+            - link "Meeting" [ref=e237] [cursor=pointer]:
+              - /url: services.html
+          - paragraph [ref=e238]: Lorem ipsum dolor sit amet, consectetur notted adipisicing elit sed do eiusmod.
+        - generic [ref=e240]:
+          - heading "Treatment" [level=3] [ref=e244]:
+            - link "Treatment" [ref=e245] [cursor=pointer]:
+              - /url: services.html
+          - paragraph [ref=e246]: Lorem ipsum dolor sit amet, consectetur notted adipisicing elit sed do eiusmod.
+        - generic [ref=e248]:
+          - heading "Finalizing" [level=3] [ref=e252]:
+            - link "Finalizing" [ref=e253] [cursor=pointer]:
+              - /url: services.html
+          - paragraph [ref=e254]: Lorem ipsum dolor sit amet, consectetur notted adipisicing elit sed do eiusmod.
+    - generic [ref=e258]:
+      - generic [ref=e260]:
+        - generic [ref=e263]:
+          - generic [ref=e264]: Customer Reviews
+          - heading "What They’re Talking About Center" [level=2] [ref=e265]
+        - paragraph [ref=e268]: There are many variations of passages of available but the majority have suffered in form, by injected words which don't look. There are many variations of passages.
+      - generic [ref=e270]:
+        - generic [ref=e272]:
+          - generic [ref=e277]:
+            - generic [ref=e278]:
+              - generic [ref=e279]: 
+              - generic [ref=e280]: 
+              - generic [ref=e281]: 
+              - generic [ref=e282]: 
+              - generic [ref=e283]: 
+            - paragraph [ref=e284]: I was very impresed by the avivon service, lorem ipsum is simply free text used by copytyping.
+            - generic [ref=e287]:
+              - heading "Edna Marxten" [level=3] [ref=e288]
+              - paragraph [ref=e289]: Customer
+          - generic [ref=e294]:
+            - generic [ref=e295]:
+              - generic [ref=e296]: 
+              - generic [ref=e297]: 
+              - generic [ref=e298]: 
+              - generic [ref=e299]: 
+              - generic [ref=e300]: 
+            - paragraph [ref=e301]: I was very impresed by the avivon service, lorem ipsum is simply free text used by copytyping.
+            - generic [ref=e304]:
+              - heading "Mike Hardson" [level=3] [ref=e305]
+              - paragraph [ref=e306]: Customer
+          - generic [ref=e311]:
+            - generic [ref=e312]:
+              - generic [ref=e313]: 
+              - generic [ref=e314]: 
+              - generic [ref=e315]: 
+              - generic [ref=e316]: 
+              - generic [ref=e317]: 
+            - paragraph [ref=e318]: I was very impresed by the avivon service, lorem ipsum is simply free text used by copytyping.
+            - generic [ref=e321]:
+              - heading "Jessica Brown" [level=3] [ref=e322]
+              - paragraph [ref=e323]: Customer
+        - text:  
+    - generic [ref=e325]:
+      - heading "Follow mollis on Instagram" [level=3] [ref=e327]
+      - generic [ref=e328]:
+        - generic [ref=e332]:
+          - link "":
+            - /url: "#"
+            - generic: 
+        - generic [ref=e336]:
+          - link "":
+            - /url: "#"
+            - generic: 
+        - generic [ref=e340]:
+          - link "":
+            - /url: "#"
+            - generic: 
+        - generic [ref=e344]:
+          - link "":
+            - /url: "#"
+            - generic: 
+        - generic [ref=e348]:
+          - link "":
+            - /url: "#"
+            - generic: 
+        - generic [ref=e352]:
+          - link "":
+            - /url: "#"
+            - generic: 
+    - generic [ref=e358]:
+      - heading "Our Spa Center is the True Splendor" [level=3] [ref=e360]:
+        - text: Our Spa Center is the
+        - text: True Splendor
+      - link "book now" [ref=e362] [cursor=pointer]:
+        - /url: contact.html
+    - generic [ref=e365]:
+      - iframe [ref=e366]:
+        
+      - generic [ref=e367]:
+        - heading "Opening Hours" [level=4] [ref=e368]:
+          - text: Opening
+          - text: Hours
+        - generic [ref=e370]: 
+        - list [ref=e371]:
+          - listitem [ref=e372]:
+            - paragraph [ref=e373]: Monday
+            - heading "12:00 pm - 19:00 pm" [level=5] [ref=e374]
+          - listitem [ref=e375]:
+            - paragraph [ref=e376]: Tuesday to Friday
+            - heading "8:00 am - 19:00 pm" [level=5] [ref=e377]
+          - listitem [ref=e378]:
+            - paragraph [ref=e379]: Saturday
+            - heading "8:00 am to 3:30 pm" [level=5] [ref=e380]
+    - generic [ref=e383]:
+      - generic [ref=e384]: Blog Posts
+      - heading "Latest News & Articles" [level=2] [ref=e385]
+    - contentinfo [ref=e412]:
+      - generic [ref=e421]:
+        - paragraph [ref=e422]:
+          - text: © Copyright 2024 by
+          - link "LeCoquette, Llc" [ref=e423] [cursor=pointer]:
+            - /url: "#"
+        - list [ref=e424]:
+          - listitem [ref=e425]:
+            - link "Help" [ref=e426] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e427]:
+            - link "Privacy Policy" [ref=e428] [cursor=pointer]:
+              - /url: "#"
+  - generic [ref=e432]:
+    - generic [ref=e433]: search here
+    - textbox "search here" [ref=e434]:
+      - /placeholder: Search Here...
+    - button "search submit" [ref=e435] [cursor=pointer]:
+      - generic [ref=e436]: 
+  - text: 

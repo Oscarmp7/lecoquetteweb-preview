@@ -1,0 +1,249 @@
+- generic [active] [ref=e1]:
+  - dialog "This website uses cookies" [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e5]:
+        - img "logo" [ref=e7]
+        - link "Cookiebot by Usercentrics - opens in a new window" [ref=e8] [cursor=pointer]:
+          - /url: https://www.cookiebot.com/en/what-is-behind-powered-by-cookiebot/?utm_source=banner_cb&utm_medium=referral&utm_content=v2
+          - img [ref=e9]
+      - tablist [ref=e36]:
+        - tab "Consent" [selected] [ref=e37] [cursor=pointer]
+        - tab "Details" [ref=e38] [cursor=pointer]
+        - tab "About" [ref=e39] [cursor=pointer]
+      - tabpanel "Consent" [ref=e41]:
+        - generic [ref=e43]:
+          - heading "This website uses cookies" [level=2] [ref=e44]
+          - generic [ref=e45]: We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services.
+        - generic [ref=e46]:
+          - img [ref=e48]
+          - generic [ref=e50]: The GPC signal is honored
+      - generic [ref=e54]:
+        - button "ALLOW ALL" [ref=e55] [cursor=pointer]
+        - button "Customize" [ref=e56] [cursor=pointer]: Customize
+        - button "REJECT ALL" [ref=e58] [cursor=pointer]
+  - generic [ref=e59]:
+    - banner:
+      - navigation [ref=e62]:
+        - generic [ref=e63]:
+          - generic [ref=e65]:
+            - generic [ref=e70]:
+              - link "Logo Aire Ancient Baths" [ref=e71] [cursor=pointer]:
+                - /url: /en
+                - img "Logo Aire Ancient Baths" [ref=e72]
+              - text: "|"
+            - generic:
+              - generic:
+                - generic:
+                  - list
+          - generic [ref=e79]:
+            - generic [ref=e81]:
+              - list [ref=e83]:
+                - listitem [ref=e84] [cursor=pointer]:
+                  - generic [ref=e85]:
+                    - link "newyork" [ref=e86]:
+                      - /url: /en/aire-ancient-baths-newyork
+                    - img [ref=e87]
+                - listitem [ref=e89] [cursor=pointer]:
+                  - link "· New York · Tribeca" [ref=e90]:
+                    - /url: /en/aire-ancient-baths-newyork-tribeca
+                - listitem [ref=e91] [cursor=pointer]:
+                  - link "· New York · Upper East Side" [ref=e92]:
+                    - /url: /en/aire-ancient-baths-newyork-uppereastside
+                - listitem [ref=e93] [cursor=pointer]:
+                  - link "Experiences" [ref=e94]:
+                    - /url: /en/aire-ancient-baths-newyork/experiencias
+                - listitem [ref=e95] [cursor=pointer]:
+                  - link "Gift AIRE" [ref=e96]:
+                    - /url: https://beaire.com/landing/gift-aire/?ce=newyork
+              - generic [ref=e97]:
+                - link "Book" [ref=e99] [cursor=pointer]:
+                  - /url: /en/booking/newyork-uppereastside
+                - link "Gift" [ref=e101] [cursor=pointer]:
+                  - /url: /en/gift/newyork-tribeca/experiences
+                - link "I have a gift box" [ref=e103] [cursor=pointer]:
+                  - /url: /en/exchange
+            - combobox [ref=e110]:
+              - option "ES"
+              - option "EN" [selected]
+              - option "CA"
+              - option "DA"
+    - main [ref=e111]:
+      - generic [ref=e113]:
+        - generic [ref=e117]:
+          - listbox "Presentation of main images and videos" [ref=e122]:
+            - option "Main image or video 0" [ref=e123]:
+              - iframe [ref=e125]:
+                
+          - generic [ref=e126]:
+            - generic [ref=e127]:
+              - heading "AIRE New York · Tribeca ®" [level=2] [ref=e128]:
+                - link "AIRE New York · Tribeca" [ref=e129] [cursor=pointer]:
+                  - /url: /en/aire-ancient-baths-newyork-tribeca
+                - text: ®
+              - paragraph [ref=e130]: ENJOY A RENEWED SPACE
+              - paragraph [ref=e131]: Set inside a restored 1883 textile factory, AIRE resides in Manhattan’s most cinematic and cobblestone-clad quarters and stands as one of our largest locations with 16,000 square feet of candlelit calm. Original brick, beams, and iron columns frame our thermal baths, which now feature a unique Tepidarium with a skylight where the sky itself becomes part of the experience, warm marble beds, and new massage rooms. As the first AIRE destination outside Europe, it blends historical architectural charm with the ritual of water to create a richly immersive, sensorial experience. Perfect for those seeking tranquility, more space and an iconic downtown setting.
+              - generic [ref=e132]:
+                - link "Discover" [ref=e133] [cursor=pointer]:
+                  - /url: /en/aire-ancient-baths-newyork-tribeca
+                - paragraph [ref=e134]:
+                  - link "View gallery" [ref=e135] [cursor=pointer]:
+                    - /url: "#galleryModal"
+            - generic [ref=e136]:
+              - generic [ref=e137]:
+                - img "Location icon" [ref=e139]
+                - generic [ref=e140]:
+                  - paragraph [ref=e141]: Location
+                  - paragraph [ref=e142]:
+                    - link "88 Franklin St, New York NY 10013" [ref=e143] [cursor=pointer]:
+                      - /url: https://goo.gl/maps/hrRAKC9RmZu
+                      - text: 88 Franklin St, New York
+                      - text: NY 10013
+              - generic [ref=e144]:
+                - img "Phone icon" [ref=e146]
+                - generic [ref=e147]:
+                  - paragraph [ref=e148]: Phone
+                  - paragraph [ref=e149]:
+                    - link "+1 917-563-4542" [ref=e150] [cursor=pointer]:
+                      - /url: tel:+1 917-563-4542
+              - generic [ref=e151]:
+                - img "Email icon" [ref=e153]
+                - generic [ref=e154]:
+                  - paragraph [ref=e155]: Email
+                  - paragraph [ref=e156]:
+                    - link "nytribeca@beaire.com" [ref=e157] [cursor=pointer]:
+                      - /url: mailto:nytribeca@beaire.com
+            - generic [ref=e158]:
+              - list [ref=e159]:
+                - listitem [ref=e160]:
+                  - link "Hours and guidelines" [ref=e161] [cursor=pointer]:
+                    - /url: /en/horario-normas-newyork-tribeca
+                - listitem [ref=e162]:
+                  - link "Faqs" [ref=e163] [cursor=pointer]:
+                    - /url: /en/preguntas-frecuentes-newyork-tribeca
+              - generic [ref=e164]:
+                - generic [ref=e165]:
+                  - paragraph [ref=e166]: Tribeca
+                  - link "See Experiences" [ref=e167] [cursor=pointer]:
+                    - /url: /en/aire-ancient-baths-newyork-tribeca/experiencias
+                - img [ref=e168]
+            - generic [ref=e169]:
+              - heading "AIRE New York · Upper East Side ®" [level=2] [ref=e170]:
+                - link "AIRE New York · Upper East Side" [ref=e171] [cursor=pointer]:
+                  - /url: /en/aire-ancient-baths-newyork-uppereastside
+                - text: ®
+              - paragraph [ref=e172]: DISCOVER OUR NEWEST LOCATION
+              - paragraph [ref=e173]: Tucked away in a neighborhood filled with historical landmarks and world-renowned museums, this AIRE oasis is nestled in a 120-year-old historic building that once served as an art and silver collections warehouse for the Museum of Modern Art (MoMA). With over 10,000 square feet of curated space, this exclusive sanctuary of relaxation offers an intimate and elevated experience designed for true disconnection. Vaulted ceilings and loft-style architecture create a serene backdrop for its signature suspended Flotarium, a saltwater bath that appears to float mid-air. Ideal for those seeking a quiet and artful retreat in the heart of the Upper East Side.
+              - generic [ref=e174]:
+                - link "Discover" [ref=e175] [cursor=pointer]:
+                  - /url: /en/aire-ancient-baths-newyork-uppereastside
+                - paragraph [ref=e176]:
+                  - link "View gallery" [ref=e177] [cursor=pointer]:
+                    - /url: "#galleryModal"
+            - generic [ref=e178]:
+              - generic [ref=e179]:
+                - img "Location icon" [ref=e181]
+                - generic [ref=e182]:
+                  - paragraph [ref=e183]: Location
+                  - paragraph [ref=e184]:
+                    - link "305 E 61st Street, New York NY 10065" [ref=e185] [cursor=pointer]:
+                      - /url: https://maps.app.goo.gl/HQnYs7GrukucBrMG6
+                      - text: 305 E 61st Street, New York
+                      - text: NY 10065
+              - generic [ref=e186]:
+                - img "Phone icon" [ref=e188]
+                - generic [ref=e189]:
+                  - paragraph [ref=e190]: Phone
+                  - paragraph [ref=e191]:
+                    - link "+1 332-244-4191" [ref=e192] [cursor=pointer]:
+                      - /url: tel:+1 332-244-4191
+              - generic [ref=e193]:
+                - img "Email icon" [ref=e195]
+                - generic [ref=e196]:
+                  - paragraph [ref=e197]: Email
+                  - paragraph [ref=e198]:
+                    - link "nyues@beaire.com" [ref=e199] [cursor=pointer]:
+                      - /url: mailto:nyues@beaire.com
+            - generic [ref=e200]:
+              - list [ref=e201]:
+                - listitem [ref=e202]:
+                  - link "Hours and guidelines" [ref=e203] [cursor=pointer]:
+                    - /url: /en/horario-normas-newyork-uppereastside
+                - listitem [ref=e204]:
+                  - link "Faqs" [ref=e205] [cursor=pointer]:
+                    - /url: /en/preguntas-frecuentes-newyork-uppereastside
+              - generic [ref=e206]:
+                - generic [ref=e207]:
+                  - paragraph [ref=e208]: Upper East Side
+                  - link "See Experiences" [ref=e209] [cursor=pointer]:
+                    - /url: /en/aire-ancient-baths-newyork-uppereastside/experiencias
+                - img [ref=e210]
+        - generic [ref=e218]:
+          - img "Suscribe" [ref=e220]
+          - paragraph [ref=e221]: Join our AIRE New York newsletter for wellness inspiration, exclusive offers, and be the first to discover our newest experiences.
+          - generic [ref=e222]:
+            - textbox "Email" [ref=e224]:
+              - /placeholder: Enter your email
+            - generic [ref=e227]:
+              - checkbox "I have read the privacy policy and I accept the terms and conditions of Grupo Aire Ancient Baths" [ref=e228] [cursor=pointer]
+              - generic [ref=e229]:
+                - text: I have read the
+                - link "privacy policy" [ref=e230] [cursor=pointer]:
+                  - /url: /en/legal
+                - text: and I accept the
+                - link "terms and conditions" [ref=e231] [cursor=pointer]:
+                  - /url: /en/terminos-y-condiciones
+                - text: of Grupo Aire Ancient Baths
+            - generic [ref=e232]: SIGN UP
+    - contentinfo [ref=e233]:
+      - generic [ref=e239]:
+        - generic [ref=e244]:
+          - link "Facebook logo" [ref=e246] [cursor=pointer]:
+            - /url: https://www.facebook.com/AireAncientBathsUS/
+            - generic "Facebook logo" [ref=e247]: 
+          - link "Instagram logo" [ref=e249] [cursor=pointer]:
+            - /url: https://www.instagram.com/aireancientbaths_us/
+            - generic "Instagram logo" [ref=e250]: 
+        - generic [ref=e251]:
+          - list [ref=e256]:
+            - listitem [ref=e257]:
+              - link "Contact us" [ref=e258] [cursor=pointer]:
+                - /url: /en/form-contact
+            - listitem [ref=e259]: Corporate gifting
+            - listitem [ref=e260]:
+              - link "Careers" [ref=e261] [cursor=pointer]:
+                - /url: https://careers.beaire.com/
+            - listitem [ref=e262]:
+              - link "Press" [ref=e263] [cursor=pointer]:
+                - /url: /en/press-room
+            - listitem [ref=e264]:
+              - link "Blog" [ref=e265] [cursor=pointer]:
+                - /url: /en/aire-magazine
+            - listitem [ref=e266]:
+              - link "Legal notice" [ref=e267] [cursor=pointer]:
+                - /url: /en/legal-newyork
+            - listitem [ref=e268]:
+              - link "Code of Ethics and Complaints Channel" [ref=e269] [cursor=pointer]:
+                - /url: /en/code-ethics-and-responsible-practices-us
+            - listitem [ref=e270]:
+              - link "Accessibility Statement" [ref=e271] [cursor=pointer]:
+                - /url: /en/accessibility-statement
+            - listitem [ref=e272]:
+              - link "Safe Practices" [ref=e273] [cursor=pointer]:
+                - /url: /en/safe-practices
+            - listitem [ref=e274]:
+              - link "Accessibility" [ref=e275] [cursor=pointer]:
+                - /url: ""
+            - listitem [ref=e276]:
+              - link "Sustainability" [ref=e277] [cursor=pointer]:
+                - /url: /en/sustainability
+            - listitem [ref=e278]:
+              - link "Cancellation Policy" [ref=e279] [cursor=pointer]:
+                - /url: /en/politica-cancelacion-newyork-tribeca
+            - listitem [ref=e280]:
+              - link "Cookies Policy" [ref=e281] [cursor=pointer]:
+                - /url: /en/cookies-policy-newyork-tribeca
+          - paragraph [ref=e286]: Copyright © AIRE Ancient Baths
+  - iframe [ref=e287]:
+    
+  - button "Hello, have a question? Let’s chat." [ref=e288] [cursor=pointer]:
+    - img [ref=e290]

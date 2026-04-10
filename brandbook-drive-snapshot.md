@@ -1,0 +1,35 @@
+- generic [ref=e1]:
+  - iframe [ref=e2]:
+    
+  - generic [ref=e4]:
+    - navigation [ref=e5]:
+      - button [ref=e259] [cursor=pointer]:
+        - generic [ref=e9]: Ir al contenido principal
+      - button [ref=e260] [cursor=pointer]:
+        - generic [ref=e13]: Combinaciones de teclas
+      - button [ref=e261] [cursor=pointer]:
+        - generic [ref=e17]: Comentarios sobre accesibilidad
+    - banner [ref=e19]:
+      - generic [ref=e20]:
+        - link [ref=e262] [cursor=pointer]:
+          - /url: https://drive.google.com/?tab=oo
+        - generic [ref=e28]
+    - generic [ref=e37]:
+      - generic [ref=e46]:
+        - navigation [ref=e266]
+        - toolbar [ref=e50]
+      - main [ref=e76]:
+        - region [active] [ref=e82]
+  - img [ref=e258]
+  - iframe [ref=e307]:
+    
+  - dialog "Prueba Drive sin costo Google Drive es un lugar seguro para todos tus archivos Comienza hoy" [ref=e308]:
+    - generic:
+      - heading "Acerca de Google Drive" [ref=e309]
+      - button "Cerrar" [ref=e310]:
+        - img [ref=e313]
+    - document [ref=e316]:
+      - img [ref=e320]
+      - generic [ref=e327]:
+        - heading "Prueba Drive sin costo" [level=1] [ref=e328]
+        - paragraph [ref=e329]

@@ -1,0 +1,264 @@
+- generic [active] [ref=e1]:
+  - img [ref=e4]
+  - generic [ref=e5]:
+    - banner [ref=e6]:
+      - navigation [ref=e7]:
+        - generic [ref=e9]:
+          - link [ref=e12] [cursor=pointer]:
+            - /url: /legacy/index.html
+          - generic [ref=e13]:
+            - text: 
+            - list [ref=e14]:
+              - listitem [ref=e15]:
+                - link "Home" [ref=e16] [cursor=pointer]:
+                  - /url: /legacy/index.html
+              - listitem [ref=e17]:
+                - link "Services" [ref=e18] [cursor=pointer]:
+                  - /url: https://lecoquetteluxspa.com/services.html
+              - listitem [ref=e19]:
+                - link "Promotions" [ref=e20] [cursor=pointer]:
+                  - /url: https://lecoquetteluxspa.com/promotions.html
+              - listitem [ref=e21]:
+                - link "Gallery" [ref=e22] [cursor=pointer]:
+                  - /url: https://lecoquetteluxspa.com/gallery.html
+              - listitem [ref=e23]:
+                - link "Contact" [ref=e24] [cursor=pointer]:
+                  - /url: https://lecoquetteluxspa.com/contact.html
+    - generic [ref=e28]:
+      - generic [ref=e29]:
+        - paragraph [ref=e30]: Warm luxury beauty rituals in Gainesville
+        - paragraph [ref=e31]: Facials, brows, and nails delivered with refined care, polished detail, and a warm luxury atmosphere from the moment you arrive.
+      - img [ref=e33]
+    - generic [ref=e40]:
+      - heading "Welcome to Le Coquette." [level=2] [ref=e42]:
+        - text: Welcome to
+        - paragraph [ref=e43]: Le Coquette.
+      - paragraph [ref=e44]: Inspired by the French art of elegance and self-care, Le Coquette offers a refined experience where timeless beauty and modern indulgence come together. Discover the essence of grace and charm that defines us, and book your experience today to begin your journey with Le Coquette.
+      - list [ref=e45]:
+        - listitem [ref=e46]:
+          - generic [ref=e48]: 
+          - generic [ref=e49]:
+            - heading "Special Offers" [level=3] [ref=e50]
+            - paragraph [ref=e51]: 10% On your first visit.
+      - link "Reserve Your Appointment" [ref=e53] [cursor=pointer]:
+        - /url: https://lecoquetteluxspa.com/contact.html
+    - generic [ref=e56]:
+      - generic [ref=e57]: Signature services
+      - heading "Tailored Beauty Rituals" [level=2] [ref=e58]
+    - generic [ref=e64]:
+      - generic [ref=e66]:
+        - generic [ref=e67]:
+          - generic [ref=e68]: The Le Coquette experience
+          - heading "Refined care, elevated detail, and a warm luxury atmosphere from the moment you arrive." [level=2] [ref=e69]
+        - link "" [ref=e71] [cursor=pointer]:
+          - /url: https://www.youtube.com/watch?v=Get7rqXYrbQ
+          - generic [ref=e73]: 
+      - generic [ref=e76]:
+        - list [ref=e77]:
+          - listitem [ref=e78]:
+            - generic [ref=e80]: 
+            - paragraph [ref=e81]: Signature facials
+          - listitem [ref=e82]:
+            - generic [ref=e84]: 
+            - paragraph [ref=e85]: Brow shaping
+          - listitem [ref=e86]:
+            - generic [ref=e88]: 
+            - paragraph [ref=e89]: Luxury manicures
+          - listitem [ref=e90]:
+            - generic [ref=e92]: 
+            - paragraph [ref=e93]: Pedicure care
+          - listitem [ref=e94]:
+            - generic [ref=e96]: 
+            - paragraph [ref=e97]: Soft glam finishing
+          - listitem [ref=e98]:
+            - generic [ref=e100]: 
+            - paragraph [ref=e101]: Event-ready details
+        - list [ref=e102]:
+          - listitem [ref=e103]:
+            - generic [ref=e105]: 
+            - paragraph [ref=e106]: Customized treatments
+          - listitem [ref=e107]:
+            - generic [ref=e109]: 
+            - paragraph [ref=e110]: High-touch service
+          - listitem [ref=e111]:
+            - generic [ref=e113]: 
+            - paragraph [ref=e114]: Relaxed scheduling
+          - listitem [ref=e115]:
+            - generic [ref=e117]: 
+            - paragraph [ref=e118]: Clean beauty standards
+          - listitem [ref=e119]:
+            - generic [ref=e121]: 
+            - paragraph [ref=e122]: Polished final result
+    - generic [ref=e127]:
+      - generic [ref=e129]:
+        - generic [ref=e131]: 
+        - generic [ref=e132]:
+          - heading "2 3" [level=3] [ref=e134]:
+            - generic [ref=e135]:
+              - generic [ref=e140]: "2"
+              - generic [ref=e145]: "3"
+          - paragraph [ref=e146]: Years Experience
+      - generic [ref=e148]:
+        - generic [ref=e150]: 
+        - generic [ref=e151]:
+          - heading "8 6 0" [level=3] [ref=e153]:
+            - generic [ref=e154]:
+              - generic [ref=e159]: "8"
+              - generic [ref=e164]: "6"
+              - generic [ref=e169]: "0"
+          - paragraph [ref=e170]: Wellness & Spa
+      - generic [ref=e172]:
+        - generic [ref=e174]: 
+        - generic [ref=e175]:
+          - heading "3 0" [level=3] [ref=e177]:
+            - generic [ref=e178]:
+              - generic [ref=e183]: "3"
+              - generic [ref=e188]: "0"
+          - paragraph [ref=e189]: Herbal Treatment
+      - generic [ref=e191]:
+        - generic [ref=e193]: 
+        - generic [ref=e194]:
+          - heading "9 8 0" [level=3] [ref=e196]:
+            - generic [ref=e197]:
+              - generic [ref=e202]: "9"
+              - generic [ref=e207]: "8"
+              - generic [ref=e212]: "0"
+          - paragraph [ref=e213]: Happy Clients
+    - generic [ref=e216]:
+      - generic [ref=e218]:
+        - generic [ref=e219]: A seamless visit
+        - heading "How Your Appointment Flows" [level=2] [ref=e220]
+      - generic [ref=e221]:
+        - generic [ref=e223]:
+          - heading "Reserve" [level=3] [ref=e227]:
+            - link "Reserve" [ref=e228] [cursor=pointer]:
+              - /url: https://lecoquetteluxspa.com/services.html
+          - paragraph [ref=e229]: Choose the service that fits your moment and secure your appointment with a quick message or booking inquiry.
+        - generic [ref=e231]:
+          - heading "Arrive & Unwind" [level=3] [ref=e235]:
+            - link "Arrive & Unwind" [ref=e236] [cursor=pointer]:
+              - /url: https://lecoquetteluxspa.com/services.html
+          - paragraph [ref=e237]: We tailor the experience to you, creating a calm, polished environment where every detail feels intentional.
+        - generic [ref=e239]:
+          - heading "Leave Polished" [level=3] [ref=e243]:
+            - link "Leave Polished" [ref=e244] [cursor=pointer]:
+              - /url: https://lecoquetteluxspa.com/services.html
+          - paragraph [ref=e245]: Step back into your day feeling refined, refreshed, and visibly elevated by a service designed around you.
+    - generic [ref=e249]:
+      - generic [ref=e251]:
+        - generic [ref=e254]:
+          - generic [ref=e255]: Client impressions
+          - heading "Why Guests Keep Coming Back" [level=2] [ref=e256]
+        - paragraph [ref=e259]: Clients return for the atmosphere, the precision, and the feeling of being cared for with intention from start to finish.
+      - generic [ref=e261]:
+        - generic [ref=e263]:
+          - generic [ref=e268]:
+            - generic [ref=e269]:
+              - generic [ref=e270]: 
+              - generic [ref=e271]: 
+              - generic [ref=e272]: 
+              - generic [ref=e273]: 
+              - generic [ref=e274]: 
+            - paragraph [ref=e275]: Beautiful attention to detail, a warm environment, and results that feel polished without ever feeling overdone.
+            - generic [ref=e278]:
+              - heading "Ava M." [level=3] [ref=e279]
+              - paragraph [ref=e280]: Customer
+          - generic [ref=e285]:
+            - generic [ref=e286]:
+              - generic [ref=e287]: 
+              - generic [ref=e288]: 
+              - generic [ref=e289]: 
+              - generic [ref=e290]: 
+              - generic [ref=e291]: 
+            - paragraph [ref=e292]: Beautiful attention to detail, a warm environment, and results that feel polished without ever feeling overdone.
+            - generic [ref=e295]:
+              - heading "Sofia R." [level=3] [ref=e296]
+              - paragraph [ref=e297]: Customer
+          - generic [ref=e302]:
+            - generic [ref=e303]:
+              - generic [ref=e304]: 
+              - generic [ref=e305]: 
+              - generic [ref=e306]: 
+              - generic [ref=e307]: 
+              - generic [ref=e308]: 
+            - paragraph [ref=e309]: Beautiful attention to detail, a warm environment, and results that feel polished without ever feeling overdone.
+            - generic [ref=e312]:
+              - heading "Camila P." [level=3] [ref=e313]
+              - paragraph [ref=e314]: Customer
+        - text:    
+    - generic [ref=e316]:
+      - heading "Follow Le Coquette on Instagram" [level=3] [ref=e318]
+      - generic [ref=e319]:
+        - generic [ref=e323]:
+          - link "":
+            - /url: "#"
+            - generic: 
+        - generic [ref=e327]:
+          - link "":
+            - /url: "#"
+            - generic: 
+        - generic [ref=e331]:
+          - link "":
+            - /url: "#"
+            - generic: 
+        - generic [ref=e335]:
+          - link "":
+            - /url: "#"
+            - generic: 
+        - generic [ref=e339]:
+          - link "":
+            - /url: "#"
+            - generic: 
+        - generic [ref=e343]:
+          - link "":
+            - /url: "#"
+            - generic: 
+    - generic [ref=e349]:
+      - heading "A warm luxury escape in Gainesville" [level=3] [ref=e351]:
+        - text: A warm luxury escape
+        - text: in Gainesville
+      - link "book now" [ref=e353] [cursor=pointer]:
+        - /url: https://lecoquetteluxspa.com/contact.html
+    - generic [ref=e356]:
+      - iframe [ref=e357]:
+        
+      - generic [ref=e358]:
+        - heading "Opening Hours" [level=4] [ref=e359]:
+          - text: Opening
+          - text: Hours
+        - generic [ref=e361]: 
+        - list [ref=e362]:
+          - listitem [ref=e363]:
+            - paragraph [ref=e364]: Monday
+            - heading "12:00 pm - 19:00 pm" [level=5] [ref=e365]
+          - listitem [ref=e366]:
+            - paragraph [ref=e367]: Tuesday to Friday
+            - heading "8:00 am - 19:00 pm" [level=5] [ref=e368]
+          - listitem [ref=e369]:
+            - paragraph [ref=e370]: Saturday
+            - heading "8:00 am to 3:30 pm" [level=5] [ref=e371]
+    - generic [ref=e374]:
+      - generic [ref=e375]: Care notes
+      - heading "Beauty Tips & Ritual Inspiration" [level=2] [ref=e376]
+    - contentinfo [ref=e403]:
+      - generic [ref=e409]:
+        - img "Le Coquette Luxury Spa" [ref=e411]
+        - generic [ref=e414]:
+          - paragraph [ref=e415]:
+            - text: © Copyright 2024 by
+            - link "LeCoquette, Llc" [ref=e416] [cursor=pointer]:
+              - /url: "#"
+          - list [ref=e417]:
+            - listitem [ref=e418]:
+              - link "Help" [ref=e419] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e420]:
+              - link "Privacy Policy" [ref=e421] [cursor=pointer]:
+                - /url: "#"
+  - generic [ref=e425]:
+    - generic [ref=e426]: search here
+    - textbox "search here" [ref=e427]:
+      - /placeholder: Search Here...
+    - button "search submit" [ref=e428] [cursor=pointer]:
+      - generic [ref=e429]: 
+  - text: 

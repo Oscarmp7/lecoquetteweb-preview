@@ -1,0 +1,227 @@
+{
+  "data": {
+    "branding": {
+      "colorScheme": "light",
+      "fonts": [
+        {
+          "family": "Manrope",
+          "count": 87
+        },
+        {
+          "family": "sans-serif",
+          "count": 87
+        },
+        {
+          "family": "icomoon",
+          "count": 2
+        }
+      ],
+      "colors": {
+        "primary": "#E0563C",
+        "secondary": "#6C757D",
+        "accent": "#0D6EFD",
+        "background": "#FFFFFF",
+        "textPrimary": "#27252A",
+        "link": "#0D6EFD"
+      },
+      "typography": {
+        "fontFamilies": {
+          "primary": "Manrope",
+          "heading": "Manrope"
+        },
+        "fontStacks": {
+          "body": [
+            "Manrope",
+            "sans-serif"
+          ],
+          "heading": [
+            "Manrope",
+            "sans-serif"
+          ],
+          "paragraph": [
+            "Manrope",
+            "sans-serif"
+          ]
+        },
+        "fontSizes": {
+          "h1": "16px",
+          "h2": "65px",
+          "body": "14px"
+        }
+      },
+      "spacing": {
+        "baseUnit": 4,
+        "borderRadius": "4px"
+      },
+      "components": {
+        "input": {
+          "background": "#1E1C20",
+          "textColor": "#A6A2AC",
+          "borderColor": null,
+          "borderRadius": "0px",
+          "borderRadiusCorners": {
+            "topLeft": "0px",
+            "topRight": "0px",
+            "bottomRight": "0px",
+            "bottomLeft": "0px"
+          },
+          "shadow": "none"
+        }
+      },
+      "images": {
+        "favicon": "https://lecoquetteluxspa.com/assets/images/favicons/apple-touch-icon.png",
+        "ogImage": "assets/images/backgrounds/12006302.png"
+      },
+      "__llm_logo_reasoning": {
+        "selectedIndex": -1,
+        "reasoning": "LLM failed",
+        "confidence": 0,
+        "rejected": true,
+        "source": "llm"
+      },
+      "__llm_button_reasoning": {
+        "primary": {
+          "index": -1,
+          "text": "N/A",
+          "reasoning": "LLM failed"
+        },
+        "secondary": {
+          "index": -1,
+          "text": "N/A",
+          "reasoning": "LLM failed"
+        },
+        "confidence": 0
+      },
+      "personality": {
+        "tone": "professional",
+        "energy": "medium",
+        "targetAudience": "unknown"
+      },
+      "designSystem": {
+        "framework": "unknown",
+        "componentLibrary": ""
+      },
+      "confidence": {
+        "buttons": 0,
+        "colors": 0,
+        "overall": 0
+      },
+      "__llm_metadata": {
+        "logoSelection": {
+          "llmCalled": true,
+          "llmSucceeded": false,
+          "finalSource": "fallback",
+          "error": "LLM failed",
+          "rawLogoSelection": {
+            "selectedLogoIndex": -1,
+            "selectedLogoReasoning": "LLM failed",
+            "confidence": 0
+          }
+        },
+        "buttonClassification": {
+          "llmCalled": true,
+          "llmSucceeded": false,
+          "error": "LLM call failed or returned fallback values"
+        }
+      }
+    },
+    "metadata": {
+      "ogImage": "assets/images/backgrounds/12006302.png",
+      "title": " Le Coquette - Luxury Spa | Home ",
+      "viewport": "width=device-width, initial-scale=1.0",
+      "language": "en",
+      "og:image": "assets/images/backgrounds/12006302.png",
+      "description": "LeCoquette - Luxury Spa",
+      "favicon": "https://lecoquetteluxspa.com/assets/images/favicons/favicon-32x32.png",
+      "scrapeId": "019d6f41-2581-73fd-8b1f-00712ed3cd1a",
+      "sourceURL": "https://lecoquetteluxspa.com/",
+      "url": "https://lecoquetteluxspa.com/",
+      "statusCode": 200,
+      "contentType": "text/html",
+      "timezone": "America/New_York",
+      "proxyUsed": "basic",
+      "indexId": "0cc2acdd-b6c9-4ccf-ac9b-aa14839de8b9",
+      "creditsUsed": 1,
+      "concurrencyLimited": false
+    }
+  },
+  "scrape_id": "019d6f41-2581-73fd-8b1f-00712ed3cd1a",
+  "id": "0iqLNujE4-q0Qq6bP0Ciu",
+  "startedAt": "2026-04-08T22:40:34.074Z",
+  "endedAt": "2026-04-08T22:40:41.422Z",
+  "endpoint": "scrape",
+  "formState": {
+    "extractSetupCompleted": false,
+    "urls": [],
+    "extractSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "company_mission": {
+          "type": "string"
+        },
+        "supports_sso": {
+          "type": "boolean"
+        },
+        "is_open_source": {
+          "type": "boolean"
+        },
+        "is_in_yc": {
+          "type": "boolean"
+        }
+      }
+    },
+    "extractPrompt": "Extract the company details, following the schema.",
+    "enableWebSearch": false,
+    "constrainUrls": false,
+    "options": {
+      "onlyMainContent": false,
+      "parsePDF": true,
+      "stealthMode": false,
+      "excludeTags": [],
+      "includeTags": [],
+      "waitFor": "",
+      "timeout": "",
+      "maxAge": "2 days",
+      "ignoreSitemap": false,
+      "crawlEntireDomain": false,
+      "sitemap": "include",
+      "limit": "10",
+      "maxDepth": "",
+      "excludePaths": [],
+      "includePaths": [],
+      "includeSubdomains": false,
+      "search": "",
+      "scrapeContentFromSearchResults": true,
+      "timeBasedSearch": "",
+      "location": "",
+      "prompt": ""
+    },
+    "formats": [
+      "branding"
+    ],
+    "sources": [
+      "web"
+    ],
+    "categories": [],
+    "jsonSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "company_name": {
+          "type": "string"
+        },
+        "company_description": {
+          "type": "string"
+        }
+      }
+    },
+    "jsonPrompt": "",
+    "agent": {},
+    "url": "lecoquetteluxspa.com/",
+    "endpoint": "scrape"
+  },
+  "status": "success",
+  "version": "Nk7EA2CcqEBXVl3wHHulQ",
+  "isPreview": false
+}

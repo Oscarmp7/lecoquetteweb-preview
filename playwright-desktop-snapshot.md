@@ -1,0 +1,54 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - banner [ref=e5]:
+      - generic [ref=e384]
+      - navigation [ref=e6]
+    - generic [ref=e22]:
+      - generic [ref=e421]
+      - generic
+    - generic [ref=e44]:
+      - heading "Welcome to Le Coquette." [level=2] [ref=e46]
+      - paragraph [ref=e48]: Inspired by the French art of elegance and self-care, Le Coquette offers a refined experience where timeless beauty and modern indulgence come together. Discover the essence of grace and charm that defines us—book your experience today to begin your journey with Le Coquette.
+      - list [ref=e49]
+      - link "Schedule Today" [ref=e57] [cursor=pointer]:
+        - /url: services.html
+    - generic [ref=e60]:
+      - generic [ref=e61]: Our services
+      - heading "What We’re Offering" [level=2] [ref=e62]
+    - generic [ref=e68]:
+      - generic [ref=e70]
+      - generic [ref=e80]
+    - generic [ref=e131]:
+      - generic [ref=e133]
+      - generic [ref=e147]
+      - generic [ref=e161]
+      - generic [ref=e175]
+    - generic [ref=e190]:
+      - generic [ref=e191]
+      - generic [ref=e194]
+    - generic [ref=e222]:
+      - generic [ref=e224]
+      - generic [ref=e234]
+    - generic [ref=e272]:
+      - heading "Follow mollis on Instagram" [level=3] [ref=e274]
+      - generic [ref=e275]
+    - generic [ref=e305]:
+      - heading "Our Spa Center is the True Splendor" [level=3] [ref=e307]
+      - link "book now" [ref=e309] [cursor=pointer]:
+        - /url: contact.html
+    - generic [ref=e312]:
+      - iframe [ref=e313]:
+        
+      - generic [ref=e314]
+    - generic [ref=e330]:
+      - generic [ref=e331]: Blog Posts
+      - heading "Latest News & Articles" [level=2] [ref=e332]
+    - contentinfo [ref=e357]:
+      - generic [ref=e366]
+  - generic [ref=e377]:
+    - generic [ref=e378]: search here
+    - textbox "search here" [ref=e379]:
+      - /placeholder: Search Here...
+    - button "search submit" [ref=e380] [cursor=pointer]:
+      - generic [ref=e381]: 
+  - text: 

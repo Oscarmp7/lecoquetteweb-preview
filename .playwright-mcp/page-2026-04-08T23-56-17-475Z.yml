@@ -1,0 +1,417 @@
+- generic [active] [ref=e1]:
+  - region [ref=e2]:
+    - generic [ref=e3]:
+      - button "Close" [ref=e4] [cursor=pointer]
+      - generic [ref=e6]:
+        - paragraph [ref=e8]:
+          - text: We use cookies to enhance your experience. See our
+          - link "Privacy Policy" [ref=e9] [cursor=pointer]:
+            - /url: https://coreatelierpilates.com/privacy-policy
+        - button "Accept" [ref=e11] [cursor=pointer]
+  - generic [ref=e12]:
+    - link "Skip to content" [ref=e13] [cursor=pointer]:
+      - /url: "#primary"
+    - banner [ref=e14]:
+      - generic [ref=e15]:
+        - link [ref=e18] [cursor=pointer]:
+          - /url: https://coreatelierpilates.com/
+        - img "Hamburger Menu" [ref=e20] [cursor=pointer]
+      - generic [ref=e22]:
+        - img [ref=e26] [cursor=pointer]
+        - generic [ref=e32]:
+          - link "Home" [ref=e33] [cursor=pointer]:
+            - /url: https://coreatelierpilates.com
+          - list [ref=e35]:
+            - listitem [ref=e36]:
+              - link "About" [ref=e37] [cursor=pointer]:
+                - /url: https://coreatelierpilates.com/about/
+            - listitem [ref=e38]:
+              - link "Classes" [ref=e39] [cursor=pointer]:
+                - /url: https://coreatelierpilates.com/classes/
+            - listitem [ref=e40]:
+              - link "Book" [ref=e41] [cursor=pointer]:
+                - /url: https://coreatelierpilates.com/book/
+            - listitem [ref=e42]:
+              - link "Shop" [ref=e43] [cursor=pointer]:
+                - /url: https://coreatelierpilates.com/shop/
+            - listitem [ref=e44]:
+              - link "Events" [ref=e45] [cursor=pointer]:
+                - /url: https://coreatelierpilates.com/events/
+            - listitem [ref=e46]:
+              - link "Contact" [ref=e47] [cursor=pointer]:
+                - /url: https://coreatelierpilates.com/contact/
+        - link "Sign In" [ref=e49] [cursor=pointer]:
+          - /url: https://coreatelierpilates.com/login?redirect_to=https%3A%2F%2Fcoreatelierpilates.com%2F
+    - main [ref=e50]:
+      - article [ref=e51]:
+        - generic [ref=e52]:
+          - generic [ref=e54]:
+            - img "Core Hero" [ref=e55]
+            - generic [ref=e58]:
+              - generic [ref=e59]:
+                - img [ref=e61]
+                - img [ref=e79]
+              - link "Sign Up Now" [ref=e93] [cursor=pointer]:
+                - /url: https://coreatelierpilates.com/sign-up
+          - generic [ref=e98]:
+            - generic [ref=e99]:
+              - heading "core messages" [level=1] [ref=e100]:
+                - text: core
+                - emphasis [ref=e101]: messages
+              - generic [ref=e102]: At Core Atelier, we believe Pilates is more than just exercise—it’s an experience. Our classes are intentionally kept small with group sizes of just three, enabling us to craft sessions as unique as the individuals who step into our studio.
+            - img "Core Messages" [ref=e106]
+          - generic [ref=e109]:
+            - generic [ref=e111]:
+              - group "1 / 5" [ref=e112]:
+                - img "core slider" [ref=e113]
+              - group "2 / 5" [ref=e114]:
+                - img "core slider" [ref=e115]
+              - group "3 / 5" [ref=e116]:
+                - img "core slider" [ref=e117]
+              - group "4 / 5" [ref=e118]:
+                - img "core slider" [ref=e119]
+              - group "5 / 5" [ref=e120]:
+                - img "core slider" [ref=e121]
+            - button "Previous slide" [ref=e122] [cursor=pointer]:
+              - img "Slider control arrow" [ref=e123]
+            - button "Next slide" [ref=e124] [cursor=pointer]:
+              - img "Slider control arrow" [ref=e125]
+          - generic [ref=e127]:
+            - generic [ref=e128]: 1 of 5 reflections
+            - generic [ref=e129]:
+              - group "1 / 5" [ref=e130]:
+                - generic [ref=e132]:
+                  - heading "\"The studio is absolutely amazing and incredibly spacious, setting it apart from most studios in the area. I've been taking private sessions with Lena for nearly two years, and it has truly been a game changer for my posture and core strength.\"" [level=4] [ref=e133]
+                  - paragraph [ref=e134]: — Parada S.
+              - group "2 / 5" [ref=e135]:
+                - generic [ref=e137]:
+                  - 'heading "“Private sessions are rigorous yet so enjoyable and deeply fulfilling: Always tailored to our individual needs, however that looks like. I requested help with holistic, full-body training, and was given that and so much more.”" [level=4] [ref=e138]'
+                  - paragraph [ref=e139]: — Wai Ling T.
+              - group "3 / 5" [ref=e140]:
+                - generic [ref=e142]:
+                  - heading "“Amazing group class experience! It is just 3 sets of apparatus, so it really just feels like a private session. Due to the cosy group, our instructor was also able to correct us, especially in all the small details in engagement and alignment!”" [level=4] [ref=e143]
+                  - paragraph [ref=e144]: — Yi Mon T.
+              - group "4 / 5" [ref=e145]:
+                - generic [ref=e147]:
+                  - heading "“I highly recommend Core Atelier. I feel better than I have in the last 10 years and attribute it to these sessions. They are tailored for you so you will experience the results quickly.”" [level=4] [ref=e148]
+                  - paragraph [ref=e149]: — Standlee W.
+              - group "5 / 5" [ref=e150]:
+                - generic [ref=e152]:
+                  - heading "“The studio atmosphere is really nice and cosy. I've been attending Lena's private classes and her class has always been fun and enjoyable. If you prefer smaller group classes with more attention from the instructors, you can always consider their group classes.”" [level=4] [ref=e153]
+                  - paragraph [ref=e154]: — Li Mei T.
+            - generic [ref=e155]:
+              - button "Previous slide" [ref=e156] [cursor=pointer]:
+                - img "Slider control arrow" [ref=e157]
+              - button "Next slide" [ref=e158] [cursor=pointer]:
+                - img "Slider control arrow" [ref=e159]
+          - generic [ref=e161]:
+            - img "core pilates" [ref=e163]
+            - generic [ref=e165]:
+              - heading "begin your journey" [level=2] [ref=e166]:
+                - text: begin your
+                - emphasis [ref=e167]: journey
+              - paragraph [ref=e168]: Discover our offerings and find the classes that best elevate and personalize your Pilates experience.
+              - link "Explore More" [ref=e169] [cursor=pointer]:
+                - /url: https://coreatelierpilates.com/classes
+    - contentinfo [ref=e170]:
+      - generic [ref=e171]:
+        - heading "core artistry, in motion" [level=2] [ref=e173]:
+          - text: core artistry,
+          - emphasis [ref=e174]: in motion
+        - generic [ref=e175]:
+          - list [ref=e178]:
+            - listitem [ref=e179]:
+              - link "Home" [ref=e180] [cursor=pointer]:
+                - /url: https://coreatelierpilates.com/
+            - listitem [ref=e181]:
+              - link "About" [ref=e182] [cursor=pointer]:
+                - /url: https://coreatelierpilates.com/about/
+            - listitem [ref=e183]:
+              - link "Classes" [ref=e184] [cursor=pointer]:
+                - /url: https://coreatelierpilates.com/classes/
+            - listitem [ref=e185]:
+              - link "Book" [ref=e186] [cursor=pointer]:
+                - /url: https://coreatelierpilates.com/book/
+            - listitem [ref=e187]:
+              - link "Shop" [ref=e188] [cursor=pointer]:
+                - /url: https://coreatelierpilates.com/shop/
+          - list [ref=e191]:
+            - listitem [ref=e192]:
+              - link "Events" [ref=e193] [cursor=pointer]:
+                - /url: https://coreatelierpilates.com/events/
+            - listitem [ref=e194]:
+              - link "Press" [ref=e195] [cursor=pointer]:
+                - /url: https://coreatelierpilates.com/press/
+            - listitem [ref=e196]:
+              - link "Rewards" [ref=e197] [cursor=pointer]:
+                - /url: https://coreatelierpilates.com/rewards/
+            - listitem [ref=e198]:
+              - link "FAQ" [ref=e199] [cursor=pointer]:
+                - /url: https://coreatelierpilates.com/faq/
+            - listitem [ref=e200]:
+              - link "Careers" [ref=e201] [cursor=pointer]:
+                - /url: https://coreatelierpilates.com/careers/
+          - list [ref=e204]:
+            - listitem [ref=e205]:
+              - link "Contact" [ref=e206] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e207]:
+              - link "Instagram" [ref=e208] [cursor=pointer]:
+                - /url: https://www.instagram.com/coreatelierpilates
+            - listitem [ref=e209]:
+              - link "WhatsApp" [ref=e210] [cursor=pointer]:
+                - /url: https://wa.me/+6596310528
+      - generic [ref=e211]:
+        - generic [ref=e212]:
+          - paragraph [ref=e213]: © 2026 Core Atelier. All rights reserved.
+          - list [ref=e216]:
+            - listitem [ref=e217]:
+              - link "Privacy Policy" [ref=e218] [cursor=pointer]:
+                - /url: https://coreatelierpilates.com/privacy-policy/
+            - listitem [ref=e219]:
+              - link "Terms of Service" [ref=e220] [cursor=pointer]:
+                - /url: https://coreatelierpilates.com/terms-of-service/
+            - listitem [ref=e221]:
+              - link "Cookie Settings" [ref=e222] [cursor=pointer]:
+                - /url: "#"
+        - img [ref=e224]
+  - generic [ref=e237]:
+    - img "Close icon" [ref=e240] [cursor=pointer]
+    - generic [ref=e241]:
+      - heading "contact us" [level=2] [ref=e242]:
+        - text: contact
+        - emphasis [ref=e243]: us
+      - generic [ref=e245]:
+        - generic [ref=e246]:
+          - status
+          - list
+        - form "Contact form" [ref=e247]:
+          - generic [ref=e248]:
+            - generic [ref=e249]:
+              - generic [ref=e250]:
+                - generic [ref=e251]: First Name
+                - textbox [ref=e253]
+              - generic [ref=e254]:
+                - generic [ref=e255]: Last Name
+                - textbox [ref=e257]
+            - generic [ref=e258]:
+              - generic [ref=e259]:
+                - generic [ref=e260]: Email
+                - textbox [ref=e262]
+              - generic [ref=e263]:
+                - generic [ref=e264]: Phone Number
+                - generic [ref=e266]:
+                  - textbox [ref=e269]: "+65"
+                  - textbox [ref=e272]
+            - generic [ref=e275]:
+              - generic [ref=e276]: Your Message
+              - textbox [ref=e278]
+          - generic [ref=e279]:
+            - generic [ref=e280]:
+              - checkbox [ref=e284] [cursor=pointer]
+              - generic [ref=e285]:
+                - text: You agree to our friendly
+                - link "Privacy Policy." [ref=e286] [cursor=pointer]:
+                  - /url: https://coreatelierpilates.com/privacy-policy/
+            - generic [ref=e287]:
+              - button "Submit" [disabled] [ref=e288]
+              - generic [ref=e289]: Submitting...
+      - generic [ref=e290]:
+        - generic [ref=e291]:
+          - paragraph [ref=e293]: SOCIALS
+          - paragraph [ref=e295]: LOCATION
+        - generic [ref=e296]:
+          - generic [ref=e297]:
+            - link "WhatsApp" [ref=e298] [cursor=pointer]:
+              - /url: https://wa.me/+6596310528
+            - link "Instagram" [ref=e299] [cursor=pointer]:
+              - /url: https://www.instagram.com/coreatelierpilates
+          - generic [ref=e300]:
+            - link "Google Map" [ref=e301] [cursor=pointer]:
+              - /url: https://maps.app.goo.gl/CihQ3zvCeR4Ffw6A8
+            - generic [ref=e302]: Appointment Only
+  - generic [ref=e304]:
+    - img "Close icon" [ref=e307] [cursor=pointer]
+    - generic [ref=e309]:
+      - heading "apply careers" [level=2] [ref=e310]:
+        - text: apply
+        - emphasis [ref=e311]: careers
+      - generic [ref=e313]:
+        - generic [ref=e314]:
+          - status
+          - list
+        - form "Contact form" [ref=e315]:
+          - generic [ref=e316]:
+            - generic [ref=e317]:
+              - generic [ref=e318]:
+                - generic [ref=e319]: First Name
+                - textbox [ref=e321]
+              - generic [ref=e322]:
+                - generic [ref=e323]: Last Name
+                - textbox [ref=e325]
+            - generic [ref=e326]:
+              - generic:
+                - generic: Job Title
+                - generic:
+                  - textbox: hello
+              - generic [ref=e327]:
+                - generic [ref=e328]: Portfolio
+                - generic [ref=e329] [cursor=pointer]: Upload file (PDF max.2MB)
+            - generic [ref=e330]:
+              - generic [ref=e331]:
+                - generic [ref=e332]: Email
+                - textbox [ref=e334]
+              - generic [ref=e335]:
+                - generic [ref=e336]: Phone Number
+                - generic [ref=e338]:
+                  - textbox [ref=e341]: "+65"
+                  - textbox [ref=e344]
+            - generic [ref=e346]:
+              - generic [ref=e347]: Your Message
+              - textbox [ref=e349]
+          - generic [ref=e350]:
+            - generic [ref=e351]:
+              - checkbox [ref=e355] [cursor=pointer]
+              - generic [ref=e356]:
+                - text: You agree to our friendly
+                - link "Privacy Policy." [ref=e357] [cursor=pointer]:
+                  - /url: /privacy-policy
+            - generic [ref=e358]:
+              - button "Submit" [disabled] [ref=e359]
+              - generic [ref=e360]: Submitting...
+  - generic [ref=e362]:
+    - img "Close" [ref=e364]
+    - generic [ref=e368]:
+      - heading [level=2]
+      - paragraph
+      - img "Package Image" [ref=e370]
+      - generic [ref=e371]:
+        - generic [ref=e372]:
+          - paragraph [ref=e373]: Class Length
+          - paragraph
+        - generic [ref=e374]:
+          - paragraph [ref=e375]: Instructor
+          - paragraph
+        - generic [ref=e376]:
+          - paragraph [ref=e377]: Schedule
+          - paragraph
+        - generic [ref=e378]:
+          - paragraph [ref=e379]: Location
+          - paragraph
+  - generic [ref=e381]:
+    - img "Close" [ref=e383]
+    - generic [ref=e386]:
+      - heading "group class" [level=2] [ref=e387]: group class
+      - paragraph [ref=e388]: Join our intimate class of three. Experience the motivation of working out with others while still receiving expert instruction and guidance from our professional trainers.
+      - img "Package Image" [ref=e390]
+      - generic [ref=e391]:
+        - generic [ref=e392]:
+          - paragraph [ref=e393]: Package Type
+          - paragraph [ref=e394]: Group ( 3 max )
+        - generic [ref=e395]:
+          - paragraph [ref=e396]: Validity
+          - paragraph
+        - generic [ref=e397]:
+          - paragraph [ref=e398]: Sessions / Credits
+          - paragraph
+        - generic [ref=e399]:
+          - paragraph [ref=e400]: Disclaimer
+          - paragraph [ref=e401]: All sales of packages and retail items are final and non-refundable.
+    - generic [ref=e403]:
+      - paragraph [ref=e404]:
+        - text: S$
+        - text: ".00"
+      - link "Sign In to Shop" [ref=e405] [cursor=pointer]:
+        - /url: https://coreatelierpilates.com/sign-in
+  - generic [ref=e407]:
+    - img "Close" [ref=e409]
+    - generic [ref=e410]:
+      - generic [ref=e412]:
+        - generic [ref=e413]:
+          - heading [level=2]
+          - paragraph [ref=e414]: Please complete the form to book your private session.
+          - img "Panel image" [ref=e415]
+        - generic [ref=e417]:
+          - generic [ref=e418]:
+            - text: Preferred Instructor
+            - generic [ref=e419]:
+              - generic [ref=e423] [cursor=pointer]:
+                - paragraph [ref=e424]: Selected by Core
+                - paragraph [ref=e425]: Let us assign the very best instructor based entirely on your needs.
+              - generic [ref=e429] [cursor=pointer]:
+                - paragraph [ref=e430]: Lena Chien
+                - paragraph [ref=e431]: Founder, STOTT PILATES® Certified (All Equipment), GYROTONIC® Level 1 Trainer
+              - generic [ref=e435] [cursor=pointer]:
+                - paragraph [ref=e436]: Michelle Yow-Davidson
+                - paragraph [ref=e437]: STOTT PILATES® Certified (All Equipment), Pre & Postnatal and Menopause Specialist
+            - paragraph [ref=e438]: Preferred Instructor is required.
+          - generic [ref=e439]:
+            - generic [ref=e440]:
+              - generic [ref=e441]: Preferred Time
+              - combobox "Select Preferred Time" [ref=e444] [cursor=pointer]:
+                - generic [ref=e446]: Select Preferred Time
+              - paragraph [ref=e447]: Preferred Time is required.
+            - generic [ref=e448]:
+              - generic [ref=e449]: Preferred Days
+              - combobox "Select Preferred Days" [ref=e452] [cursor=pointer]:
+                - generic [ref=e454]: Select Preferred Days
+              - paragraph [ref=e455]: Preferred Day is required.
+            - generic [ref=e456]:
+              - generic [ref=e457]: Preferred Mode of Communication
+              - combobox "Select Method" [ref=e460] [cursor=pointer]:
+                - generic [ref=e462]: Select Method
+              - paragraph [ref=e463]: Preferred Method is required.
+      - generic [ref=e464]:
+        - paragraph
+        - link "Sign In to Book" [ref=e465] [cursor=pointer]:
+          - /url: https://coreatelierpilates.com/sign-in
+    - link "Sign In to Book" [ref=e467] [cursor=pointer]:
+      - /url: https://coreatelierpilates.com/sign-in
+  - generic [ref=e469]:
+    - img "Close" [ref=e471]
+    - generic [ref=e474]:
+      - heading [level=2]
+      - paragraph
+      - img "Package Image" [ref=e476]
+      - generic [ref=e477]:
+        - generic [ref=e478]:
+          - paragraph [ref=e479]: Class Length
+          - paragraph
+        - generic [ref=e480]:
+          - paragraph [ref=e481]: Instructor
+          - paragraph
+        - generic [ref=e482]:
+          - paragraph [ref=e483]: Schedule
+          - paragraph
+        - generic [ref=e484]:
+          - paragraph [ref=e485]: Location
+          - paragraph
+    - link "Sign In to Book" [ref=e487] [cursor=pointer]:
+      - /url: https://coreatelierpilates.com/sign-in
+  - generic [ref=e488]:
+    - paragraph [ref=e489]: Payment couldn’t be processed. Please try again.
+    - img "Close" [ref=e490] [cursor=pointer]
+  - generic:
+    - generic:
+      - img "Close"
+    - generic:
+      - heading "packages required" [level=2]:
+        - text: packages
+        - emphasis: required
+      - paragraph:
+        - text: Credits are required to book a class.
+        - text: Please purchase a package first.
+    - generic:
+      - checkbox
+      - generic: Don’t show this message again.
+  - generic [ref=e491]:
+    - img "Close"
+    - generic [ref=e494]:
+      - img "Close" [ref=e496] [cursor=pointer]
+      - generic [ref=e498]:
+        - heading "your cart is empty" [level=3] [ref=e499]:
+          - text: your cart
+          - emphasis [ref=e500]: is empty
+        - link "Explore Shop" [ref=e501] [cursor=pointer]:
+          - /url: https://coreatelierpilates.com/shop
+  - status [ref=e502]

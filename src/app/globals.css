@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+:root {
+  --color-background: oklch(0.985 0.010 55);
+  --color-surface: oklch(0.952 0.020 52);
+  --color-surface-alt: oklch(0.852 0.091 51.4);
+  --color-foreground: oklch(0.410 0.109 36.5);
+  --color-foreground-strong: oklch(0.269 0.010 303.8);
+  --color-foreground-muted: oklch(0.560 0.050 35);
+  --color-primary: oklch(0.637 0.177 32.7);
+  --color-primary-hover: oklch(0.600 0.197 32.7);
+  --color-secondary: oklch(0.852 0.091 51.4);
+  --color-border: oklch(0.900 0.025 50);
+  --color-noir: oklch(0.180 0.008 35);
+  --color-noir-foreground: oklch(0.940 0.015 60);
+  --color-noir-accent: oklch(0.780 0.060 75);
+  --duration-medium: 260ms;
+  --ease-standard: cubic-bezier(0.16, 1, 0.3, 1);
+  --radius-pill: 9999px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto;
+  overflow-x: clip;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: clip;
+  background:
+    radial-gradient(circle at top, rgba(255, 235, 224, 0.88), transparent 32%),
+    linear-gradient(180deg, #fffaf6 0%, #fff5ef 38%, #fffaf6 100%);
+  color: var(--color-foreground);
+  font-family: var(--font-body), sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+::selection {
+  background: rgba(226, 88, 62, 0.18);
+}
+
+.font-display {
+  font-family: var(--font-display), serif;
+}
+
+.font-body {
+  font-family: var(--font-body), sans-serif;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Hero scroll hint */
+@keyframes scroll-line-draw {
+  0%   { transform: scaleY(0); opacity: 0; }
+  15%  { opacity: 1; }
+  50%  { transform: scaleY(1); }
+  85%  { transform: scaleY(1); opacity: 1; }
+  100% { transform: scaleY(1); opacity: 0; }
+}
+
+.hero-scroll-line {
+  transform-origin: top center;
+  animation: scroll-line-draw 2s ease-in-out infinite;
+}

@@ -1,0 +1,334 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - main [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - heading "Shopping Cart" [level=5]
+                      - img
+                    - generic:
+                      - img
+                  - generic:
+                    - generic:
+                      - paragraph: Oops, your cart is empty!
+                      - paragraph: Time to refill it with silhouettes that hit different.
+                      - generic:
+                        - link "See Homepage":
+                          - /url: /
+                        - link "Go to Shop":
+                          - /url: /shop
+          - generic [ref=e6]:
+            - link "Shop logo" [ref=e8] [cursor=pointer]:
+              - /url: /
+              - img "Shop logo" [ref=e9]
+            - generic [ref=e18] [cursor=pointer]:
+              - img [ref=e19]
+              - generic [ref=e21]: "0"
+        - generic:
+          - navigation:
+            - generic:
+              - generic:
+                - text: Drops
+                - img "Open drop menu"
+            - link "Shop":
+              - /url: /shop
+            - link "About":
+              - /url: /about
+            - link "Contact":
+              - /url: /contact
+            - link "Stockist":
+              - /url: /stockist
+            - link "Account":
+              - /url: https://shopify.com/69202149630/account?locale=en&region_country=US&consent=s0
+          - navigation:
+            - generic:
+              - generic:
+                - text: Drops
+                - img "Open drop menu"
+            - generic:
+              - link "06":
+                - /url: /collections/drop-6
+              - link "05":
+                - /url: /collections/drop-5
+              - link "04":
+                - /url: /collections/drop-iv
+              - link "03":
+                - /url: /collections/drop-3
+              - link "02":
+                - /url: /collections/drop-2
+              - link "01":
+                - /url: /collections/drop-1
+      - main [ref=e22]:
+        - generic [ref=e26]:
+          - img "Hero background" [ref=e27]
+          - img "Hero background" [ref=e30]
+        - generic [ref=e32]:
+          - generic [ref=e34]:
+            - img "Slide 1" [ref=e37] [cursor=pointer]
+            - img "Slide 2" [ref=e40]
+            - img "Slide 3" [ref=e43] [cursor=pointer]
+            - img "Slide 4" [ref=e46]
+            - generic [ref=e47]:
+              - generic [ref=e48]:
+                - text: "06"
+                - paragraph [ref=e49]: Drop 6 channels 90’s retro elegance, where timeless closet pieces are reborn with a modern edge.
+              - link "Shop All" [ref=e50] [cursor=pointer]:
+                - /url: /shop
+          - generic [ref=e51]:
+            - img "Click to change slide" [ref=e52]
+            - img "Click to change slide" [ref=e53]
+        - generic [ref=e54]:
+          - generic [ref=e55]: Curated Pieces
+          - generic [ref=e56]:
+            - link "Product image Buy Now" [ref=e57] [cursor=pointer]:
+              - /url: /shop/drop-6-detachable-bomber-jacket
+              - img "Product image" [ref=e59]
+              - generic [ref=e60]:
+                - generic:
+                  - button "Buy Now"
+            - link "Product image Buy Now" [ref=e62] [cursor=pointer]:
+              - /url: /shop/drop-6-fuax-fur-coat
+              - img "Product image" [ref=e64]
+              - generic [ref=e65]:
+                - generic:
+                  - button "Buy Now"
+        - generic [ref=e67]:
+          - generic [ref=e68]:
+            - paragraph [ref=e69]:
+              - generic ".make yourself comfortable" [ref=e70]:
+                - generic [ref=e71]: .
+                - generic [ref=e72]: m
+                - generic [ref=e73]: a
+                - generic [ref=e74]: k
+                - generic [ref=e75]: e
+                - generic [ref=e76]: "y"
+                - generic [ref=e77]: o
+                - generic [ref=e78]: u
+                - generic [ref=e79]: r
+                - generic [ref=e80]: s
+                - generic [ref=e81]: e
+                - generic [ref=e82]: l
+                - generic [ref=e83]: f
+                - generic [ref=e84]: c
+                - generic [ref=e85]: o
+                - generic [ref=e86]: m
+                - generic [ref=e87]: f
+                - generic [ref=e88]: o
+                - generic [ref=e89]: r
+                - generic [ref=e90]: t
+                - generic [ref=e91]: a
+                - generic [ref=e92]: b
+                - generic [ref=e93]: l
+                - generic [ref=e94]: e
+              - generic "trust your body and feel free" [ref=e95]:
+                - generic [ref=e96]: t
+                - generic [ref=e97]: r
+                - generic [ref=e98]: u
+                - generic [ref=e99]: s
+                - generic [ref=e100]: t
+                - generic [ref=e101]: "y"
+                - generic [ref=e102]: o
+                - generic [ref=e103]: u
+                - generic [ref=e104]: r
+                - generic [ref=e105]: b
+                - generic [ref=e106]: o
+                - generic [ref=e107]: d
+                - generic [ref=e108]: "y"
+                - generic [ref=e109]: a
+                - generic [ref=e110]: "n"
+                - generic [ref=e111]: d
+                - generic [ref=e112]: f
+                - generic [ref=e113]: e
+                - generic [ref=e114]: e
+                - generic [ref=e115]: l
+                - generic [ref=e116]: f
+                - generic [ref=e117]: r
+                - generic [ref=e118]: e
+                - generic [ref=e119]: e
+              - generic "in every self manifestation+" [ref=e120]:
+                - generic [ref=e121]: i
+                - generic [ref=e122]: "n"
+                - generic [ref=e123]: e
+                - generic [ref=e124]: v
+                - generic [ref=e125]: e
+                - generic [ref=e126]: r
+                - generic [ref=e127]: "y"
+                - generic [ref=e128]: s
+                - generic [ref=e129]: e
+                - generic [ref=e130]: l
+                - generic [ref=e131]: f
+                - generic [ref=e132]: m
+                - generic [ref=e133]: a
+                - generic [ref=e134]: "n"
+                - generic [ref=e135]: i
+                - generic [ref=e136]: f
+                - generic [ref=e137]: e
+                - generic [ref=e138]: s
+                - generic [ref=e139]: t
+                - generic [ref=e140]: a
+                - generic [ref=e141]: t
+                - generic [ref=e142]: i
+                - generic [ref=e143]: o
+                - generic [ref=e144]: "n"
+                - generic [ref=e145]: +
+            - paragraph [ref=e146]:
+              - generic "modern twist" [ref=e147]:
+                - generic [ref=e148]: m
+                - generic [ref=e149]: o
+                - generic [ref=e150]: d
+                - generic [ref=e151]: e
+                - generic [ref=e152]: r
+                - generic [ref=e153]: "n"
+                - generic [ref=e154]: t
+                - generic [ref=e155]: w
+                - generic [ref=e156]: i
+                - generic [ref=e157]: s
+                - generic [ref=e158]: t
+              - generic "on classical" [ref=e159]:
+                - generic [ref=e160]: o
+                - generic [ref=e161]: "n"
+                - generic [ref=e162]: c
+                - generic [ref=e163]: l
+                - generic [ref=e164]: a
+                - generic [ref=e165]: s
+                - generic [ref=e166]: s
+                - generic [ref=e167]: i
+                - generic [ref=e168]: c
+                - generic [ref=e169]: a
+                - generic [ref=e170]: l
+              - generic "elegance" [ref=e171]:
+                - generic [ref=e172]: e
+                - generic [ref=e173]: l
+                - generic [ref=e174]: e
+                - generic [ref=e175]: g
+                - generic [ref=e176]: a
+                - generic [ref=e177]: "n"
+                - generic [ref=e178]: c
+                - generic [ref=e179]: e
+          - img "Background" [ref=e181]
+        - generic [ref=e183]:
+          - generic [ref=e184]: THE BIGGEST LINEUP IN TOWN
+          - generic [ref=e185]:
+            - link "Product image 1 DROP 6 ASYMETRIC DRAPE TOP $320.0 USD" [ref=e186] [cursor=pointer]:
+              - /url: /shop/drop-6-drape-t-shirt
+              - img "Product image 1" [ref=e188]
+              - generic [ref=e189]:
+                - generic:
+                  - generic:
+                    - button "DROP 6 ASYMETRIC DRAPE TOP $320.0 USD":
+                      - generic: DROP 6 ASYMETRIC DRAPE TOP
+                      - generic: $320.0 USD
+            - link "Product image 2 DROP 6 DETACHABLE BOMBER JACKET $520.0 USD" [ref=e191] [cursor=pointer]:
+              - /url: /shop/drop-6-detachable-bomber-jacket
+              - img "Product image 2" [ref=e193]
+              - generic [ref=e194]:
+                - generic:
+                  - generic:
+                    - button "DROP 6 DETACHABLE BOMBER JACKET $520.0 USD":
+                      - generic: DROP 6 DETACHABLE BOMBER JACKET
+                      - generic: $520.0 USD
+            - link "Product image 3 DROP 6 HOURGLASS T SHIRT $250.0 USD" [ref=e196] [cursor=pointer]:
+              - /url: /shop/drop-6-hour-glass-t-shirt
+              - img "Product image 3" [ref=e198]
+              - generic [ref=e199]:
+                - generic:
+                  - generic:
+                    - button "DROP 6 HOURGLASS T SHIRT $250.0 USD":
+                      - generic: DROP 6 HOURGLASS T SHIRT
+                      - generic: $250.0 USD
+            - link "Product image 4 DROP 6 DENIM WAIST SWEATPANTS $450.0 USD" [ref=e201] [cursor=pointer]:
+              - /url: /shop/drop-6-denim-waist-sweatpants-1
+              - img "Product image 4" [ref=e203]
+              - generic [ref=e204]:
+                - generic:
+                  - generic:
+                    - button "DROP 6 DENIM WAIST SWEATPANTS $450.0 USD":
+                      - generic: DROP 6 DENIM WAIST SWEATPANTS
+                      - generic: $450.0 USD
+        - generic [ref=e207]:
+          - generic [ref=e208]:
+            - heading "Drop 05" [level=2] [ref=e209]
+            - generic [ref=e210]:
+              - generic [ref=e211] [cursor=pointer]: "01"
+              - generic [ref=e212] [cursor=pointer]: "02"
+              - generic [ref=e213] [cursor=pointer]: "03"
+              - generic [ref=e214] [cursor=pointer]: "04"
+              - generic [ref=e215] [cursor=pointer]: "05"
+              - img [ref=e216] [cursor=pointer]
+          - generic [ref=e219]:
+            - img [ref=e221]
+            - generic [ref=e223]:
+              - generic [ref=e224]:
+                - img "drop" [ref=e226]
+                - img "drop" [ref=e229]
+                - img "drop" [ref=e232]
+                - img "drop" [ref=e235]
+                - img "drop" [ref=e238]
+                - img "drop" [ref=e241]
+              - paragraph [ref=e243]: Drop 5 brings a dreamy summer romance with sheer mesh, linen, and soft cotton. Swimwear transforms into bodysuits, layered with breezy cover-ups or effortless suit sets. Light, airy, and versatile — this drop makes summer styling feel weightless and romantic.
+              - button "View Drop 5" [ref=e244] [cursor=pointer]:
+                - link "View Drop 5" [ref=e245]:
+                  - /url: /collections/drop-5
+        - generic [ref=e247]:
+          - generic [ref=e249]:
+            - heading "Enter the inner list - subscribe for early access." [level=2] [ref=e250]
+            - paragraph
+            - generic [ref=e252]:
+              - textbox "Write down your e-mail address" [ref=e253]
+              - button "Submit" [ref=e254] [cursor=pointer]
+          - img "Subscribe to newsletter" [ref=e255]
+      - generic [ref=e258]:
+        - generic [ref=e260]:
+          - generic [ref=e261]:
+            - heading "DROPS" [level=3] [ref=e262]
+            - list [ref=e263]:
+              - listitem [ref=e264]:
+                - link "Drop 6" [ref=e265] [cursor=pointer]:
+                  - /url: /collections/drop-6
+              - listitem [ref=e266]:
+                - link "Drop 5" [ref=e267] [cursor=pointer]:
+                  - /url: /collections/drop-5
+          - generic [ref=e268]:
+            - heading "STORES" [level=3] [ref=e269]
+            - list [ref=e270]:
+              - listitem [ref=e271]:
+                - link "H.LORENZO" [ref=e272] [cursor=pointer]:
+                  - /url: /stockist
+              - listitem [ref=e273]:
+                - link "CURVE" [ref=e274] [cursor=pointer]:
+                  - /url: /stockist
+          - generic [ref=e275]:
+            - heading "INFORMATION" [level=3] [ref=e276]
+            - list [ref=e277]:
+              - listitem [ref=e278]:
+                - link "Contact" [ref=e279] [cursor=pointer]:
+                  - /url: /contact
+              - listitem [ref=e280]:
+                - link "Return and Refunds" [ref=e281] [cursor=pointer]:
+                  - /url: /refund-policy
+              - listitem [ref=e282]:
+                - link "Privacy Policy" [ref=e283] [cursor=pointer]:
+                  - /url: /privacy-policy
+              - listitem [ref=e284]:
+                - link "Terms of Service" [ref=e285] [cursor=pointer]:
+                  - /url: /terms-of-service
+          - generic [ref=e286]:
+            - heading "ABOUT US" [level=3] [ref=e287]
+            - paragraph [ref=e288]: Drop Edition is the co-creation of Jieun Kim and Mimi Kim, two entrepreneurial women with careers in fashion spanning from Seoul to Tokyo, to LA and NYC.
+            - paragraph [ref=e289]: Drop Edition is a Smart contemporary clothing designed for your goals. Versatile pieces, compact collection, endless style possibilities.
+        - generic [ref=e290]:
+          - generic [ref=e291]:
+            - link [ref=e293] [cursor=pointer]:
+              - /url: https://instagram.com/dropedition_official
+              - img [ref=e294]
+            - paragraph [ref=e296]:
+              - text: © 2025, Drop Edition Powered by
+              - link "square43.com" [ref=e297] [cursor=pointer]:
+                - /url: https://square43.com
+          - img "Drop Edition logo" [ref=e299]
+  - alert [ref=e301]

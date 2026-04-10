@@ -1,0 +1,109 @@
+- generic [active] [ref=e1]:
+  - iframe [ref=e2]:
+    
+  - region
+  - generic [ref=e4]:
+    - navigation [ref=e5]:
+      - button "Ir al contenido principal" [ref=e7] [cursor=pointer]:
+        - generic [ref=e9]: Ir al contenido principal
+      - button "Combinaciones de teclas" [ref=e11] [cursor=pointer]:
+        - generic [ref=e13]: Combinaciones de teclas
+      - button "Comentarios sobre accesibilidad" [ref=e15] [cursor=pointer]:
+        - generic [ref=e17]: Comentarios sobre accesibilidad
+    - banner [ref=e19]:
+      - generic [ref=e20]:
+        - link "Drive" [ref=e24] [cursor=pointer]:
+          - /url: https://drive.google.com/?tab=oo
+          - img [ref=e25]
+          - generic [ref=e26]: Drive
+        - generic [ref=e28]:
+          - button "Apps de Google" [ref=e32] [cursor=pointer]:
+            - img [ref=e33]
+          - link "Acceder" [ref=e36] [cursor=pointer]:
+            - /url: https://accounts.google.com/ServiceLogin?hl=es-419&passive=true&continue=https://drive.google.com/drive/folders/1lG3Rb7zzPWsop8dHwytwGexfiThbeH1y&service=writely&ec=GAZAMQ
+    - generic [ref=e37]:
+      - generic [ref=e46]:
+        - generic [ref=e48]:
+          - generic:
+            - navigation:
+              - heading "Ruta de carpeta" [ref=e49]
+              - list "Ruta de carpeta"
+        - toolbar [ref=e50]:
+          - radiogroup "Diseño de lista o cuadrícula (Alt+V y, luego, L)" [ref=e55]:
+            - generic [ref=e56]:
+              - radio "Lista" [checked] [ref=e57] [cursor=pointer]:
+                - generic [ref=e58]:
+                  - img [ref=e59]
+                  - img [ref=e63]
+              - radio "Cuadrícula" [ref=e66] [cursor=pointer]:
+                - generic [ref=e67]:
+                  - img [ref=e68]
+                  - img [ref=e72]
+      - main [ref=e76]:
+        - region [ref=e82]:
+          - grid "Lista de elementos" [ref=e86]:
+            - rowgroup [ref=e87]:
+              - generic [ref=e88] [cursor=pointer]: Nombre
+              - img [ref=e90] [cursor=pointer]
+              - generic [ref=e92] [cursor=pointer]: Date modified
+              - text: File size
+              - generic [ref=e98]:
+                - button "Ordenar" [ref=e100] [cursor=pointer]:
+                  - img [ref=e104]
+                  - generic [ref=e106]: Ordenar
+                - tooltip [ref=e107]: Ver opciones de orden
+            - rowgroup [ref=e108]:
+              - row "BRANDBOOK Shared folder Modified 12 ago 2025 Size not available" [ref=e109]:
+                - gridcell "BRANDBOOK Shared folder" [ref=e110]:
+                  - generic [ref=e112]:
+                    - img [ref=e118]
+                    - generic "BRANDBOOK Shared folder" [ref=e126]:
+                      - strong [ref=e129]: BRANDBOOK
+                - gridcell "Modified 12 ago 2025" [ref=e130]:
+                  - generic "Modified 12 ago 2025" [ref=e134]:
+                    - generic [ref=e135]: 12 ago 2025
+                - gridcell "Size not available" [ref=e136]:
+                  - generic "Size not available" [ref=e140]:
+                    - generic [ref=e141]: —
+                - gridcell [ref=e142]
+              - row "EDITABLES Shared folder Modified 25 mar 2024 Size not available" [ref=e146]:
+                - gridcell "EDITABLES Shared folder" [ref=e147]:
+                  - generic [ref=e149]:
+                    - img [ref=e155]
+                    - generic "EDITABLES Shared folder" [ref=e163]:
+                      - strong [ref=e166]: EDITABLES
+                - gridcell "Modified 25 mar 2024" [ref=e167]:
+                  - generic "Modified 25 mar 2024" [ref=e171]:
+                    - generic [ref=e172]: 25 mar 2024
+                - gridcell "Size not available" [ref=e173]:
+                  - generic "Size not available" [ref=e177]:
+                    - generic [ref=e178]: —
+                - gridcell [ref=e179]
+              - row "LOGOS Shared folder Modified 20 mar 2024 Size not available" [ref=e183]:
+                - gridcell "LOGOS Shared folder" [ref=e184]:
+                  - generic [ref=e186]:
+                    - img [ref=e192]
+                    - generic "LOGOS Shared folder" [ref=e200]:
+                      - strong [ref=e203]: LOGOS
+                - gridcell "Modified 20 mar 2024" [ref=e204]:
+                  - generic "Modified 20 mar 2024" [ref=e208]:
+                    - generic [ref=e209]: 20 mar 2024
+                - gridcell "Size not available" [ref=e210]:
+                  - generic "Size not available" [ref=e214]:
+                    - generic [ref=e215]: —
+                - gridcell [ref=e216]
+              - row "MOCKUPS (IMAGENES Y APLICACIONES DE LA MARCA) Shared folder Modified 19 abr 2024 Size not available" [ref=e220]:
+                - gridcell "MOCKUPS (IMAGENES Y APLICACIONES DE LA MARCA) Shared folder" [ref=e221]:
+                  - generic [ref=e223]:
+                    - img [ref=e229]
+                    - generic "MOCKUPS (IMAGENES Y APLICACIONES DE LA MARCA) Shared folder" [ref=e237]:
+                      - strong [ref=e240]: MOCKUPS (IMAGENES Y APLICACIONES DE LA MARCA)
+                - gridcell "Modified 19 abr 2024" [ref=e241]:
+                  - generic "Modified 19 abr 2024" [ref=e245]:
+                    - generic [ref=e246]: 19 abr 2024
+                - gridcell "Size not available" [ref=e247]:
+                  - generic "Size not available" [ref=e251]:
+                    - generic [ref=e252]: —
+                - gridcell [ref=e253]
+  - region
+  - img [ref=e258]

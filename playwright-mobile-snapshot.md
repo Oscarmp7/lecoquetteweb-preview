@@ -1,0 +1,98 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - banner [ref=e5]:
+      - text:   
+      - navigation [ref=e6]:
+        - generic [ref=e8]
+    - generic [ref=e22]:
+      - generic [ref=e497]:
+        - paragraph [ref=e499]: Rejuvenating facials tailored to your skin’s needs.
+        - heading "Glow From Within" [level=2] [ref=e500]
+        - link "Discover Our Treatments" [ref=e502] [cursor=pointer]:
+          - /url: services.html
+      - generic:
+        - button "Go to slide 1" [ref=e35] [cursor=pointer]
+        - button "Go to slide 2" [ref=e36] [cursor=pointer]
+        - button "Go to slide 3" [ref=e37] [cursor=pointer]
+    - generic [ref=e44]:
+      - heading "Welcome to Le Coquette." [level=2] [ref=e46]:
+        - text: Welcome to
+        - paragraph [ref=e47]: Le Coquette.
+      - paragraph [ref=e48]: Inspired by the French art of elegance and self-care, Le Coquette offers a refined experience where timeless beauty and modern indulgence come together. Discover the essence of grace and charm that defines us—book your experience today to begin your journey with Le Coquette.
+      - list [ref=e49]:
+        - listitem [ref=e50]
+      - link "Schedule Today" [ref=e57] [cursor=pointer]:
+        - /url: services.html
+    - generic [ref=e60]:
+      - generic [ref=e61]: Our services
+      - heading "What We’re Offering" [level=2] [ref=e62]
+    - generic [ref=e68]:
+      - generic [ref=e70]:
+        - generic [ref=e71]
+        - link "" [ref=e75] [cursor=pointer]:
+          - /url: https://www.youtube.com/watch?v=Get7rqXYrbQ
+      - generic [ref=e80]:
+        - list [ref=e81]
+        - list [ref=e106]
+    - generic [ref=e131]:
+      - generic [ref=e133]:
+        - generic [ref=e135]: 
+        - generic [ref=e136]
+      - generic [ref=e147]:
+        - generic [ref=e149]: 
+        - generic [ref=e150]
+      - generic [ref=e161]:
+        - generic [ref=e163]: 
+        - generic [ref=e164]
+      - generic [ref=e175]:
+        - generic [ref=e177]: 
+        - generic [ref=e178]
+    - generic [ref=e190]:
+      - generic [ref=e191]:
+        - generic [ref=e192]: 3 easy steps
+        - heading "How It Works?" [level=2] [ref=e193]
+      - generic [ref=e194]:
+        - generic [ref=e196]
+        - generic [ref=e204]
+        - generic [ref=e212]
+    - generic [ref=e222]:
+      - generic [ref=e224]:
+        - generic [ref=e227]
+        - paragraph [ref=e232]: There are many variations of passages of available but the majority have suffered in form, by injected words which don't look. There are many variations of passages.
+      - generic [ref=e234]:
+        - generic [ref=e236]
+        - text:  
+    - generic [ref=e272]:
+      - heading "Follow mollis on Instagram" [level=3] [ref=e274]
+      - generic [ref=e275]:
+        - generic [ref=e279]
+        - generic [ref=e283]
+        - generic [ref=e287]
+        - generic [ref=e291]
+        - generic [ref=e295]
+        - generic [ref=e299]
+    - generic [ref=e305]:
+      - heading "Our Spa Center is the True Splendor" [level=3] [ref=e307]
+      - link "book now" [ref=e309] [cursor=pointer]:
+        - /url: contact.html
+    - generic [ref=e312]:
+      - iframe [ref=e313]:
+        
+      - generic [ref=e314]:
+        - heading "Opening Hours" [level=4] [ref=e315]
+        - generic [ref=e317]: 
+        - list [ref=e318]
+    - generic [ref=e330]:
+      - generic [ref=e331]: Blog Posts
+      - heading "Latest News & Articles" [level=2] [ref=e332]
+    - contentinfo [ref=e357]:
+      - generic [ref=e366]:
+        - paragraph [ref=e367]
+        - list [ref=e369]
+  - generic [ref=e377]:
+    - generic [ref=e378]: search here
+    - textbox "search here" [ref=e379]:
+      - /placeholder: Search Here...
+    - button "search submit" [ref=e380] [cursor=pointer]:
+      - generic [ref=e381]: 
+  - text: 

@@ -1,0 +1,664 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - navigation [ref=e6]:
+      - link "Bellovoire" [ref=e9] [cursor=pointer]:
+        - /url: ./
+        - generic [ref=e13]: Bellovoire
+    - main [ref=e19]:
+      - generic [ref=e20]:
+        - generic:
+          - generic:
+            - img "Bellevoire"
+        - generic [ref=e21]:
+          - paragraph [ref=e23]:
+            - generic [ref=e24]:
+              - generic [ref=e25]: W
+              - generic [ref=e26]: h
+              - generic [ref=e27]: e
+              - generic [ref=e28]: r
+              - generic [ref=e29]: e
+            - generic [ref=e30]:
+              - generic [ref=e31]: D
+              - generic [ref=e32]: r
+              - generic [ref=e33]: e
+              - generic [ref=e34]: a
+              - generic [ref=e35]: m
+              - generic [ref=e36]: s
+            - generic [ref=e37]:
+              - generic [ref=e38]: M
+              - generic [ref=e39]: e
+              - generic [ref=e40]: e
+              - generic [ref=e41]: t
+            - generic [ref=e42]:
+              - generic [ref=e43]: t
+              - generic [ref=e44]: h
+              - generic [ref=e45]: e
+            - generic [ref=e46]:
+              - generic [ref=e47]: B
+              - generic [ref=e48]: e
+              - generic [ref=e49]: a
+              - generic [ref=e50]: u
+              - generic [ref=e51]: t
+              - generic [ref=e52]: "y"
+            - generic [ref=e53]:
+              - generic [ref=e54]: o
+              - generic [ref=e55]: f
+            - generic [ref=e56]:
+              - generic [ref=e57]: F
+              - generic [ref=e58]: r
+              - generic [ref=e59]: a
+              - generic [ref=e60]: "n"
+              - generic [ref=e61]: c
+              - generic [ref=e62]: e
+          - img [ref=e63]:
+            - heading "Bellevoire" [level=1] [ref=e65]
+      - generic [ref=e66]:
+        - generic [ref=e67]:
+          - generic [ref=e69]:
+            - generic [ref=e70]:
+              - heading "Welcome to Bellevoire" [level=2] [ref=e73]:
+                - generic [ref=e74]: Welcome
+                - generic [ref=e75]: to
+                - generic [ref=e76]: Bellevoire
+              - heading "Your Elegant Retreat" [level=2] [ref=e78]:
+                - generic [ref=e79]: Your
+                - generic [ref=e80]: Elegant
+                - generic [ref=e81]: Retreat
+              - heading "in the Heart of Paris" [level=2] [ref=e84]:
+                - generic [ref=e85]: in
+                - generic [ref=e86]: the
+                - generic [ref=e87]: Heart
+                - generic [ref=e88]: of
+                - generic [ref=e89]: Paris
+            - paragraph [ref=e91]: We provide an experience of refined comfort, timeless elegance, and heartfelt hospitality. Nestled in the romantic city of Paris, France, our collection of three distinguished hotels invites travelers from around the world to immerse themselves in the charm and culture of the City of Light.
+            - link "More About us" [ref=e94] [cursor=pointer]:
+              - /url: ./about
+              - paragraph [ref=e96]: More About us
+          - img "Bellevoire" [ref=e103]
+        - generic [ref=e104]:
+          - generic [ref=e105]:
+            - heading "Paris Awaits at" [level=2] [ref=e107]:
+              - generic [ref=e108]: Paris
+              - generic [ref=e109]: Awaits
+              - generic [ref=e110]: at
+            - heading "Your Bellevoire Retreat" [level=2] [ref=e112]:
+              - generic [ref=e113]: Your
+              - generic [ref=e114]: Bellevoire
+              - generic [ref=e115]: Retreat
+          - generic [ref=e116]:
+            - generic [ref=e119]:
+              - generic [ref=e120]:
+                - generic [ref=e121]:
+                  - heading "Bellevoire Montmartre" [level=4] [ref=e123]
+                  - paragraph [ref=e125]: Nestled in the artistic heart of Paris, this boutique hotel blends bohemian charm with serene garden courtyards and panoramic city views.
+                  - link "Learn more" [ref=e127] [cursor=pointer]:
+                    - /url: ./hotels/bellevoire-montmartre
+                    - paragraph [ref=e129]: Learn more
+                - img "Bellevoire Montmartre" [ref=e134]
+              - img "Bellevoire Montmartre" [ref=e137]
+            - generic [ref=e140]:
+              - generic [ref=e141]:
+                - generic [ref=e142]:
+                  - heading "Bellevoire Champs-Élysées" [level=4] [ref=e144]
+                  - paragraph [ref=e146]: Just steps from luxury shopping and iconic landmarks, experience modern elegance and refined Parisian glamour.
+                  - link "Learn more" [ref=e148] [cursor=pointer]:
+                    - /url: ./hotels/bellevoire-champs-élysées
+                    - paragraph [ref=e150]: Learn more
+                - img "Bellevoire Champs-Élysées" [ref=e155]
+              - img "Bellevoire Champs-Élysées" [ref=e158]
+            - generic [ref=e161]:
+              - generic [ref=e162]:
+                - generic [ref=e163]:
+                  - heading "Bellevoire Saint-Germain" [level=4] [ref=e165]
+                  - paragraph [ref=e167]: Tucked into the storied Left Bank, Bellevoire Saint-Germain is a refined retreat for the poetic soul. Surrounded by art galleries, antique bookstores, historic cafés.
+                  - link "Learn more" [ref=e169] [cursor=pointer]:
+                    - /url: ./hotels/bellevoire-saint-germain
+                    - paragraph [ref=e171]: Learn more
+                - img "Bellevoire Saint-Germain" [ref=e176]
+              - img "Bellevoire Saint-Germain" [ref=e179]
+        - generic [ref=e180]:
+          - generic [ref=e181]:
+            - heading "Personalized" [level=2] [ref=e183]:
+              - generic [ref=e184]: Personalized
+            - heading "Services" [level=2] [ref=e186]:
+              - generic [ref=e187]: Services
+          - generic [ref=e188]:
+            - generic [ref=e192]:
+              - generic [ref=e193]:
+                - paragraph [ref=e196]: "01"
+                - heading "Private Chef" [level=3] [ref=e199]
+              - generic [ref=e200]:
+                - paragraph [ref=e203]: Core Elements, Guidelines We create engaging brand and campaign identities that resonate with your target audience, from logo design to complete brand experience.
+                - img "Private Chef" [ref=e207]
+            - generic [ref=e211]:
+              - generic [ref=e212]:
+                - paragraph [ref=e215]: "02"
+                - heading "Boarding Assistance" [level=3] [ref=e218]
+              - generic [ref=e219]:
+                - paragraph [ref=e222]: Begin and end your journey with ease. Our VIP airport service includes priority check-in, luggage handling, and a smooth, stress-free transfer to your hotel.
+                - img "Boarding Assistance" [ref=e226]
+            - generic [ref=e230]:
+              - generic [ref=e231]:
+                - paragraph [ref=e234]: "03"
+                - heading "Personal Concierge" [level=3] [ref=e237]
+              - generic [ref=e238]:
+                - paragraph [ref=e241]: From securing reservations at Paris’s finest restaurants to arranging exclusive cultural experiences, our dedicated concierge ensures your stay is effortlessly exceptional.
+                - img "Personal Concierge" [ref=e245]
+            - generic [ref=e249]:
+              - generic [ref=e250]:
+                - paragraph [ref=e253]: "04"
+                - heading "Chauffeur-Driven" [level=3] [ref=e256]
+              - generic [ref=e257]:
+                - paragraph [ref=e260]: Discover Paris at your own pace in a luxury vehicle with a professional chauffeur — whether for city sightseeing, shopping trips, or elegant evening outings.
+                - img "Chauffeur-Driven" [ref=e264]
+          - generic [ref=e265]:
+            - heading "Y o u r c o m f o r t a n d d e s i r e s s h a p e e v e r y d e t a i l o f y o u r s t a y . W h e t h e r y o u ' r e e a g e r t o i m m e r s e y o u r s e l f i n h a n d p i c k e d P a r i s i a n e x p e r i e n c e s ." [level=4] [ref=e267]:
+              - generic [ref=e268]:
+                - generic [ref=e269]: "Y"
+                - generic [ref=e270]: o
+                - generic [ref=e271]: u
+                - generic [ref=e272]: r
+              - generic [ref=e273]:
+                - generic [ref=e274]: c
+                - generic [ref=e275]: o
+                - generic [ref=e276]: m
+                - generic [ref=e277]: f
+                - generic [ref=e278]: o
+                - generic [ref=e279]: r
+                - generic [ref=e280]: t
+              - generic [ref=e281]:
+                - generic [ref=e282]: a
+                - generic [ref=e283]: "n"
+                - generic [ref=e284]: d
+              - generic [ref=e285]:
+                - generic [ref=e286]: d
+                - generic [ref=e287]: e
+                - generic [ref=e288]: s
+                - generic [ref=e289]: i
+                - generic [ref=e290]: r
+                - generic [ref=e291]: e
+                - generic [ref=e292]: s
+              - generic [ref=e293]:
+                - generic [ref=e294]: s
+                - generic [ref=e295]: h
+                - generic [ref=e296]: a
+                - generic [ref=e297]: p
+                - generic [ref=e298]: e
+              - generic [ref=e299]:
+                - generic [ref=e300]: e
+                - generic [ref=e301]: v
+                - generic [ref=e302]: e
+                - generic [ref=e303]: r
+                - generic [ref=e304]: "y"
+              - generic [ref=e305]:
+                - generic [ref=e306]: d
+                - generic [ref=e307]: e
+                - generic [ref=e308]: t
+                - generic [ref=e309]: a
+                - generic [ref=e310]: i
+                - generic [ref=e311]: l
+              - generic [ref=e312]:
+                - generic [ref=e313]: o
+                - generic [ref=e314]: f
+              - generic [ref=e315]:
+                - generic [ref=e316]: "y"
+                - generic [ref=e317]: o
+                - generic [ref=e318]: u
+                - generic [ref=e319]: r
+              - generic [ref=e320]:
+                - generic [ref=e321]: s
+                - generic [ref=e322]: t
+                - generic [ref=e323]: a
+                - generic [ref=e324]: "y"
+                - generic [ref=e325]: .
+              - generic [ref=e326]:
+                - generic [ref=e327]: W
+                - generic [ref=e328]: h
+                - generic [ref=e329]: e
+                - generic [ref=e330]: t
+                - generic [ref=e331]: h
+                - generic [ref=e332]: e
+                - generic [ref=e333]: r
+              - generic [ref=e334]:
+                - generic [ref=e335]: "y"
+                - generic [ref=e336]: o
+                - generic [ref=e337]: u
+                - generic [ref=e338]: "'"
+                - generic [ref=e339]: r
+                - generic [ref=e340]: e
+              - generic [ref=e341]:
+                - generic [ref=e342]: e
+                - generic [ref=e343]: a
+                - generic [ref=e344]: g
+                - generic [ref=e345]: e
+                - generic [ref=e346]: r
+              - generic [ref=e347]:
+                - generic [ref=e348]: t
+                - generic [ref=e349]: o
+              - generic [ref=e350]:
+                - generic [ref=e351]: i
+                - generic [ref=e352]: m
+                - generic [ref=e353]: m
+                - generic [ref=e354]: e
+                - generic [ref=e355]: r
+                - generic [ref=e356]: s
+                - generic [ref=e357]: e
+              - generic [ref=e358]:
+                - generic [ref=e359]: "y"
+                - generic [ref=e360]: o
+                - generic [ref=e361]: u
+                - generic [ref=e362]: r
+                - generic [ref=e363]: s
+                - generic [ref=e364]: e
+                - generic [ref=e365]: l
+                - generic [ref=e366]: f
+              - generic [ref=e367]:
+                - generic [ref=e368]: i
+                - generic [ref=e369]: "n"
+              - generic [ref=e370]:
+                - generic [ref=e371]: h
+                - generic [ref=e372]: a
+                - generic [ref=e373]: "n"
+                - generic [ref=e374]: d
+                - generic [ref=e375]: p
+                - generic [ref=e376]: i
+                - generic [ref=e377]: c
+                - generic [ref=e378]: k
+                - generic [ref=e379]: e
+                - generic [ref=e380]: d
+              - generic [ref=e381]:
+                - generic [ref=e382]: P
+                - generic [ref=e383]: a
+                - generic [ref=e384]: r
+                - generic [ref=e385]: i
+                - generic [ref=e386]: s
+                - generic [ref=e387]: i
+                - generic [ref=e388]: a
+                - generic [ref=e389]: "n"
+              - generic [ref=e390]:
+                - generic [ref=e391]: e
+                - generic [ref=e392]: x
+                - generic [ref=e393]: p
+                - generic [ref=e394]: e
+                - generic [ref=e395]: r
+                - generic [ref=e396]: i
+                - generic [ref=e397]: e
+                - generic [ref=e398]: "n"
+                - generic [ref=e399]: c
+                - generic [ref=e400]: e
+                - generic [ref=e401]: s
+                - generic [ref=e402]: .
+            - link "View All services" [ref=e405] [cursor=pointer]:
+              - /url: ./services
+              - paragraph [ref=e407]: View All services
+        - generic [ref=e410]:
+          - generic:
+            - generic:
+              - generic:
+                - img "Seaside view"
+          - generic [ref=e414]:
+            - generic [ref=e417]: More
+            - generic [ref=e420]: than
+            - generic [ref=e423]: stay
+          - heading "A t B e l l e v o i r e , e v e r y d e t a i l i s d e s i g n e d t o m a k e y o u f e e l a t h o m e — w i t h t h e e l e g a n c e o f P a r i s j u s t b e y o n d y o u r d o o r" [level=4] [ref=e426]:
+            - generic [ref=e427]:
+              - generic [ref=e428]: A
+              - generic [ref=e429]: t
+            - generic [ref=e430]:
+              - generic [ref=e431]: B
+              - generic [ref=e432]: e
+              - generic [ref=e433]: l
+              - generic [ref=e434]: l
+              - generic [ref=e435]: e
+              - generic [ref=e436]: v
+              - generic [ref=e437]: o
+              - generic [ref=e438]: i
+              - generic [ref=e439]: r
+              - generic [ref=e440]: e
+              - generic [ref=e441]: ","
+            - generic [ref=e442]:
+              - generic [ref=e443]: e
+              - generic [ref=e444]: v
+              - generic [ref=e445]: e
+              - generic [ref=e446]: r
+              - generic [ref=e447]: "y"
+            - generic [ref=e448]:
+              - generic [ref=e449]: d
+              - generic [ref=e450]: e
+              - generic [ref=e451]: t
+              - generic [ref=e452]: a
+              - generic [ref=e453]: i
+              - generic [ref=e454]: l
+            - generic [ref=e455]:
+              - generic [ref=e456]: i
+              - generic [ref=e457]: s
+            - generic [ref=e458]:
+              - generic [ref=e459]: d
+              - generic [ref=e460]: e
+              - generic [ref=e461]: s
+              - generic [ref=e462]: i
+              - generic [ref=e463]: g
+              - generic [ref=e464]: "n"
+              - generic [ref=e465]: e
+              - generic [ref=e466]: d
+            - generic [ref=e467]:
+              - generic [ref=e468]: t
+              - generic [ref=e469]: o
+            - generic [ref=e470]:
+              - generic [ref=e471]: m
+              - generic [ref=e472]: a
+              - generic [ref=e473]: k
+              - generic [ref=e474]: e
+            - generic [ref=e475]:
+              - generic [ref=e476]: "y"
+              - generic [ref=e477]: o
+              - generic [ref=e478]: u
+            - generic [ref=e479]:
+              - generic [ref=e480]: f
+              - generic [ref=e481]: e
+              - generic [ref=e482]: e
+              - generic [ref=e483]: l
+            - generic [ref=e484]:
+              - generic [ref=e485]: a
+              - generic [ref=e486]: t
+            - generic [ref=e487]:
+              - generic [ref=e488]: h
+              - generic [ref=e489]: o
+              - generic [ref=e490]: m
+              - generic [ref=e491]: e
+            - generic [ref=e493]: —
+            - generic [ref=e494]:
+              - generic [ref=e495]: w
+              - generic [ref=e496]: i
+              - generic [ref=e497]: t
+              - generic [ref=e498]: h
+            - generic [ref=e499]:
+              - generic [ref=e500]: t
+              - generic [ref=e501]: h
+              - generic [ref=e502]: e
+            - generic [ref=e503]:
+              - generic [ref=e504]: e
+              - generic [ref=e505]: l
+              - generic [ref=e506]: e
+              - generic [ref=e507]: g
+              - generic [ref=e508]: a
+              - generic [ref=e509]: "n"
+              - generic [ref=e510]: c
+              - generic [ref=e511]: e
+            - generic [ref=e512]:
+              - generic [ref=e513]: o
+              - generic [ref=e514]: f
+            - generic [ref=e515]:
+              - generic [ref=e516]: P
+              - generic [ref=e517]: a
+              - generic [ref=e518]: r
+              - generic [ref=e519]: i
+              - generic [ref=e520]: s
+            - generic [ref=e521]:
+              - generic [ref=e522]: j
+              - generic [ref=e523]: u
+              - generic [ref=e524]: s
+              - generic [ref=e525]: t
+            - generic [ref=e526]:
+              - generic [ref=e527]: b
+              - generic [ref=e528]: e
+              - generic [ref=e529]: "y"
+              - generic [ref=e530]: o
+              - generic [ref=e531]: "n"
+              - generic [ref=e532]: d
+            - generic [ref=e533]:
+              - generic [ref=e534]: "y"
+              - generic [ref=e535]: o
+              - generic [ref=e536]: u
+              - generic [ref=e537]: r
+            - generic [ref=e538]:
+              - generic [ref=e539]: d
+              - generic [ref=e540]: o
+              - generic [ref=e541]: o
+              - generic [ref=e542]: r
+        - generic [ref=e543]:
+          - generic [ref=e544]:
+            - heading "Where Every Day is" [level=2] [ref=e546]:
+              - generic [ref=e547]: Where
+              - generic [ref=e548]: Every
+              - generic [ref=e549]: Day
+              - generic [ref=e550]: is
+            - heading "Designed for You" [level=2] [ref=e552]:
+              - generic [ref=e553]: Designed
+              - generic [ref=e554]: for
+              - generic [ref=e555]: You
+          - generic [ref=e556]:
+            - generic [ref=e559]:
+              - img "Yoga & Meditation" [ref=e562]
+              - img "Chauffeured Trips" [ref=e565]
+              - img "Cooking Masterclass" [ref=e568]
+              - img "Cultural Tours" [ref=e571]
+              - img "In-Suite Spa" [ref=e574]
+              - img "Golf Getaways" [ref=e577]
+              - img "Swimming" [ref=e580]
+            - generic [ref=e581]:
+              - heading "Swimming" [level=3] [ref=e586]
+              - heading "Golf Getaways" [level=3] [ref=e591]
+              - heading "In-Suite Spa" [level=3] [ref=e596]
+              - heading "Cultural Tours" [level=3] [ref=e601]
+              - heading "Cooking Masterclass" [level=3] [ref=e606]
+              - heading "Chauffeured Trips" [level=3] [ref=e611]
+              - heading "Yoga & Meditation" [level=3] [ref=e616]
+              - generic [ref=e617]:
+                - paragraph [ref=e619]: Bellevoire presents a curated collection of experiences, from serene riverside strolls to immersive art and culture tours.
+                - link "View All Activities" [ref=e622] [cursor=pointer]:
+                  - /url: ./activities
+                  - paragraph [ref=e624]: View All Activities
+        - generic [ref=e627]:
+          - generic:
+            - generic:
+              - generic:
+                - img "Yacht in the middle of sea"
+          - generic [ref=e631]:
+            - generic [ref=e634]: Planned
+            - generic [ref=e636]:
+              - generic [ref=e637]: for
+              - generic [ref=e638]: You
+          - generic [ref=e640]:
+            - heading "E v e r y m o m e n t c u r a t e d , e v e r y e x p e r i e n c e u n f o r g e t t a b l e — l e a v e t h e p l a n n i n g t o u s ." [level=4] [ref=e642]:
+              - generic [ref=e643]:
+                - generic [ref=e644]: E
+                - generic [ref=e645]: v
+                - generic [ref=e646]: e
+                - generic [ref=e647]: r
+                - generic [ref=e648]: "y"
+              - generic [ref=e649]:
+                - generic [ref=e650]: m
+                - generic [ref=e651]: o
+                - generic [ref=e652]: m
+                - generic [ref=e653]: e
+                - generic [ref=e654]: "n"
+                - generic [ref=e655]: t
+              - generic [ref=e656]:
+                - generic [ref=e657]: c
+                - generic [ref=e658]: u
+                - generic [ref=e659]: r
+                - generic [ref=e660]: a
+                - generic [ref=e661]: t
+                - generic [ref=e662]: e
+                - generic [ref=e663]: d
+                - generic [ref=e664]: ","
+              - generic [ref=e665]:
+                - generic [ref=e666]: e
+                - generic [ref=e667]: v
+                - generic [ref=e668]: e
+                - generic [ref=e669]: r
+                - generic [ref=e670]: "y"
+              - generic [ref=e671]:
+                - generic [ref=e672]: e
+                - generic [ref=e673]: x
+                - generic [ref=e674]: p
+                - generic [ref=e675]: e
+                - generic [ref=e676]: r
+                - generic [ref=e677]: i
+                - generic [ref=e678]: e
+                - generic [ref=e679]: "n"
+                - generic [ref=e680]: c
+                - generic [ref=e681]: e
+              - generic [ref=e682]:
+                - generic [ref=e683]: u
+                - generic [ref=e684]: "n"
+                - generic [ref=e685]: f
+                - generic [ref=e686]: o
+                - generic [ref=e687]: r
+                - generic [ref=e688]: g
+                - generic [ref=e689]: e
+                - generic [ref=e690]: t
+                - generic [ref=e691]: t
+                - generic [ref=e692]: a
+                - generic [ref=e693]: b
+                - generic [ref=e694]: l
+                - generic [ref=e695]: e
+              - generic [ref=e697]: —
+              - generic [ref=e698]:
+                - generic [ref=e699]: l
+                - generic [ref=e700]: e
+                - generic [ref=e701]: a
+                - generic [ref=e702]: v
+                - generic [ref=e703]: e
+              - generic [ref=e704]:
+                - generic [ref=e705]: t
+                - generic [ref=e706]: h
+                - generic [ref=e707]: e
+              - generic [ref=e708]:
+                - generic [ref=e709]: p
+                - generic [ref=e710]: l
+                - generic [ref=e711]: a
+                - generic [ref=e712]: "n"
+                - generic [ref=e713]: "n"
+                - generic [ref=e714]: i
+                - generic [ref=e715]: "n"
+                - generic [ref=e716]: g
+              - generic [ref=e717]:
+                - generic [ref=e718]: t
+                - generic [ref=e719]: o
+              - generic [ref=e720]:
+                - generic [ref=e721]: u
+                - generic [ref=e722]: s
+                - generic [ref=e723]: .
+            - link "Book now" [ref=e726] [cursor=pointer]:
+              - /url: ./book
+              - paragraph [ref=e728]: Book now
+        - generic [ref=e731]:
+          - generic [ref=e732]:
+            - generic [ref=e733]:
+              - heading "Experience Bellevoire" [level=2] [ref=e735]:
+                - generic [ref=e736]: Experience
+                - generic [ref=e737]: Bellevoire
+              - heading "in Pictures" [level=2] [ref=e739]:
+                - generic [ref=e740]: in
+                - generic [ref=e741]: Pictures
+            - paragraph [ref=e743]: Step inside the world of Bellevoire through our gallery—where timeless interiors, elegant details, and enchanting Parisian scenes come together to tell the story of your next unforgettable escape.
+            - link "View Gallery" [ref=e746] [cursor=pointer]:
+              - /url: ./gallery
+              - paragraph [ref=e748]: View Gallery
+          - generic [ref=e753]:
+            - list [ref=e755]:
+              - listitem [ref=e915]:
+                - img "Bellevoire portrait" [ref=e918]
+              - listitem [ref=e919]:
+                - img "Bellevoire hotel location" [ref=e922]
+              - listitem [ref=e923]:
+                - img "Bellevoire" [ref=e926]
+              - listitem [ref=e927]:
+                - img [ref=e930]
+              - listitem [ref=e931]:
+                - img [ref=e934]
+              - listitem [ref=e935]:
+                - img [ref=e938]
+              - listitem [ref=e939]:
+                - img [ref=e942]
+            - group "Slideshow pagination controls"
+        - generic [ref=e758]:
+          - img "Hotel interiors" [ref=e761]
+          - generic [ref=e763]:
+            - generic [ref=e766]:
+              - heading "Reserve Your Stay" [level=2] [ref=e768]
+              - paragraph [ref=e770]: Booking with Bellevoire means more than just selecting dates — it’s about tailoring every detail to suit your stay. Whether you’d like to include curated add-on services or keep things minimal, you have full control over your experience.
+            - link "BOOK NOW" [ref=e772] [cursor=pointer]:
+              - /url: ./book
+              - paragraph [ref=e774]: BOOK NOW
+    - contentinfo [ref=e779]:
+      - generic [ref=e780]:
+        - heading "Bellevoire" [level=2] [ref=e784]
+        - heading "Bellevoire is a collection of elegant Parisian retreats" [level=5] [ref=e786]
+      - generic [ref=e787]:
+        - generic [ref=e788]:
+          - generic [ref=e789]:
+            - paragraph [ref=e791]: Contact
+            - heading "128 Rue de Rivoli, 4th Arrondissement 75001 Paris, France" [level=5] [ref=e793]
+            - generic [ref=e794]:
+              - link "info@bellevoire.com" [ref=e796] [cursor=pointer]:
+                - /url: mailto:creativebasitkhan@gmail.com
+                - paragraph [ref=e798]: info@bellevoire.com
+              - link "+01 1234567890" [ref=e802] [cursor=pointer]:
+                - /url: tel:+923132518909
+                - paragraph [ref=e804]: +01 1234567890
+          - generic [ref=e807]:
+            - paragraph [ref=e809]: Hotels
+            - generic [ref=e810]:
+              - link "Montmartre" [ref=e812] [cursor=pointer]:
+                - /url: ./hotels/bellevoire-montmartre
+                - paragraph [ref=e814]: Montmartre
+              - link "Champs-Élysées" [ref=e818] [cursor=pointer]:
+                - /url: ./hotels/bellevoire-champs-élysées
+                - paragraph [ref=e820]: Champs-Élysées
+              - link "Saint-Germain" [ref=e824] [cursor=pointer]:
+                - /url: ./hotels/bellevoire-saint-germain
+                - paragraph [ref=e826]: Saint-Germain
+          - generic [ref=e829]:
+            - paragraph [ref=e831]: Sitemap
+            - generic [ref=e832]:
+              - link "Home" [ref=e834] [cursor=pointer]:
+                - /url: ./
+                - heading "Home" [level=5] [ref=e836]
+              - link "About us" [ref=e839] [cursor=pointer]:
+                - /url: ./about
+                - heading "About us" [level=5] [ref=e841]
+              - link "Services" [ref=e844] [cursor=pointer]:
+                - /url: ./services
+                - heading "Services" [level=5] [ref=e846]
+              - link "Activities" [ref=e849] [cursor=pointer]:
+                - /url: ./activities
+                - heading "Activities" [level=5] [ref=e851]
+              - link "Gallery" [ref=e854] [cursor=pointer]:
+                - /url: ./gallery
+                - heading "Gallery" [level=5] [ref=e856]
+              - link "Contact" [ref=e859] [cursor=pointer]:
+                - /url: ./contact
+                - heading "Contact" [level=5] [ref=e861]
+          - generic [ref=e863]:
+            - paragraph [ref=e865]: Socials
+            - generic [ref=e866]:
+              - link "Twitter" [ref=e868] [cursor=pointer]:
+                - /url: https://x.com/basit_designs
+                - heading "Twitter" [level=5] [ref=e870]
+              - link "Instagram" [ref=e873] [cursor=pointer]:
+                - /url: https://www.instagram.com/basit.designs/
+                - heading "Instagram" [level=5] [ref=e875]
+              - link "Linkedin" [ref=e878] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/basitakhan/?originalSubdomain=sa
+                - heading "Linkedin" [level=5] [ref=e880]
+              - link "Store" [ref=e883] [cursor=pointer]:
+                - /url: https://basitdesign.lemonsqueezy.com/
+                - heading "Store" [level=5] [ref=e885]
+        - generic [ref=e887]:
+          - paragraph [ref=e890]: © 2025 All rights reserved.
+          - generic [ref=e891]:
+            - link "Terms & Conditions" [ref=e893] [cursor=pointer]:
+              - /url: ./terms-conditions
+              - paragraph [ref=e895]: Terms & Conditions
+            - link "Privacy Policy" [ref=e899] [cursor=pointer]:
+              - /url: ./privacy-policy
+              - paragraph [ref=e901]: Privacy Policy
+    - link "Get This Template" [ref=e905] [cursor=pointer]:
+      - /url: https://basitdesign.lemonsqueezy.com/buy/3c5c6688-035c-480c-8795-fb61f9529822
+      - paragraph [ref=e907]: Get This Template
+  - link "Framer - Custom site builder" [ref=e944] [cursor=pointer]:
+    - /url: https://www.framer.com
+    - img "Framer - Custom site builder" [ref=e948]
