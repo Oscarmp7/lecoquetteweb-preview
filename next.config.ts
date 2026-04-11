@@ -1,16 +1,13 @@
 import type { NextConfig } from "next";
 
-const isGithubActions = process.env.GITHUB_ACTIONS === "true";
-const repoName = process.env.GITHUB_REPOSITORY?.split("/")[1] ?? "";
-const isUserPagesRepo = repoName.toLowerCase() === "oscarmp7.github.io";
-const basePath =
-  isGithubActions && repoName && !isUserPagesRepo ? `/${repoName}` : "";
+const productionBasePath =
+  process.env.NODE_ENV === "production" ? "/lecoquetteweb-preview" : "";
 
 const nextConfig: NextConfig = {
   output: "export",
   trailingSlash: true,
-  basePath,
-  assetPrefix: basePath || undefined,
+  basePath: productionBasePath,
+  assetPrefix: productionBasePath || undefined,
   images: {
     remotePatterns: [],
     unoptimized: true
