@@ -8,6 +8,9 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   basePath: productionBasePath,
   assetPrefix: productionBasePath || undefined,
+  env: {
+    NEXT_PUBLIC_BASE_PATH: productionBasePath,
+  },
   images: {
     remotePatterns: [],
     unoptimized: true

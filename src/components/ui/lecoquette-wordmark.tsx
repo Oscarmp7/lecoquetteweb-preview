@@ -7,9 +7,11 @@ type LeCoquetteWordmarkProps = {
   adaptive?: boolean;
 };
 
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 const maskStyles = {
-  WebkitMaskImage: "url('/assets/branding/lecoquette-wordmark.png')",
-  maskImage: "url('/assets/branding/lecoquette-wordmark.png')",
+  WebkitMaskImage: `url('${BASE_PATH}/assets/branding/lecoquette-wordmark.png')`,
+  maskImage: `url('${BASE_PATH}/assets/branding/lecoquette-wordmark.png')`,
   WebkitMaskRepeat: "no-repeat",
   maskRepeat: "no-repeat",
   WebkitMaskPosition: "50% 52.6%",
