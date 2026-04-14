@@ -85,20 +85,22 @@ export function HeroSection() {
   return (
     <section
       ref={containerRef}
-      className="relative h-[100svh] overflow-hidden"
-      style={{ position: "sticky", top: 0, zIndex: 1 }}
+      className="sticky top-0 h-[100svh] overflow-hidden"
+      style={{ zIndex: 1 }}
       data-header-theme="dark"
     >
-      {/* Background — clase hero-bg para parallax */}
-      <Image
-        src={assetPath("/assets/branding/Background2.png")}
-        alt=""
-        fill
-        priority
-        fetchPriority="high"
-        className="hero-bg object-cover object-center"
-        sizes="100vw"
-      />
+      <div className="absolute inset-0">
+        {/* Background — clase hero-bg para parallax */}
+        <Image
+          src={assetPath("/assets/branding/Background2.png")}
+          alt=""
+          fill
+          priority
+          fetchPriority="high"
+          className="hero-bg object-cover object-center"
+          sizes="100vw"
+        />
+      </div>
 
       {/* Contenido central — clase hero-content para parallax unificado */}
       <div className="hero-content absolute inset-0 flex flex-col items-center justify-center pointer-events-none px-5 pt-32 sm:px-6 sm:pt-28 md:px-4 md:pt-0 gap-0">

@@ -407,6 +407,90 @@ function DesktopRitualText({ ritual }: { ritual: Ritual }) {
   );
 }
 
+function DesktopAddonsText() {
+  return (
+    <div className="flex h-full flex-col justify-center overflow-y-auto px-10 py-12 xl:px-16 text-left">
+      <div className="mb-5 flex items-center gap-3">
+        <span className="block h-px w-8 shrink-0" style={{ background: "oklch(0.637 0.177 32.7)" }} />
+        <span className="font-body text-xs uppercase tracking-[0.26em]" style={{ color: "oklch(0.637 0.177 32.7)" }}>
+          Additional Services
+        </span>
+      </div>
+
+      <h2
+        className="font-display m-0"
+        style={{
+          fontSize: "clamp(2rem, 3.8vw, 3rem)",
+          lineHeight: 1.08,
+          color: "oklch(0.269 0.010 303.8)",
+        }}
+      >
+        Complete your
+        <br />
+        ritual.
+      </h2>
+
+      <p
+        className="font-body mt-4 max-w-[36ch]"
+        style={{ fontSize: "clamp(0.9rem, 1.4vw, 1rem)", lineHeight: 1.78, color: "oklch(0.560 0.050 35)" }}
+      >
+        Elevate any visit with curated additions, from precision brow shaping to little luxuries that make the appointment feel fully considered.
+      </p>
+
+      <div className="mt-8 max-w-sm">
+        <ul className="space-y-0 border-t pt-2" style={{ borderColor: "oklch(0.900 0.025 50)" }}>
+          {ADD_ONS.map((a) => (
+            <li
+              key={a.label}
+              className="flex items-baseline justify-between gap-4 border-b py-3.5"
+              style={{ borderColor: "oklch(0.900 0.025 50)" }}
+            >
+              <span className="font-body" style={{ fontSize: "0.85rem", color: "oklch(0.410 0.109 36.5)" }}>
+                {a.label}
+              </span>
+              <span
+                className="font-body shrink-0 tabular-nums"
+                style={{ fontSize: "0.85rem", fontWeight: 500, color: "oklch(0.269 0.010 303.8)" }}
+              >
+                {a.price}
+              </span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div className="mt-8">
+        <a
+          href={BOOKING_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex cursor-pointer items-center gap-2 rounded-full font-medium uppercase tracking-[0.06em] transition-all"
+          style={{
+            background: "oklch(0.637 0.177 32.7)",
+            color: "#fff",
+            fontSize: "0.8rem",
+            padding: "0.85rem 1.6rem",
+            boxShadow: "0 10px 32px oklch(0.637 0.177 32.7 / 0.30)",
+            transitionDuration: "260ms",
+            transitionTimingFunction: "cubic-bezier(0.16,1,0.3,1)",
+          }}
+          onMouseEnter={(e) => {
+            (e.currentTarget as HTMLElement).style.background = "oklch(0.600 0.197 32.7)";
+          }}
+          onMouseLeave={(e) => {
+            (e.currentTarget as HTMLElement).style.background = "oklch(0.637 0.177 32.7)";
+          }}
+        >
+          Book Add-On
+          <svg width="13" height="13" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  );
+}
+
 function DesktopPinnedRituals() {
   const outerRef = useRef<HTMLDivElement>(null);
   const reducedMotion = usePrefersReducedMotion();
@@ -418,14 +502,9 @@ function DesktopPinnedRituals() {
 
       const tl = gsap.timeline({ defaults: { ease: "power1.inOut" } });
 
-      // ── Beat 0→1: Manicure enters (img left, txt right) ──────────────────
-      tl.fromTo(".pin-img-0", { yPercent: 100 }, { yPercent: 0, duration: 1 }, 0);
-      tl.fromTo(
-        ".pin-txt-0",
-        { autoAlpha: 0, y: 32 },
-        { autoAlpha: 1, y: 0, duration: 0.55, ease: "power2.out" },
-        0.35
-      );
+      // First panel must already be in place while the intro clears out.
+      gsap.set(".pin-img-0", { yPercent: 0 });
+      gsap.set(".pin-txt-0", { autoAlpha: 1, y: 0 });
 
       // ── Beat 1→2: Pedicure enters (img right), Manicure exits ────────────
       tl.to(".pin-img-0", { yPercent: -100, duration: 1 }, 1);
@@ -449,6 +528,20 @@ function DesktopPinnedRituals() {
         2.38
       );
 
+      // ── Beat 3→4: Add-ons enters, Bundles exits ──────────────────────────
+      tl.to(".pin-img-2", { yPercent: -100, duration: 1 }, 3);
+      tl.fromTo(".pin-img-3", { yPercent: 100 }, { yPercent: 0, duration: 1 }, 3);
+      tl.to(".pin-txt-2", { autoAlpha: 0, y: -24, duration: 0.3, ease: "power2.in" }, 3);
+      tl.fromTo(
+        ".pin-txt-3",
+        { autoAlpha: 0, y: 32 },
+        { autoAlpha: 1, y: 0, duration: 0.55, ease: "power2.out" },
+        3.38
+      );
+
+      // Hold Add-ons in place longer before About starts covering Services.
+      tl.to({}, { duration: 1 }, 4);
+
       ScrollTrigger.create({
         trigger: outerRef.current,
         start: "top top",
@@ -464,16 +557,20 @@ function DesktopPinnedRituals() {
     { scope: outerRef, dependencies: [reducedMotion] }
   );
 
-  // N = 3 panels → outer height = 4 × 100vh → 300vh of sticky scroll travel
-  const N = RITUALS.length;
+  // Four content beats plus one hold beat before About takeover.
+  const panelCount = RITUALS.length + 1;
 
   return (
-    <div ref={outerRef} style={{ height: `${(N + 1) * 100}vh` }} className="hidden md:block">
+    <div
+      ref={outerRef}
+      style={{ height: `${(panelCount + 2) * 100}vh` }}
+      className="hidden md:block"
+    >
       <div
         className="sticky top-0 h-screen overflow-hidden"
         style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}
       >
-        {/* ── LEFT column: img-0 (Manicure), img-2 (Bundles), txt-1 (Pedicure) ── */}
+        {/* ── LEFT column: img-0 (Manicure), img-2 (Bundles), txt-1 (Pedicure), txt-3 (Add-ons) ── */}
         <div className="relative h-full overflow-hidden" style={{ background: "oklch(0.930 0.022 50)" }} data-header-theme="light">
           {/* Manicure image — enters first */}
           <div
@@ -496,9 +593,15 @@ function DesktopPinnedRituals() {
           >
             <DesktopRitualText ritual={RITUALS[1]} />
           </div>
+          <div
+            className="pin-txt-3 absolute inset-0"
+            style={{ zIndex: 10, background: "oklch(0.985 0.010 55)", visibility: "hidden", opacity: 0 }}
+          >
+            <DesktopAddonsText />
+          </div>
         </div>
 
-        {/* ── RIGHT column: txt-0 (Manicure), img-1 (Pedicure), txt-2 (Bundles) ── */}
+        {/* ── RIGHT column: txt-0 (Manicure), img-1 (Pedicure), txt-2 (Bundles), img-3 (Add-ons) ── */}
         <div className="relative h-full overflow-hidden" style={{ background: "oklch(0.985 0.010 55)" }} data-header-theme="dark">
           {/* Manicure text — visible beat 0→1 */}
           <div
@@ -521,50 +624,180 @@ function DesktopPinnedRituals() {
           >
             <DesktopRitualText ritual={RITUALS[2]} />
           </div>
+          <div
+            className="pin-img-3 absolute inset-0 will-change-transform"
+            style={{ zIndex: 30 }}
+          >
+            <Image src={assetPath("/assets/services/manicure.png")} alt="Additional luxury beauty services" fill sizes="50vw" className="object-cover object-center" />
+          </div>
         </div>
       </div>
     </div>
   );
 }
 
-// ─── Add-ons strip ────────────────────────────────────────────────────────────
+// ─── Add-ons section ──────────────────────────────────────────────────────────
 
-function AddOnsStrip() {
+function AddOnsSection() {
+  const ref = useRef<HTMLDivElement>(null);
+  const reducedMotion = usePrefersReducedMotion();
+
+  useGSAP(
+    () => {
+      if (reducedMotion) return;
+      const { gsap } = ensureGsap();
+
+      gsap.fromTo(
+        ".addon-reveal",
+        { opacity: 0, y: 28, immediateRender: false },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.8,
+          ease: "power3.out",
+          stagger: 0.08,
+          scrollTrigger: {
+            trigger: ref.current,
+            start: "top 78%",
+            toggleActions: "play none none reverse",
+          },
+        }
+      );
+
+      gsap.fromTo(
+        ".addon-item",
+        { opacity: 0, y: 16, immediateRender: false },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.55,
+          ease: "power2.out",
+          stagger: 0.05,
+          scrollTrigger: {
+            trigger: ref.current,
+            start: "top 72%",
+            toggleActions: "play none none reverse",
+          },
+        }
+      );
+    },
+    { scope: ref, dependencies: [reducedMotion] }
+  );
+
   return (
     <div
-      className="relative w-full border-t"
-      style={{ background: "oklch(0.952 0.020 52)", borderColor: "oklch(0.900 0.025 50)" }}
+      ref={ref}
+      className="relative w-full border-t md:hidden"
+      style={{ background: "oklch(0.985 0.010 55)", borderColor: "oklch(0.900 0.025 50)" }}
       data-header-theme="dark"
     >
-      <div className="mx-auto max-w-5xl px-5 py-12 md:py-16">
-        <div className="mb-8 flex items-center gap-3">
-          <span className="block h-px w-6" style={{ background: "oklch(0.637 0.177 32.7 / 0.4)" }} />
-          <span
-            className="font-body text-[0.68rem] uppercase tracking-[0.26em]"
-            style={{ color: "oklch(0.560 0.050 35)" }}
-          >
-            Additional Services
-          </span>
-        </div>
-
-        <div className="grid grid-cols-1 gap-x-8 gap-y-0 sm:grid-cols-2 lg:grid-cols-3">
-          {ADD_ONS.map((a) => (
-            <div
-              key={a.label}
-              className="flex items-baseline justify-between gap-4 border-b py-3"
-              style={{ borderColor: "oklch(0.900 0.025 50)" }}
-            >
-              <span className="font-body" style={{ fontSize: "0.875rem", color: "oklch(0.410 0.109 36.5)" }}>
-                {a.label}
-              </span>
+      <div className="grid md:min-h-screen md:grid-cols-2">
+        <div className="flex items-center">
+          <div className="w-full px-5 py-12 md:px-10 md:py-16 xl:px-16">
+            <div className="addon-reveal mb-5 flex items-center gap-3">
+              <span className="block h-px w-8 shrink-0" style={{ background: "oklch(0.637 0.177 32.7)" }} />
               <span
-                className="font-body shrink-0 tabular-nums"
-                style={{ fontSize: "0.875rem", fontWeight: 500, color: "oklch(0.269 0.010 303.8)" }}
+                className="font-body text-[0.68rem] uppercase tracking-[0.26em]"
+                style={{ color: "oklch(0.637 0.177 32.7)" }}
               >
-                {a.price}
+                Additional Services
               </span>
             </div>
-          ))}
+
+            <h2
+              className="addon-reveal font-display m-0"
+              style={{
+                fontSize: "clamp(2.2rem, 4.8vw, 4.5rem)",
+                lineHeight: 1.05,
+                color: "oklch(0.269 0.010 303.8)",
+                letterSpacing: "-0.02em",
+              }}
+            >
+              Complete your
+              <br />
+              ritual.
+            </h2>
+
+            <p
+              className="addon-reveal font-body mt-5 max-w-[34ch]"
+              style={{
+                fontSize: "clamp(0.95rem, 1.4vw, 1.05rem)",
+                lineHeight: 1.8,
+                color: "oklch(0.560 0.050 35)",
+              }}
+            >
+              Elevate any visit with curated additions, from precision brow shaping to little luxuries that make the appointment feel fully considered.
+            </p>
+
+            <div className="mt-8 max-w-xl border-t pt-2" style={{ borderColor: "oklch(0.900 0.025 50)" }}>
+              {ADD_ONS.map((a) => (
+                <div
+                  key={a.label}
+                  className="addon-item flex items-baseline justify-between gap-4 border-b py-3.5"
+                  style={{ borderColor: "oklch(0.900 0.025 50)" }}
+                >
+                  <span className="font-body" style={{ fontSize: "0.88rem", color: "oklch(0.410 0.109 36.5)" }}>
+                    {a.label}
+                  </span>
+                  <span
+                    className="font-body shrink-0 tabular-nums"
+                    style={{ fontSize: "0.88rem", fontWeight: 500, color: "oklch(0.269 0.010 303.8)" }}
+                  >
+                    {a.price}
+                  </span>
+                </div>
+              ))}
+            </div>
+
+            <div className="addon-reveal mt-8">
+              <a
+                href={BOOKING_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex cursor-pointer items-center gap-2 rounded-full font-medium uppercase tracking-[0.06em] transition-all"
+                style={{
+                  background: "oklch(0.637 0.177 32.7)",
+                  color: "#fff",
+                  fontSize: "0.8rem",
+                  padding: "0.85rem 1.6rem",
+                  boxShadow: "0 10px 32px oklch(0.637 0.177 32.7 / 0.30)",
+                  transitionDuration: "260ms",
+                  transitionTimingFunction: "cubic-bezier(0.16,1,0.3,1)",
+                }}
+                onMouseEnter={(e) => {
+                  (e.currentTarget as HTMLElement).style.background = "oklch(0.600 0.197 32.7)";
+                }}
+                onMouseLeave={(e) => {
+                  (e.currentTarget as HTMLElement).style.background = "oklch(0.637 0.177 32.7)";
+                }}
+              >
+                Book Add-On
+                <svg width="13" height="13" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                  <path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          className="relative min-h-[26rem] overflow-hidden md:min-h-full"
+          data-header-theme="light"
+        >
+          <Image
+            src={assetPath("/assets/services/manicure.png")}
+            alt="Additional luxury beauty services"
+            fill
+            sizes="(min-width: 768px) 50vw, 100vw"
+            className="object-cover object-center"
+          />
+          <div
+            className="pointer-events-none absolute inset-0"
+            style={{
+              background: "linear-gradient(180deg, oklch(0.985 0.010 55 / 0.02) 0%, oklch(0.180 0.008 35 / 0.12) 100%)",
+            }}
+            aria-hidden="true"
+          />
         </div>
       </div>
     </div>
@@ -594,7 +827,11 @@ function ServicesIntro() {
   );
 
   return (
-    <div ref={ref} className="mx-auto max-w-2xl px-5 py-16 text-center md:py-24">
+    <div
+      ref={ref}
+      className="relative z-10 mx-auto max-w-2xl px-5 py-16 text-center md:py-20"
+      style={{ background: "oklch(0.985 0.010 55)" }}
+    >
       <div className="intro-item mb-5 flex items-center justify-center gap-3">
         <span className="block h-px w-7" style={{ background: "oklch(0.637 0.177 32.7 / 0.45)" }} />
         <span className="font-body text-[0.68rem] uppercase tracking-[0.28em]" style={{ color: "oklch(0.637 0.177 32.7)" }}>
@@ -646,7 +883,7 @@ export function ServicesSection() {
       {/* Desktop: pinned scroll sequence */}
       <DesktopPinnedRituals />
 
-      <AddOnsStrip />
+      <AddOnsSection />
     </section>
   );
 }

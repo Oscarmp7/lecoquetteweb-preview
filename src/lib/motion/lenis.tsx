@@ -20,6 +20,14 @@ export function LenisProvider() {
       smoothWheel: true
     });
 
+    const stopLenis = () => {
+      lenis.stop();
+    };
+
+    const startLenis = () => {
+      lenis.start();
+    };
+
     lenis.on("scroll", () => {
       ensureGsap().ScrollTrigger.update();
     });
@@ -30,8 +38,12 @@ export function LenisProvider() {
 
     gsap.ticker.add(update);
     gsap.ticker.lagSmoothing(0);
+    window.addEventListener("lenis:stop", stopLenis);
+    window.addEventListener("lenis:start", startLenis);
 
     return () => {
+      window.removeEventListener("lenis:stop", stopLenis);
+      window.removeEventListener("lenis:start", startLenis);
       gsap.ticker.remove(update);
       lenis.destroy();
     };

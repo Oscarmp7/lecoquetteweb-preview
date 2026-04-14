@@ -7,10 +7,10 @@ import { ButtonLink } from "@/components/ui/button";
 import { getBookingLink } from "@/lib/booking/get-booking-link";
 import { cn } from "@/lib/utils";
 const links = [
-  { href: "/", label: "Home" },
-  { href: "/services", label: "Services" },
-  { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" }
+  { href: "#top", label: "Home" },
+  { href: "#services", label: "Services" },
+  { href: "#about", label: "About" },
+  { href: "#contact", label: "Contact" }
 ];
 
 type MobileNavProps = {
@@ -36,10 +36,12 @@ export function MobileNav({ tone }: MobileNavProps) {
     };
 
     document.body.style.overflow = "hidden";
+    window.dispatchEvent(new Event("lenis:stop"));
     window.addEventListener("keydown", onKeyDown);
 
     return () => {
       document.body.style.overflow = previousOverflow;
+      window.dispatchEvent(new Event("lenis:start"));
       window.removeEventListener("keydown", onKeyDown);
     };
   }, [open]);
@@ -131,7 +133,7 @@ export function MobileNav({ tone }: MobileNavProps) {
                         delay: 0.06 + index * 0.05,
                       }}
                     >
-                      <Link
+                      <a
                         href={link.href}
                         className="group flex min-w-[12rem] flex-col items-center gap-3 text-center text-[clamp(2rem,6vw,3.2rem)] font-display leading-[0.92] tracking-[-0.05em] text-[var(--color-foreground-strong)] transition-all duration-[var(--duration-medium)] ease-[var(--ease-standard)] hover:text-[var(--color-primary)] focus-visible:text-[var(--color-primary)]"
                         onClick={() => setOpen(false)}
@@ -139,7 +141,7 @@ export function MobileNav({ tone }: MobileNavProps) {
                         <span>{link.label}</span>
                         <span className="h-px w-0 bg-[var(--color-primary)] transition-all duration-300 ease-[var(--ease-standard)] group-hover:w-16 group-focus-visible:w-16" aria-hidden="true">
                         </span>
-                      </Link>
+                      </a>
                     </motion.div>
                   ))}
                 </nav>

@@ -1,0 +1,164 @@
+"use client";
+
+import { useRef } from "react";
+import { useGSAP } from "@gsap/react";
+import { ensureGsap } from "@/lib/motion/gsap";
+import { usePrefersReducedMotion } from "@/lib/motion/reduced-motion";
+import { getBookingLink } from "@/lib/booking/get-booking-link";
+
+const CONTACT_DETAILS = [
+  { label: "Phone", value: "(786) 599-8161", href: "tel:+17865998161" },
+  { label: "Instagram", value: "@lecoquette_spa", href: "https://instagram.com/lecoquette_spa" },
+  { label: "Experience", value: "Luxury appointments by booking request" },
+];
+
+export function ContactSection() {
+  const sectionRef = useRef<HTMLElement>(null);
+  const reducedMotion = usePrefersReducedMotion();
+
+  useGSAP(
+    () => {
+      if (reducedMotion) return;
+      const { gsap } = ensureGsap();
+
+      gsap.fromTo(
+        ".ct-item",
+        { opacity: 0, y: 32, immediateRender: false },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.85,
+          ease: "power3.out",
+          stagger: 0.1,
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: "top 80%",
+            once: true,
+          },
+        }
+      );
+    },
+    { scope: sectionRef, dependencies: [reducedMotion] }
+  );
+
+  return (
+    <section
+      ref={sectionRef}
+      id="contact"
+      className="scroll-mt-24 relative overflow-hidden"
+      style={{ zIndex: 10, background: "oklch(0.985 0.010 55)" }}
+      data-header-theme="dark"
+    >
+      <div
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background:
+            "radial-gradient(ellipse 70% 55% at 50% 0%, oklch(0.637 0.177 32.7 / 0.10), transparent 65%)",
+        }}
+        aria-hidden="true"
+      />
+
+      <div className="relative mx-auto max-w-5xl px-6 py-28 text-center md:py-36">
+        <div className="ct-item mb-8 flex items-center justify-center gap-4">
+          <span className="block h-px w-10" style={{ background: "oklch(0.637 0.177 32.7 / 0.45)" }} />
+          <span
+            className="font-body text-[0.64rem] uppercase tracking-[0.38em]"
+            style={{ color: "oklch(0.637 0.177 32.7)" }}
+          >
+            Reserve
+          </span>
+          <span className="block h-px w-10" style={{ background: "oklch(0.637 0.177 32.7 / 0.45)" }} />
+        </div>
+
+        <h2
+          className="ct-item font-display m-0"
+          style={{
+            fontSize: "clamp(3rem, 8vw, 6.5rem)",
+            lineHeight: 0.98,
+            letterSpacing: "-0.04em",
+            color: "oklch(0.269 0.010 303.8)",
+          }}
+        >
+          Begin your
+          <br />
+          <span style={{ color: "oklch(0.637 0.177 32.7)" }}>ritual.</span>
+        </h2>
+
+        <p
+          className="ct-item font-body mx-auto mt-6 max-w-[38ch]"
+          style={{
+            fontSize: "clamp(0.95rem, 1.6vw, 1.05rem)",
+            lineHeight: 1.82,
+            color: "oklch(0.560 0.050 35)",
+          }}
+        >
+          Every detail considered, every visit elevated. Reserve your appointment
+          and step into the LeCoquette experience.
+        </p>
+
+        <div className="ct-item mt-10">
+          <a
+            href={getBookingLink("contact-section")}
+            className="inline-flex items-center gap-2.5 rounded-full font-body font-medium uppercase tracking-[0.08em] transition-all"
+            style={{
+              background: "oklch(0.637 0.177 32.7)",
+              color: "#fff",
+              fontSize: "0.82rem",
+              padding: "1.05rem 2.4rem",
+              boxShadow:
+                "0 14px 44px oklch(0.637 0.177 32.7 / 0.32), 0 4px 12px oklch(0.637 0.177 32.7 / 0.18)",
+              transitionDuration: "260ms",
+              transitionTimingFunction: "cubic-bezier(0.16,1,0.3,1)",
+            }}
+          >
+            Reserve on WhatsApp
+            <svg width="13" height="13" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path
+                d="M1 7h12M8 2l5 5-5 5"
+                stroke="currentColor"
+                strokeWidth="1.6"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <div
+          className="ct-item mx-auto mt-16 grid max-w-3xl gap-x-10 gap-y-8 border-t pt-12"
+          style={{
+            borderColor: "oklch(0.900 0.025 50)",
+            gridTemplateColumns: "repeat(auto-fit, minmax(10rem, 1fr))",
+            textAlign: "left",
+          }}
+        >
+          {CONTACT_DETAILS.map((item) => (
+            <div key={item.label}>
+              <p
+                className="font-body text-[0.60rem] uppercase tracking-[0.26em]"
+                style={{ color: "oklch(0.637 0.177 32.7 / 0.65)" }}
+              >
+                {item.label}
+              </p>
+              {item.href ? (
+                <a
+                  href={item.href}
+                  target={item.href.startsWith("http") ? "_blank" : undefined}
+                  rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                  className="font-body mt-2 block"
+                  style={{ fontSize: "0.9rem", color: "oklch(0.410 0.109 36.5)" }}
+                >
+                  {item.value}
+                </a>
+              ) : (
+                <p className="font-body mt-2" style={{ fontSize: "0.9rem", color: "oklch(0.410 0.109 36.5)" }}>
+                  {item.value}
+                </p>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

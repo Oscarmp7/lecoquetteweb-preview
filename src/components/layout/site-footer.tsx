@@ -24,10 +24,10 @@ export function SiteFooter() {
             Navigate
           </p>
           <div className="flex flex-col gap-3 text-white/78">
-            <Link href="/services">Services</Link>
-            <Link href="/about">About</Link>
-            <Link href="/contact">Contact</Link>
-            <Link href="/reserve">Reserve</Link>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <Link href="/">Home</Link>
           </div>
         </div>
         <div className="space-y-4">
