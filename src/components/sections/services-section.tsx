@@ -5,6 +5,7 @@ import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import { ensureGsap } from "@/lib/motion/gsap";
 import { usePrefersReducedMotion } from "@/lib/motion/reduced-motion";
+import { assetPath } from "@/lib/utils";
 
 
 // ─── Types & Data ─────────────────────────────────────────────────────────────
@@ -222,7 +223,7 @@ function MobileCard({ ritual, i }: { ritual: Ritual; i: number }) {
         data-header-theme="light"
       >
         <Image
-          src={ritual.image}
+          src={assetPath(ritual.image)}
           alt={ritual.imageAlt}
           fill
           sizes="100vw"
@@ -553,14 +554,14 @@ function DesktopPinnedRituals() {
             className="pin-img-0 absolute inset-0 will-change-transform"
             style={{ zIndex: 20 }}
           >
-            <Image src={RITUALS[0].image} alt={RITUALS[0].imageAlt} fill sizes="50vw" className="object-cover object-center" />
+            <Image src={assetPath(RITUALS[0].image)} alt={RITUALS[0].imageAlt} fill sizes="50vw" className="object-cover object-center" />
           </div>
           {/* Bundles image — enters last */}
           <div
             className="pin-img-2 absolute inset-0 will-change-transform"
             style={{ zIndex: 30 }}
           >
-            <Image src={RITUALS[2].image} alt={RITUALS[2].imageAlt} fill sizes="50vw" className="object-cover object-center" />
+            <Image src={assetPath(RITUALS[2].image)} alt={RITUALS[2].imageAlt} fill sizes="50vw" className="object-cover object-center" />
           </div>
           {/* Pedicure text — visible between beats 1→2 */}
           <div
@@ -591,7 +592,7 @@ function DesktopPinnedRituals() {
             className="pin-img-1 absolute inset-0 will-change-transform"
             style={{ zIndex: 20 }}
           >
-            <Image src={RITUALS[1].image} alt={RITUALS[1].imageAlt} fill sizes="50vw" className="object-cover object-center" />
+            <Image src={assetPath(RITUALS[1].image)} alt={RITUALS[1].imageAlt} fill sizes="50vw" className="object-cover object-center" />
           </div>
           {/* Bundles text — visible beat 2→3 */}
           <div
@@ -604,7 +605,7 @@ function DesktopPinnedRituals() {
             className="pin-img-3 absolute inset-0 will-change-transform"
             style={{ zIndex: 30 }}
           >
-            <Image src="/assets/services/addons_new.png" alt="Additional luxury beauty services" fill sizes="50vw" className="object-cover object-center" />
+            <Image src={assetPath("/assets/services/addons_new.png")} alt="Additional luxury beauty services" fill sizes="50vw" className="object-cover object-center" />
           </div>
         </div>
       </div>
@@ -749,7 +750,7 @@ function AddOnsSection() {
           data-header-theme="light"
         >
           <Image
-            src="/assets/services/addons_new.png"
+            src={assetPath("/assets/services/addons_new.png")}
             alt="Additional luxury beauty services"
             fill
             sizes="(min-width: 768px) 50vw, 100vw"
