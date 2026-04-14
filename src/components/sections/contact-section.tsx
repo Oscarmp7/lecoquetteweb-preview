@@ -112,11 +112,11 @@ export function ContactSection() {
         </div>
 
         <div
-          className="ct-item mx-auto mt-16 grid max-w-3xl gap-x-10 gap-y-8 border-t pt-12"
+          className="ct-item mx-auto mt-16 flex flex-col md:grid max-w-3xl gap-x-10 gap-y-10 border-t pt-12"
           style={{
             borderColor: "oklch(0.900 0.025 50)",
             gridTemplateColumns: "repeat(auto-fit, minmax(10rem, 1fr))",
-            textAlign: "left",
+            textAlign: "left"
           }}
         >
           {CONTACT_DETAILS.map((item) => (

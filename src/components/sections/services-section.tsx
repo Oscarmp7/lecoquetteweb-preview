@@ -667,7 +667,7 @@ function AddOnsSection() {
       style={{ background: "oklch(0.985 0.010 55)", borderColor: "oklch(0.900 0.025 50)" }}
       data-header-theme="dark"
     >
-      <div className="grid md:min-h-screen md:grid-cols-2">
+      <div className="flex flex-col-reverse md:grid md:min-h-screen md:grid-cols-2">
         <div className="flex items-center">
           <div className="w-full px-5 py-12 md:px-10 md:py-16 xl:px-16">
             <div className="addon-reveal mb-5 flex items-center gap-3">

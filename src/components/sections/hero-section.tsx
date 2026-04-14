@@ -85,7 +85,7 @@ export function HeroSection() {
   return (
     <section
       ref={containerRef}
-      className="sticky top-0 h-[100svh] overflow-hidden"
+      className="sticky top-0 h-[100dvh] overflow-hidden"
       style={{ zIndex: 1 }}
       data-header-theme="dark"
     >
