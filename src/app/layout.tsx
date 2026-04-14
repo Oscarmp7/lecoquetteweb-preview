@@ -20,10 +20,30 @@ const body = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Le Coquette Lux Spa",
+  title: "LeCoquette Luxury Spa",
   description:
     "Warm-premium beauty rituals and luxury spa appointments designed to feel refined, personal, and intentionally elevated.",
-  metadataBase: new URL("https://lecoquetteluxspa.com")
+  metadataBase: new URL("https://lecoquetteluxspa.com"),
+  icons: {
+    icon: "/lecoquetteweb-preview/assets/branding/logo-dark.png",
+    apple: "/lecoquetteweb-preview/assets/branding/logo-dark.png",
+  },
+  openGraph: {
+    title: "LeCoquette Luxury Spa",
+    description: "Every visit, a ritual. Warm-premium beauty and luxury spa appointments.",
+    url: "https://oscarmp7.github.io/lecoquetteweb-preview",
+    siteName: "LeCoquette",
+    images: [
+      {
+        url: "https://oscarmp7.github.io/lecoquetteweb-preview/assets/branding/Background2.png",
+        width: 1200,
+        height: 630,
+        alt: "LeCoquette Luxury Spa Aesthetic",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
