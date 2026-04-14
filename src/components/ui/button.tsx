@@ -3,23 +3,24 @@ import { forwardRef, type ButtonHTMLAttributes, type ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
 type ButtonVariant = "primary" | "secondary" | "ghost" | "outline";
-type ButtonSize = "sm" | "md" | "lg";
+type ButtonSize = "sm" | "md" | "lg" | "none";
 
 const variantClasses: Record<ButtonVariant, string> = {
   primary:
-    "border border-[var(--color-primary)] bg-transparent text-[var(--color-primary)] hover:bg-[var(--color-primary)] hover:text-white",
+    "bg-[oklch(0.269_0.010_303.8)] text-white hover:bg-black",
   secondary:
-    "border border-[var(--color-foreground-strong)] bg-transparent text-[var(--color-foreground-strong)] hover:bg-[var(--color-foreground-strong)] hover:text-white",
+    "bg-[oklch(0.637_0.177_32.7)] text-white hover:bg-[oklch(0.600_0.197_32.7)]",
   ghost:
-    "bg-transparent text-[var(--color-foreground-strong)] hover:bg-black/5",
+    "bg-transparent text-current hover:opacity-70",
   outline:
-    "border border-[var(--color-border)] bg-transparent text-[var(--color-foreground-strong)] hover:border-[var(--color-primary)] hover:text-[var(--color-primary)]"
+    "border-[1px] border-[oklch(0.269_0.010_303.8)] bg-transparent text-[oklch(0.269_0.010_303.8)] hover:bg-[oklch(0.269_0.010_303.8)] hover:text-white"
 };
 
 const sizeClasses: Record<ButtonSize, string> = {
-  sm: "h-11 px-5 text-sm",
-  md: "h-12 px-6 text-sm md:text-[0.95rem]",
-  lg: "h-14 px-7 text-base"
+  sm: "h-10 px-6 text-[0.65rem]",
+  md: "h-14 px-10 text-[0.7rem]",
+  lg: "h-16 px-12 text-[0.75rem]",
+  none: ""
 };
 
 type SharedProps = {
@@ -41,7 +42,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         ref={ref}
         type={type}
         className={cn(
-          "inline-flex cursor-pointer items-center justify-center rounded-[var(--radius-pill)] font-medium tracking-[0.08em] uppercase transition-all duration-500 ease-[var(--ease-standard)]",
+          "inline-flex cursor-pointer items-center justify-center rounded-none font-body uppercase tracking-[0.18em] transition-all duration-700 ease-[cubic-bezier(0.19,1,0.22,1)]",
           variantClasses[variant],
           sizeClasses[size],
           className
@@ -71,7 +72,7 @@ export function ButtonLink({
     <Link
       href={href}
       className={cn(
-        "inline-flex cursor-pointer items-center justify-center rounded-[var(--radius-pill)] font-medium tracking-[0.08em] uppercase transition-all duration-500 ease-[var(--ease-standard)]",
+        "inline-flex cursor-pointer items-center justify-center rounded-none font-body uppercase tracking-[0.18em] transition-all duration-700 ease-[cubic-bezier(0.19,1,0.22,1)]",
         variantClasses[variant],
         sizeClasses[size],
         className

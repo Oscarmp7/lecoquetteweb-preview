@@ -161,7 +161,9 @@ export function MobileNav({ tone }: MobileNavProps) {
                   </p>
                   <ButtonLink
                     href={getBookingLink("mobile-nav")}
-                    className="mt-8 min-w-[18rem] bg-transparent px-0 py-0 font-display text-[1.3rem] tracking-[-0.03em] text-[var(--color-primary)] shadow-none hover:bg-transparent hover:text-[var(--color-primary-hover)]"
+                    variant="ghost"
+                    size="none"
+                    className="mt-8 bg-transparent px-0 py-0 font-display text-[1.3rem] tracking-[-0.03em] capitalize text-[oklch(0.637_0.177_32.7)] shadow-none hover:bg-transparent hover:text-opacity-70"
                     onClick={() => setOpen(false)}
                   >
                     Reserve an Appointment
