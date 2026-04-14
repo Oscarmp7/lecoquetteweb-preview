@@ -89,7 +89,7 @@ export function SiteFooter() {
         <div className="mb-10 h-px w-full md:mb-12" style={{ background: "oklch(1 1 1 / 0.05)" }} />
 
         <div className="flex w-full justify-center pb-6 opacity-90 md:pb-8">
-          <LeCoquetteWordmark tone="light" zoom={1.6} className="h-auto w-[85%] max-w-3xl origin-bottom md:w-[60%]" />
+          <LeCoquetteWordmark tone="light" zoom={4.5} className="h-auto w-full max-w-[22rem] origin-bottom md:max-w-3xl" />
         </div>
 
         <div className="font-body mt-2 flex w-full flex-col items-center justify-between gap-3 border-t border-white/5 pt-6 text-center text-[0.55rem] uppercase tracking-[0.12em] text-white/30 md:flex-row">
