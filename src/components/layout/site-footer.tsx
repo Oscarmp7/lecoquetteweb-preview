@@ -8,9 +8,7 @@ export function SiteFooter() {
     <footer className="bg-[var(--color-noir)] text-[var(--color-noir-foreground)]">
       <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 md:grid-cols-[1.1fr_0.8fr_0.8fr] md:px-10">
         <div className="space-y-6">
-          <p className="font-display text-5xl tracking-[-0.05em] text-white">
-            LeCoquette
-          </p>
+          <img src="/assets/branding/lecoquette-wordmark.png" alt="LeCoquette Luxury Spa" className="w-[14rem] h-auto object-contain brightness-0 invert opacity-90" />
           <p className="max-w-md text-base leading-8 text-white/72">
             Warm-premium rituals, refined beauty care, and a more intentional
             way to reserve time for yourself.

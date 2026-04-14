@@ -144,26 +144,14 @@ function ServiceList({ ritual }: { ritual: Ritual }) {
           target="_blank"
           rel="noopener noreferrer"
           id={`book-${ritual.id}`}
-          className="inline-flex cursor-pointer items-center gap-2 rounded-full font-medium uppercase tracking-[0.06em] transition-all"
-          style={{
-            background: "oklch(0.637 0.177 32.7)",
-            color: "#fff",
-            fontSize: "0.8rem",
-            padding: "0.85rem 1.6rem",
-            boxShadow: "0 10px 32px oklch(0.637 0.177 32.7 / 0.30)",
-            transitionDuration: "260ms",
-            transitionTimingFunction: "cubic-bezier(0.16,1,0.3,1)",
-          }}
-          onMouseEnter={(e) => {
-            (e.currentTarget as HTMLElement).style.background = "oklch(0.600 0.197 32.7)";
-          }}
-          onMouseLeave={(e) => {
-            (e.currentTarget as HTMLElement).style.background = "oklch(0.637 0.177 32.7)";
-          }}
+          className="group relative inline-flex items-center gap-3 overflow-hidden px-1 pt-1 pb-2 font-display text-[1.2rem] tracking-[-0.02em] text-[oklch(0.637_0.177_32.7)] transition-colors hover:text-opacity-70"
         >
-          {ritual.cta}
-          <svg width="13" height="13" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-            <path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+          <span className="relative">
+            {ritual.cta}
+            <span className="absolute -bottom-1 left-0 h-[1.5px] w-full origin-right scale-x-0 bg-current transition-transform duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:origin-left group-hover:scale-x-100" />
+          </span>
+          <svg width="15" height="15" viewBox="0 0 14 14" fill="none" aria-hidden="true" className="transition-transform duration-500 group-hover:translate-x-1.5 pt-[2px]">
+            <path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </a>
       </div>
@@ -464,26 +452,14 @@ function DesktopAddonsText() {
           href={BOOKING_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex cursor-pointer items-center gap-2 rounded-full font-medium uppercase tracking-[0.06em] transition-all"
-          style={{
-            background: "oklch(0.637 0.177 32.7)",
-            color: "#fff",
-            fontSize: "0.8rem",
-            padding: "0.85rem 1.6rem",
-            boxShadow: "0 10px 32px oklch(0.637 0.177 32.7 / 0.30)",
-            transitionDuration: "260ms",
-            transitionTimingFunction: "cubic-bezier(0.16,1,0.3,1)",
-          }}
-          onMouseEnter={(e) => {
-            (e.currentTarget as HTMLElement).style.background = "oklch(0.600 0.197 32.7)";
-          }}
-          onMouseLeave={(e) => {
-            (e.currentTarget as HTMLElement).style.background = "oklch(0.637 0.177 32.7)";
-          }}
+          className="group relative inline-flex items-center gap-3 overflow-hidden px-1 pt-1 pb-2 font-display text-[1.2rem] tracking-[-0.02em] text-[oklch(0.637_0.177_32.7)] transition-colors hover:text-opacity-70"
         >
-          Book Add-On
-          <svg width="13" height="13" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-            <path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+          <span className="relative">
+            Book Add-On
+            <span className="absolute -bottom-1 left-0 h-[1.5px] w-full origin-right scale-x-0 bg-current transition-transform duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:origin-left group-hover:scale-x-100" />
+          </span>
+          <svg width="15" height="15" viewBox="0 0 14 14" fill="none" aria-hidden="true" className="transition-transform duration-500 group-hover:translate-x-1.5 pt-[2px]">
+            <path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </a>
       </div>
@@ -628,7 +604,7 @@ function DesktopPinnedRituals() {
             className="pin-img-3 absolute inset-0 will-change-transform"
             style={{ zIndex: 30 }}
           >
-            <Image src={assetPath("/assets/services/manicure.png")} alt="Additional luxury beauty services" fill sizes="50vw" className="object-cover object-center" />
+            <Image src={assetPath("/assets/services/addons_new.png")} alt="Additional luxury beauty services" fill sizes="50vw" className="object-cover object-center" />
           </div>
         </div>
       </div>
@@ -754,27 +730,15 @@ function AddOnsSection() {
                 href={BOOKING_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex cursor-pointer items-center gap-2 rounded-full font-medium uppercase tracking-[0.06em] transition-all"
-                style={{
-                  background: "oklch(0.637 0.177 32.7)",
-                  color: "#fff",
-                  fontSize: "0.8rem",
-                  padding: "0.85rem 1.6rem",
-                  boxShadow: "0 10px 32px oklch(0.637 0.177 32.7 / 0.30)",
-                  transitionDuration: "260ms",
-                  transitionTimingFunction: "cubic-bezier(0.16,1,0.3,1)",
-                }}
-                onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLElement).style.background = "oklch(0.600 0.197 32.7)";
-                }}
-                onMouseLeave={(e) => {
-                  (e.currentTarget as HTMLElement).style.background = "oklch(0.637 0.177 32.7)";
-                }}
-              >
-                Book Add-On
-                <svg width="13" height="13" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                  <path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
+                className="group relative inline-flex items-center gap-3 overflow-hidden px-1 pt-1 pb-2 font-display text-[1.2rem] tracking-[-0.02em] text-[oklch(0.637_0.177_32.7)] transition-colors hover:text-opacity-70"
+        >
+          <span className="relative">
+            Book Add-On
+            <span className="absolute -bottom-1 left-0 h-[1.5px] w-full origin-right scale-x-0 bg-current transition-transform duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:origin-left group-hover:scale-x-100" />
+          </span>
+          <svg width="15" height="15" viewBox="0 0 14 14" fill="none" aria-hidden="true" className="transition-transform duration-500 group-hover:translate-x-1.5 pt-[2px]">
+            <path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
               </a>
             </div>
           </div>
@@ -785,7 +749,7 @@ function AddOnsSection() {
           data-header-theme="light"
         >
           <Image
-            src={assetPath("/assets/services/manicure.png")}
+            src={assetPath("/assets/services/addons_new.png")}
             alt="Additional luxury beauty services"
             fill
             sizes="(min-width: 768px) 50vw, 100vw"

@@ -7,9 +7,9 @@ type ButtonSize = "sm" | "md" | "lg";
 
 const variantClasses: Record<ButtonVariant, string> = {
   primary:
-    "bg-[var(--color-primary)] text-white shadow-[0_18px_60px_rgba(226,88,62,0.3)] hover:bg-[var(--color-primary-hover)]",
+    "border border-[var(--color-primary)] bg-transparent text-[var(--color-primary)] hover:bg-[var(--color-primary)] hover:text-white",
   secondary:
-    "bg-[var(--color-surface-alt)] text-[var(--color-foreground-strong)] hover:bg-[var(--color-secondary)]",
+    "border border-[var(--color-foreground-strong)] bg-transparent text-[var(--color-foreground-strong)] hover:bg-[var(--color-foreground-strong)] hover:text-white",
   ghost:
     "bg-transparent text-[var(--color-foreground-strong)] hover:bg-black/5",
   outline:
@@ -41,7 +41,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         ref={ref}
         type={type}
         className={cn(
-          "inline-flex cursor-pointer items-center justify-center rounded-[var(--radius-pill)] font-medium tracking-[0.02em] transition-colors duration-[var(--duration-medium)] ease-[var(--ease-standard)]",
+          "inline-flex cursor-pointer items-center justify-center rounded-[var(--radius-pill)] font-medium tracking-[0.08em] uppercase transition-all duration-500 ease-[var(--ease-standard)]",
           variantClasses[variant],
           sizeClasses[size],
           className
@@ -71,7 +71,7 @@ export function ButtonLink({
     <Link
       href={href}
       className={cn(
-        "inline-flex cursor-pointer items-center justify-center rounded-[var(--radius-pill)] font-medium tracking-[0.02em] transition-colors duration-[var(--duration-medium)] ease-[var(--ease-standard)]",
+        "inline-flex cursor-pointer items-center justify-center rounded-[var(--radius-pill)] font-medium tracking-[0.08em] uppercase transition-all duration-500 ease-[var(--ease-standard)]",
         variantClasses[variant],
         sizeClasses[size],
         className

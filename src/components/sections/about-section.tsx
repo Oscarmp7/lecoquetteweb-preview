@@ -71,7 +71,7 @@ function DesktopAbout() {
       <div className="ab-panel sticky top-0 h-screen overflow-hidden" data-header-theme="light">
         <div className="ab-image absolute inset-0">
           <Image
-            src={assetPath("/assets/services/bundles.png")}
+            src={assetPath("/assets/services/about_new.png")}
             alt="LeCoquette spa atmosphere"
             fill
             sizes="100vw"
@@ -83,7 +83,7 @@ function DesktopAbout() {
           className="pointer-events-none absolute inset-0"
           style={{
             background:
-              "linear-gradient(270deg, oklch(0.180 0.008 35 / 0.88) 0%, oklch(0.180 0.008 35 / 0.74) 28%, oklch(0.180 0.008 35 / 0.28) 52%, oklch(0.180 0.008 35 / 0.08) 74%, transparent 100%)",
+              "linear-gradient(270deg, oklch(0.120 0.010 35 / 0.95) 0%, oklch(0.120 0.010 35 / 0.88) 35%, oklch(0.120 0.010 35 / 0.50) 65%, transparent 100%)",
           }}
           aria-hidden="true"
         />
@@ -115,6 +115,7 @@ function DesktopAbout() {
               lineHeight: 0.96,
               letterSpacing: "-0.03em",
               color: "oklch(0.985 0.010 55)",
+              textShadow: "0 4px 24px rgba(0,0,0,0.4)",
             }}
           >
             A softer kind
@@ -128,6 +129,7 @@ function DesktopAbout() {
               fontSize: "clamp(0.95rem, 1.45vw, 1.05rem)",
               lineHeight: 1.88,
               color: "oklch(0.940 0.015 60 / 0.80)",
+              textShadow: "0 2px 14px rgba(0,0,0,0.5)",
             }}
           >
             Every appointment at LeCoquette is designed to feel like more than just
@@ -211,7 +213,7 @@ function MobileAbout() {
       <div className="mob-ab-shell relative overflow-hidden" data-header-theme="light">
         <div className="relative min-h-[100svh]">
           <Image
-            src={assetPath("/assets/services/bundles.png")}
+            src={assetPath("/assets/services/about_new.png")}
             alt="LeCoquette spa atmosphere"
             fill
             sizes="100vw"
@@ -222,7 +224,7 @@ function MobileAbout() {
             className="pointer-events-none absolute inset-0"
             style={{
               background:
-                "linear-gradient(180deg, oklch(0.180 0.008 35 / 0.16) 0%, oklch(0.180 0.008 35 / 0.16) 28%, oklch(0.180 0.008 35 / 0.54) 100%)",
+                "linear-gradient(180deg, oklch(0.120 0.010 35 / 0.16) 0%, oklch(0.120 0.010 35 / 0.40) 40%, oklch(0.120 0.010 35 / 0.88) 75%, oklch(0.120 0.010 35 / 0.95) 100%)",
             }}
             aria-hidden="true"
           />
@@ -247,6 +249,7 @@ function MobileAbout() {
                   lineHeight: 0.98,
                   letterSpacing: "-0.03em",
                   color: "oklch(0.985 0.010 55)",
+                  textShadow: "0 4px 24px rgba(0,0,0,0.4)",
                 }}
               >
                 A softer kind
@@ -260,6 +263,7 @@ function MobileAbout() {
                   fontSize: "0.96rem",
                   lineHeight: 1.82,
                   color: "oklch(0.940 0.015 60 / 0.82)",
+                  textShadow: "0 2px 14px rgba(0,0,0,0.5)",
                 }}
               >
                 Every appointment at LeCoquette is designed to feel warm, personal,
