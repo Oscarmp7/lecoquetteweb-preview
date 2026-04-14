@@ -6,7 +6,7 @@ import { useGSAP } from "@gsap/react";
 import { LeCoquetteWordmark } from "@/components/ui/lecoquette-wordmark";
 import { ensureGsap } from "@/lib/motion/gsap";
 import { usePrefersReducedMotion } from "@/lib/motion/reduced-motion";
-import { assetPath } from "@/lib/utils";
+
 
 export function HeroSection() {
   const containerRef = useRef<HTMLElement>(null);
@@ -92,7 +92,7 @@ export function HeroSection() {
       <div className="absolute inset-0">
         {/* Background — clase hero-bg para parallax */}
         <Image
-          src={assetPath("/assets/branding/Background2.png")}
+          src="/assets/branding/Background2.png"
           alt=""
           fill
           priority

@@ -5,7 +5,7 @@ import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import { ensureGsap } from "@/lib/motion/gsap";
 import { usePrefersReducedMotion } from "@/lib/motion/reduced-motion";
-import { assetPath } from "@/lib/utils";
+
 
 const PILLARS = [
   { label: "Location", value: "Gainesville, FL" },
@@ -71,7 +71,7 @@ function DesktopAbout() {
       <div className="ab-panel sticky top-0 h-screen overflow-hidden" data-header-theme="light">
         <div className="ab-image absolute inset-0">
           <Image
-            src={assetPath("/assets/services/about_new.png")}
+            src="/assets/services/about_new.png"
             alt="LeCoquette spa atmosphere"
             fill
             sizes="100vw"
@@ -213,7 +213,7 @@ function MobileAbout() {
       <div className="mob-ab-shell relative overflow-hidden" data-header-theme="light">
         <div className="relative min-h-[100svh]">
           <Image
-            src={assetPath("/assets/services/about_new.png")}
+            src="/assets/services/about_new.png"
             alt="LeCoquette spa atmosphere"
             fill
             sizes="100vw"

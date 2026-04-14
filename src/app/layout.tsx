@@ -25,8 +25,8 @@ export const metadata: Metadata = {
     "Warm-premium beauty rituals and luxury spa appointments designed to feel refined, personal, and intentionally elevated.",
   metadataBase: new URL("https://lecoquetteluxspa.com"),
   icons: {
-    icon: "/lecoquetteweb-preview/assets/branding/logo-dark.png",
-    apple: "/lecoquetteweb-preview/assets/branding/logo-dark.png",
+    icon: "/assets/branding/logo-dark.png",
+    apple: "/assets/branding/logo-dark.png",
   },
   openGraph: {
     title: "LeCoquette Luxury Spa",

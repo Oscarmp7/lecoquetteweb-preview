@@ -5,7 +5,7 @@ import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import { ensureGsap } from "@/lib/motion/gsap";
 import { usePrefersReducedMotion } from "@/lib/motion/reduced-motion";
-import { assetPath } from "@/lib/utils";
+
 
 // ─── Types & Data ─────────────────────────────────────────────────────────────
 
@@ -34,7 +34,7 @@ const RITUALS: Ritual[] = [
     headline: "Precision\nmeets indulgence",
     body: "Every line deliberate. Every finish flawless. From classic refinement to the full Coquette experience — warm towel and therapeutic massage included.",
     anchor: "From $35",
-    image: assetPath("/assets/services/manicure.png"),
+    image: "/assets/services/manicure.png",
     imageAlt: "LeCoquette luxury manicure service",
     cta: "Book Manicure",
     services: [
@@ -54,7 +54,7 @@ const RITUALS: Ritual[] = [
     headline: "A ritual from\nsole to soul",
     body: "Step into stillness. Starting with a warm soak and ending with a finish that turns every step into a statement.",
     anchor: "From $32",
-    image: assetPath("/assets/services/pedicure.png"),
+    image: "/assets/services/pedicure.png",
     imageAlt: "LeCoquette luxury pedicure service",
     cta: "Book Pedicure",
     services: [
@@ -74,7 +74,7 @@ const RITUALS: Ritual[] = [
     headline: "The full\nCoquette experience",
     body: "Why choose when you can have both? Our bundles pair manicure and pedicure into one seamless ritual.",
     anchor: "From $68",
-    image: assetPath("/assets/services/bundles.png"),
+    image: "/assets/services/bundles.png",
     imageAlt: "LeCoquette bundle mani-pedi experience",
     cta: "Book Bundle",
     services: [
@@ -604,7 +604,7 @@ function DesktopPinnedRituals() {
             className="pin-img-3 absolute inset-0 will-change-transform"
             style={{ zIndex: 30 }}
           >
-            <Image src={assetPath("/assets/services/addons_new.png")} alt="Additional luxury beauty services" fill sizes="50vw" className="object-cover object-center" />
+            <Image src="/assets/services/addons_new.png" alt="Additional luxury beauty services" fill sizes="50vw" className="object-cover object-center" />
           </div>
         </div>
       </div>
@@ -749,7 +749,7 @@ function AddOnsSection() {
           data-header-theme="light"
         >
           <Image
-            src={assetPath("/assets/services/addons_new.png")}
+            src="/assets/services/addons_new.png"
             alt="Additional luxury beauty services"
             fill
             sizes="(min-width: 768px) 50vw, 100vw"
