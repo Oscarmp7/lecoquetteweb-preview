@@ -5,6 +5,7 @@ import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import { ensureGsap } from "@/lib/motion/gsap";
 import { usePrefersReducedMotion } from "@/lib/motion/reduced-motion";
+import { getBookingLink } from "@/lib/booking/get-booking-link";
 import { assetPath } from "@/lib/utils";
 
 
@@ -25,7 +26,20 @@ type Ritual = {
   services: ServiceItem[];
 };
 
-const BOOKING_URL = "https://lecoquette.square.site/";
+type MobileShowcaseCardProps = {
+  id: string;
+  index: string;
+  subline: string;
+  headline: string;
+  body: string;
+  anchor: string;
+  image: string;
+  imageAlt: string;
+  cta: string;
+  bookingSource: string;
+  items: ServiceItem[];
+  priority?: boolean;
+};
 
 const RITUALS: Ritual[] = [
   {
@@ -33,7 +47,7 @@ const RITUALS: Ritual[] = [
     index: "01",
     subline: "Manicure",
     headline: "Precision\nmeets indulgence",
-    body: "Every line deliberate. Every finish flawless. From classic refinement to the full Coquette experience — warm towel and therapeutic massage included.",
+    body: "Luxury manicures in Gainesville, Florida, designed with refined detail, polished finishes, and the full Coquette experience.",
     anchor: "From $35",
     image: "/assets/services/manicure.png",
     imageAlt: "LeCoquette luxury manicure service",
@@ -53,7 +67,7 @@ const RITUALS: Ritual[] = [
     index: "02",
     subline: "Pedicure",
     headline: "A ritual from\nsole to soul",
-    body: "Step into stillness. Starting with a warm soak and ending with a finish that turns every step into a statement.",
+    body: "Luxury pedicures in Gainesville, Florida, beginning with a warm soak and ending with a finish that makes every step feel intentional.",
     anchor: "From $32",
     image: "/assets/services/pedicure.png",
     imageAlt: "LeCoquette luxury pedicure service",
@@ -73,7 +87,7 @@ const RITUALS: Ritual[] = [
     index: "03",
     subline: "Bundles",
     headline: "The full\nCoquette experience",
-    body: "Why choose when you can have both? Our bundles pair manicure and pedicure into one seamless ritual.",
+    body: "Why choose when you can have both? Our Gainesville manicure and pedicure bundles turn the full visit into one seamless ritual.",
     anchor: "From $68",
     image: "/assets/services/bundles.png",
     imageAlt: "LeCoquette bundle mani-pedi experience",
@@ -102,69 +116,143 @@ const ADD_ONS = [
 
 // ─── Shared: Service list + CTA ───────────────────────────────────────────────
 
+function BookingTextLink({
+  href,
+  label,
+  id,
+}: {
+  href: string;
+  label: string;
+  id?: string;
+}) {
+  return (
+    <div className="mt-6">
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        id={id}
+        className="group relative inline-flex items-center gap-3 overflow-hidden px-1 pt-1 pb-2 font-display text-[1.2rem] tracking-[-0.02em] text-[oklch(0.637_0.177_32.7)] transition-colors hover:text-opacity-70"
+      >
+        <span className="relative">
+          {label}
+          <span className="absolute -bottom-1 left-0 h-[1.5px] w-full origin-right scale-x-0 bg-current transition-transform duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:origin-left group-hover:scale-x-100" />
+        </span>
+        <svg
+          width="15"
+          height="15"
+          viewBox="0 0 14 14"
+          fill="none"
+          aria-hidden="true"
+          className="transition-transform duration-500 group-hover:translate-x-1.5 pt-[2px]"
+        >
+          <path
+            d="M1 7h12M8 2l5 5-5 5"
+            stroke="currentColor"
+            strokeWidth="1"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+      </a>
+    </div>
+  );
+}
+
+function PriceList({
+  items,
+  ariaLabel,
+}: {
+  items: Array<{ name: string; price: string; tag?: string }>;
+  ariaLabel: string;
+}) {
+  return (
+    <ul
+      className="mt-5 space-y-2.5 border-t pt-5"
+      style={{ borderColor: "oklch(0.900 0.025 50)" }}
+      aria-label={ariaLabel}
+    >
+      {items.map((item) => (
+        <li key={item.name} className="flex items-baseline justify-between gap-3">
+          <span
+            className="font-body flex items-center gap-2 leading-snug"
+            style={{ fontSize: "0.83rem", color: "oklch(0.410 0.109 36.5)" }}
+          >
+            {item.name}
+            {item.tag ? (
+              <span
+                className="inline-block rounded-full px-2 py-px text-[0.58rem] font-medium uppercase tracking-[0.1em]"
+                style={{
+                  background: "oklch(0.637 0.177 32.7 / 0.10)",
+                  color: "oklch(0.637 0.177 32.7)",
+                }}
+              >
+                {item.tag}
+              </span>
+            ) : null}
+          </span>
+          <span
+            className="font-body shrink-0 tabular-nums"
+            style={{ fontSize: "0.83rem", fontWeight: 500, color: "oklch(0.269 0.010 303.8)" }}
+          >
+            {item.price}
+          </span>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
 function ServiceList({ ritual }: { ritual: Ritual }) {
   return (
     <>
-      <ul
-        className="mt-5 space-y-2.5 border-t pt-5"
-        style={{ borderColor: "oklch(0.900 0.025 50)" }}
-        aria-label={`${ritual.subline} service prices`}
-      >
-        {ritual.services.map((svc) => (
-          <li key={svc.name} className="flex items-baseline justify-between gap-3">
-            <span
-              className="font-body flex items-center gap-2 leading-snug"
-              style={{ fontSize: "0.83rem", color: "oklch(0.410 0.109 36.5)" }}
-            >
-              {svc.name}
-              {svc.tag && (
-                <span
-                  className="inline-block rounded-full px-2 py-px text-[0.58rem] font-medium uppercase tracking-[0.1em]"
-                  style={{
-                    background: "oklch(0.637 0.177 32.7 / 0.10)",
-                    color: "oklch(0.637 0.177 32.7)",
-                  }}
-                >
-                  {svc.tag}
-                </span>
-              )}
-            </span>
-            <span
-              className="font-body shrink-0 tabular-nums"
-              style={{ fontSize: "0.83rem", fontWeight: 500, color: "oklch(0.269 0.010 303.8)" }}
-            >
-              {svc.price}
-            </span>
-          </li>
-        ))}
-      </ul>
-
-      <div className="mt-6">
-        <a
-          href={BOOKING_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          id={`book-${ritual.id}`}
-          className="group relative inline-flex items-center gap-3 overflow-hidden px-1 pt-1 pb-2 font-display text-[1.2rem] tracking-[-0.02em] text-[oklch(0.637_0.177_32.7)] transition-colors hover:text-opacity-70"
-        >
-          <span className="relative">
-            {ritual.cta}
-            <span className="absolute -bottom-1 left-0 h-[1.5px] w-full origin-right scale-x-0 bg-current transition-transform duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:origin-left group-hover:scale-x-100" />
-          </span>
-          <svg width="15" height="15" viewBox="0 0 14 14" fill="none" aria-hidden="true" className="transition-transform duration-500 group-hover:translate-x-1.5 pt-[2px]">
-            <path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
-        </a>
-      </div>
+      <PriceList
+        items={ritual.services.map((service) => ({
+          name: service.name,
+          price: service.price,
+          tag: service.tag,
+        }))}
+        ariaLabel={`${ritual.subline} service prices`}
+      />
+      <BookingTextLink
+        href={getBookingLink(`services-${ritual.id}`)}
+        label={ritual.cta}
+        id={`book-${ritual.id}`}
+      />
     </>
   );
 }
 
-// ─── MOBILE: Stacked cards ────────────────────────────────────────────────────
-// Mobile-first: each ritual is a full-width "reveal" card.
-// Image wipes in from below, text fades up underneath.
+function AddOnList({ ariaLabel }: { ariaLabel: string }) {
+  return (
+    <>
+      <PriceList
+        items={ADD_ONS.map((item) => ({ name: item.label, price: item.price }))}
+        ariaLabel={ariaLabel}
+      />
+      <BookingTextLink
+        href={getBookingLink("services-add-ons")}
+        label="Book Add-On"
+        id="book-add-ons"
+      />
+    </>
+  );
+}
 
-function MobileCard({ ritual, i }: { ritual: Ritual; i: number }) {
+function MobileShowcaseCard({
+  id,
+  index,
+  subline,
+  headline,
+  body,
+  anchor,
+  image,
+  imageAlt,
+  cta,
+  bookingSource,
+  items,
+  priority = false,
+}: MobileShowcaseCardProps) {
   const cardRef = useRef<HTMLDivElement>(null);
   const reducedMotion = usePrefersReducedMotion();
 
@@ -173,7 +261,6 @@ function MobileCard({ ritual, i }: { ritual: Ritual; i: number }) {
       if (reducedMotion) return;
       const { gsap } = ensureGsap();
 
-      // Image wipe-in (clip from bottom)
       gsap.fromTo(
         ".mc-img",
         { clipPath: "inset(100% 0% 0% 0%)" },
@@ -189,7 +276,6 @@ function MobileCard({ ritual, i }: { ritual: Ritual; i: number }) {
         }
       );
 
-      // Text stagger up
       gsap.fromTo(
         ".mc-text",
         { opacity: 0, y: 24 },
@@ -211,26 +297,20 @@ function MobileCard({ ritual, i }: { ritual: Ritual; i: number }) {
   );
 
   return (
-    <div
-      ref={cardRef}
-      id={ritual.id}
-      className="scroll-mt-8"
-    >
-      {/* Full-width image */}
+    <div ref={cardRef} id={id} className="scroll-mt-8">
       <div
         className="mc-img relative w-full overflow-hidden"
         style={{ aspectRatio: "4 / 3" }}
         data-header-theme="light"
       >
         <Image
-          src={assetPath(ritual.image)}
-          alt={ritual.imageAlt}
+          src={assetPath(image)}
+          alt={imageAlt}
           fill
           sizes="100vw"
           className="object-cover object-center"
-          priority={i === 0}
+          priority={priority}
         />
-        {/* Index overlay */}
         <span
           className="pointer-events-none absolute select-none font-display"
           aria-hidden="true"
@@ -242,31 +322,25 @@ function MobileCard({ ritual, i }: { ritual: Ritual; i: number }) {
             right: "0.05em",
           }}
         >
-          {ritual.index}
+          {index}
         </span>
       </div>
 
-      {/* Text block */}
       <div
         className="px-5 py-8"
         style={{ background: "oklch(0.985 0.010 55)" }}
         data-header-theme="dark"
       >
-        {/* Eyebrow */}
         <div className="mc-text mb-4 flex items-center gap-2.5">
-          <span
-            className="block h-px w-6 shrink-0"
-            style={{ background: "oklch(0.637 0.177 32.7)" }}
-          />
+          <span className="block h-px w-6 shrink-0" style={{ background: "oklch(0.637 0.177 32.7)" }} />
           <span
             className="font-body text-[0.68rem] uppercase tracking-[0.26em]"
             style={{ color: "oklch(0.637 0.177 32.7)" }}
           >
-            {ritual.subline}
+            {subline}
           </span>
         </div>
 
-        {/* Headline */}
         <h2
           className="mc-text font-display m-0"
           style={{
@@ -276,10 +350,9 @@ function MobileCard({ ritual, i }: { ritual: Ritual; i: number }) {
             whiteSpace: "pre-line",
           }}
         >
-          {ritual.headline}
+          {headline}
         </h2>
 
-        {/* Anchor price */}
         <p
           className="mc-text font-body mt-2.5"
           style={{
@@ -289,10 +362,9 @@ function MobileCard({ ritual, i }: { ritual: Ritual; i: number }) {
             textTransform: "uppercase",
           }}
         >
-          {ritual.anchor}
+          {anchor}
         </p>
 
-        {/* Body */}
         <p
           className="mc-text font-body mt-4"
           style={{
@@ -301,23 +373,50 @@ function MobileCard({ ritual, i }: { ritual: Ritual; i: number }) {
             color: "oklch(0.560 0.050 35)",
           }}
         >
-          {ritual.body}
+          {body}
         </p>
 
-        {/* Service list + CTA */}
         <div className="mc-text">
-          <ServiceList ritual={ritual} />
+          <PriceList items={items} ariaLabel={`${subline} service prices`} />
+          <BookingTextLink
+            href={getBookingLink(bookingSource)}
+            label={cta}
+            id={`book-${id}`}
+          />
         </div>
       </div>
+    </div>
+  );
+}
 
-      {/* Divider */}
+// ─── MOBILE: Stacked cards ────────────────────────────────────────────────────
+// Mobile-first: each ritual is a full-width "reveal" card.
+// Image wipes in from below, text fades up underneath.
+
+function MobileCard({ ritual, i }: { ritual: Ritual; i: number }) {
+  return (
+    <>
+      <MobileShowcaseCard
+        id={ritual.id}
+        index={ritual.index}
+        subline={ritual.subline}
+        headline={ritual.headline}
+        body={ritual.body}
+        anchor={ritual.anchor}
+        image={ritual.image}
+        imageAlt={ritual.imageAlt}
+        cta={ritual.cta}
+        bookingSource={`services-${ritual.id}`}
+        items={ritual.services}
+        priority={i === 0}
+      />
       {i < RITUALS.length - 1 && (
         <div
           className="mx-5 h-px"
           style={{ background: "oklch(0.900 0.025 50)" }}
         />
       )}
-    </div>
+    </>
   );
 }
 
@@ -327,6 +426,26 @@ function MobileRituals() {
       {RITUALS.map((r, i) => (
         <MobileCard key={r.id} ritual={r} i={i} />
       ))}
+    </div>
+  );
+}
+
+function MobileAddOnsCard() {
+  return (
+    <div className="md:hidden">
+      <MobileShowcaseCard
+        id="add-ons"
+        index="04"
+        subline="Additional Services"
+        headline={"Complete your\nritual."}
+        body="Elevate any visit with curated additions, from precision brow shaping to little luxuries that make the appointment feel fully considered."
+        anchor="Finishing touches from $15"
+        image="/assets/services/addons_new.png"
+        imageAlt="Additional luxury beauty services"
+        cta="Book Add-On"
+        bookingSource="services-add-ons"
+        items={ADD_ONS.map((item) => ({ name: item.label, price: item.price }))}
+      />
     </div>
   );
 }
@@ -426,43 +545,8 @@ function DesktopAddonsText() {
         Elevate any visit with curated additions, from precision brow shaping to little luxuries that make the appointment feel fully considered.
       </p>
 
-      <div className="mt-8 max-w-sm">
-        <ul className="space-y-0 border-t pt-2" style={{ borderColor: "oklch(0.900 0.025 50)" }}>
-          {ADD_ONS.map((a) => (
-            <li
-              key={a.label}
-              className="flex items-baseline justify-between gap-4 border-b py-3.5"
-              style={{ borderColor: "oklch(0.900 0.025 50)" }}
-            >
-              <span className="font-body" style={{ fontSize: "0.85rem", color: "oklch(0.410 0.109 36.5)" }}>
-                {a.label}
-              </span>
-              <span
-                className="font-body shrink-0 tabular-nums"
-                style={{ fontSize: "0.85rem", fontWeight: 500, color: "oklch(0.269 0.010 303.8)" }}
-              >
-                {a.price}
-              </span>
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      <div className="mt-8">
-        <a
-          href={BOOKING_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group relative inline-flex items-center gap-3 overflow-hidden px-1 pt-1 pb-2 font-display text-[1.2rem] tracking-[-0.02em] text-[oklch(0.637_0.177_32.7)] transition-colors hover:text-opacity-70"
-        >
-          <span className="relative">
-            Book Add-On
-            <span className="absolute -bottom-1 left-0 h-[1.5px] w-full origin-right scale-x-0 bg-current transition-transform duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:origin-left group-hover:scale-x-100" />
-          </span>
-          <svg width="15" height="15" viewBox="0 0 14 14" fill="none" aria-hidden="true" className="transition-transform duration-500 group-hover:translate-x-1.5 pt-[2px]">
-            <path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
-        </a>
+      <div className="mt-2 max-w-sm">
+        <AddOnList ariaLabel="Additional service prices" />
       </div>
     </div>
   );
@@ -616,154 +700,10 @@ function DesktopPinnedRituals() {
 // ─── Add-ons section ──────────────────────────────────────────────────────────
 
 function AddOnsSection() {
-  const ref = useRef<HTMLDivElement>(null);
-  const reducedMotion = usePrefersReducedMotion();
-
-  useGSAP(
-    () => {
-      if (reducedMotion) return;
-      const { gsap } = ensureGsap();
-
-      gsap.fromTo(
-        ".addon-reveal",
-        { opacity: 0, y: 28, immediateRender: false },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.8,
-          ease: "power3.out",
-          stagger: 0.08,
-          scrollTrigger: {
-            trigger: ref.current,
-            start: "top 78%",
-            toggleActions: "play none none reverse",
-          },
-        }
-      );
-
-      gsap.fromTo(
-        ".addon-item",
-        { opacity: 0, y: 16, immediateRender: false },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.55,
-          ease: "power2.out",
-          stagger: 0.05,
-          scrollTrigger: {
-            trigger: ref.current,
-            start: "top 72%",
-            toggleActions: "play none none reverse",
-          },
-        }
-      );
-    },
-    { scope: ref, dependencies: [reducedMotion] }
-  );
-
   return (
-    <div
-      ref={ref}
-      className="relative w-full border-t md:hidden"
-      style={{ background: "oklch(0.985 0.010 55)", borderColor: "oklch(0.900 0.025 50)" }}
-      data-header-theme="dark"
-    >
-      <div className="flex flex-col-reverse md:grid md:min-h-screen md:grid-cols-2">
-        <div className="flex items-center">
-          <div className="w-full px-5 py-12 md:px-10 md:py-16 xl:px-16">
-            <div className="addon-reveal mb-5 flex items-center gap-3">
-              <span className="block h-px w-8 shrink-0" style={{ background: "oklch(0.637 0.177 32.7)" }} />
-              <span
-                className="font-body text-[0.68rem] uppercase tracking-[0.26em]"
-                style={{ color: "oklch(0.637 0.177 32.7)" }}
-              >
-                Additional Services
-              </span>
-            </div>
-
-            <h2
-              className="addon-reveal font-display m-0"
-              style={{
-                fontSize: "clamp(2.2rem, 4.8vw, 4.5rem)",
-                lineHeight: 1.05,
-                color: "oklch(0.269 0.010 303.8)",
-                letterSpacing: "-0.02em",
-              }}
-            >
-              Complete your
-              <br />
-              ritual.
-            </h2>
-
-            <p
-              className="addon-reveal font-body mt-5 max-w-[34ch]"
-              style={{
-                fontSize: "clamp(0.95rem, 1.4vw, 1.05rem)",
-                lineHeight: 1.8,
-                color: "oklch(0.560 0.050 35)",
-              }}
-            >
-              Elevate any visit with curated additions, from precision brow shaping to little luxuries that make the appointment feel fully considered.
-            </p>
-
-            <div className="mt-8 max-w-xl border-t pt-2" style={{ borderColor: "oklch(0.900 0.025 50)" }}>
-              {ADD_ONS.map((a) => (
-                <div
-                  key={a.label}
-                  className="addon-item flex items-baseline justify-between gap-4 border-b py-3.5"
-                  style={{ borderColor: "oklch(0.900 0.025 50)" }}
-                >
-                  <span className="font-body" style={{ fontSize: "0.88rem", color: "oklch(0.410 0.109 36.5)" }}>
-                    {a.label}
-                  </span>
-                  <span
-                    className="font-body shrink-0 tabular-nums"
-                    style={{ fontSize: "0.88rem", fontWeight: 500, color: "oklch(0.269 0.010 303.8)" }}
-                  >
-                    {a.price}
-                  </span>
-                </div>
-              ))}
-            </div>
-
-            <div className="addon-reveal mt-8">
-              <a
-                href={BOOKING_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group relative inline-flex items-center gap-3 overflow-hidden px-1 pt-1 pb-2 font-display text-[1.2rem] tracking-[-0.02em] text-[oklch(0.637_0.177_32.7)] transition-colors hover:text-opacity-70"
-        >
-          <span className="relative">
-            Book Add-On
-            <span className="absolute -bottom-1 left-0 h-[1.5px] w-full origin-right scale-x-0 bg-current transition-transform duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:origin-left group-hover:scale-x-100" />
-          </span>
-          <svg width="15" height="15" viewBox="0 0 14 14" fill="none" aria-hidden="true" className="transition-transform duration-500 group-hover:translate-x-1.5 pt-[2px]">
-            <path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div
-          className="relative min-h-[26rem] overflow-hidden md:min-h-full"
-          data-header-theme="light"
-        >
-          <Image
-            src={assetPath("/assets/services/addons_new.png")}
-            alt="Additional luxury beauty services"
-            fill
-            sizes="(min-width: 768px) 50vw, 100vw"
-            className="object-cover object-center"
-          />
-          <div
-            className="pointer-events-none absolute inset-0"
-            style={{
-              background: "linear-gradient(180deg, oklch(0.985 0.010 55 / 0.02) 0%, oklch(0.180 0.008 35 / 0.12) 100%)",
-            }}
-            aria-hidden="true"
-          />
-        </div>
+    <div className="md:hidden">
+      <div className="bg-[oklch(0.985_0.010_55)]">
+        <MobileAddOnsCard />
       </div>
     </div>
   );
@@ -826,7 +766,7 @@ function ServicesIntro() {
           maxWidth: "38ch",
         }}
       >
-        Discover our curated menu — each experience designed to feel less like an appointment and more like a ceremony.
+        Discover luxury manicures, pedicures, bundles, and finishing touches in Gainesville, each one designed to feel less like an appointment and more like a ceremony.
       </p>
     </div>
   );

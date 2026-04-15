@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import { Eyebrow } from "@/components/ui/eyebrow";
+import type { ElementType } from "react";
 
 type SectionHeadingProps = {
   eyebrow?: string;
@@ -7,6 +8,7 @@ type SectionHeadingProps = {
   body?: string;
   align?: "left" | "center";
   className?: string;
+  as?: ElementType;
 };
 
 export function SectionHeading({
@@ -14,7 +16,8 @@ export function SectionHeading({
   title,
   body,
   align = "left",
-  className
+  className,
+  as: TitleTag = "h2",
 }: SectionHeadingProps) {
   return (
     <div
@@ -29,9 +32,9 @@ export function SectionHeading({
           {eyebrow}
         </Eyebrow>
       ) : null}
-      <h2 className="font-display text-[clamp(2.5rem,5vw,5rem)] leading-[0.92] tracking-[-0.03em] text-[var(--color-foreground-strong)]">
+      <TitleTag className="font-display text-[clamp(2.5rem,5vw,5rem)] leading-[0.92] tracking-[-0.03em] text-[var(--color-foreground-strong)]">
         {title}
-      </h2>
+      </TitleTag>
       {body ? (
         <p className="max-w-2xl text-pretty text-[1.125rem] leading-8 text-[var(--color-foreground-muted)]">
           {body}

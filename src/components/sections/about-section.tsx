@@ -133,9 +133,9 @@ function DesktopAbout() {
               textShadow: "0 2px 14px rgba(0,0,0,0.5)",
             }}
           >
-            Every appointment at LeCoquette is designed to feel like more than just
-            a service: warm, deliberate, and always personal. A refined beauty
-            experience that stays with you long after you leave.
+            Every Gainesville appointment at LeCoquette is designed to feel like
+            more than a service: warm, deliberate, and always personal. A refined
+            nail and beauty experience that stays with you long after you leave.
           </p>
 
           <div className="ab-copy mt-10 mb-8 h-px w-10" style={{ background: "oklch(0.780 0.060 75 / 0.38)" }} />
@@ -170,37 +170,25 @@ function MobileAbout() {
 
   useGSAP(
     () => {
-      if (reducedMotion) return;
       const { gsap } = ensureGsap();
 
-      gsap.fromTo(
-        ".mob-ab-shell",
-        { y: 42, opacity: 0.92, immediateRender: false },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 0.95,
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: ref.current,
-            start: "top 88%",
-            toggleActions: "play none none reverse",
-          },
-        }
-      );
+      if (reducedMotion) {
+        gsap.set(".mob-ab-copy", { opacity: 1, y: 0 });
+        return;
+      }
 
       gsap.fromTo(
         ".mob-ab-copy",
-        { opacity: 0, y: 20, immediateRender: false },
+        { opacity: 0, y: 22, immediateRender: false },
         {
           opacity: 1,
           y: 0,
-          duration: 0.72,
+          duration: 0.82,
           ease: "power3.out",
           stagger: 0.08,
           scrollTrigger: {
             trigger: ref.current,
-            start: "top 72%",
+            start: "top 35%",
             once: true,
           },
         }
@@ -210,8 +198,15 @@ function MobileAbout() {
   );
 
   return (
-    <div ref={ref} className="relative md:hidden" style={{ marginTop: "-10vh", zIndex: 20 }}>
-      <div className="mob-ab-shell relative overflow-hidden" data-header-theme="light">
+    <div
+      ref={ref}
+      className="relative md:hidden"
+      style={{ zIndex: 20 }}
+    >
+      <div
+        className="mob-ab-panel overflow-hidden"
+        data-header-theme="light"
+      >
         <div className="relative min-h-[100svh]">
           <Image
             src={assetPath("/assets/services/about_new.png")}
@@ -267,8 +262,8 @@ function MobileAbout() {
                   textShadow: "0 2px 14px rgba(0,0,0,0.5)",
                 }}
               >
-                Every appointment at LeCoquette is designed to feel warm, personal,
-                and composed from beginning to end.
+                Every Gainesville appointment at LeCoquette is designed to feel
+                warm, personal, and composed from beginning to end.
               </p>
 
               <div className="mob-ab-copy mt-8 flex flex-col gap-3">

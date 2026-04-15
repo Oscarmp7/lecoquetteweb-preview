@@ -3,6 +3,7 @@ import { AtSign, MapPin, MessageCircle, Phone } from "lucide-react";
 import { ButtonLink } from "@/components/ui/button";
 import { getBookingLink } from "@/lib/booking/get-booking-link";
 import { LeCoquetteWordmark } from "@/components/ui/lecoquette-wordmark";
+import { siteConfig } from "@/lib/site";
 
 export function SiteFooter() {
   return (
@@ -14,10 +15,10 @@ export function SiteFooter() {
           <span style={{ color: "oklch(0.637 0.177 32.7)" }}>of luxury.</span>
         </h2>
         <p className="font-body mb-8 max-w-[40ch] text-[clamp(0.95rem,1.2vw,1.05rem)] leading-relaxed text-white/50">
-          Warm-premium rituals, refined beauty care, and a more intentional way to reserve time for yourself.
+          Luxury nail, brow, and beauty rituals in Gainesville, Florida, shaped for a softer and more intentional kind of luxury.
         </p>
         <ButtonLink href={getBookingLink("footer")} variant="secondary" className="px-10 md:px-12">
-          Reserve on WhatsApp
+          {siteConfig.bookingLabel}
         </ButtonLink>
       </div>
 
@@ -37,14 +38,14 @@ export function SiteFooter() {
             Contact Us
           </p>
           <div className="font-body flex flex-col gap-4 text-[0.9rem] text-white/60">
-            <a href="tel:+17865998161" className="flex w-fit items-center gap-3 transition-colors hover:text-white">
-              <Phone size={14} strokeWidth={1.5} /> (786) 599-8161
+            <a href={`tel:${siteConfig.phoneHref}`} className="flex w-fit items-center gap-3 transition-colors hover:text-white">
+              <Phone size={14} strokeWidth={1.5} /> {siteConfig.phoneDisplay}
             </a>
             <a href={getBookingLink("footer")} className="flex w-fit cursor-pointer items-center gap-3 transition-colors hover:text-white">
-              <MessageCircle size={14} strokeWidth={1.5} /> WhatsApp reservations
+              <MessageCircle size={14} strokeWidth={1.5} /> {siteConfig.bookingLabel}
             </a>
             <p className="flex w-fit items-center gap-3 transition-colors hover:text-white">
-              <MapPin size={14} strokeWidth={1.5} /> Luxury appointments by booking request
+              <MapPin size={14} strokeWidth={1.5} /> Serving {siteConfig.city}, {siteConfig.region} by appointment
             </p>
           </div>
         </div>
@@ -73,12 +74,12 @@ export function SiteFooter() {
           </p>
           <div className="font-body flex flex-col gap-3 text-[0.9rem] text-white/60">
             <a
-              href="https://instagram.com/lecoquette_spa"
+              href={siteConfig.instagramUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="flex w-fit items-center gap-3 transition-colors hover:text-white"
             >
-              <AtSign size={14} strokeWidth={1.5} /> @lecoquette_spa
+              <AtSign size={14} strokeWidth={1.5} /> {siteConfig.instagramHandle}
             </a>
           </div>
         </div>
@@ -96,10 +97,7 @@ export function SiteFooter() {
 
         <div className="font-body mt-2 flex w-full flex-col items-center justify-between gap-3 border-t border-white/5 pt-6 text-center text-[0.55rem] uppercase tracking-[0.12em] text-white/30 md:flex-row">
           <p>© 2026 LeCoquette Luxury Spa. All rights reserved.</p>
-          <div className="flex gap-4">
-            <Link href="/privacy" className="transition-colors hover:text-white/60">Privacy</Link>
-            <Link href="/terms" className="transition-colors hover:text-white/60">Terms</Link>
-          </div>
+          <p>{siteConfig.city}, {siteConfig.region} · Luxury appointments by booking request</p>
         </div>
       </div>
     </footer>

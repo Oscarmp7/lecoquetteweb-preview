@@ -7,6 +7,7 @@ import { LeCoquetteWordmark } from "@/components/ui/lecoquette-wordmark";
 import { ensureGsap } from "@/lib/motion/gsap";
 import { usePrefersReducedMotion } from "@/lib/motion/reduced-motion";
 import { assetPath } from "@/lib/utils";
+import { siteConfig } from "@/lib/site";
 
 
 export function HeroSection() {
@@ -119,17 +120,17 @@ export function HeroSection() {
         <p
           className="hero-tagline font-body mt-7 text-center uppercase sm:mt-8 md:mt-10"
           style={{
-            fontSize: "clamp(0.68rem, 2.4vw, 1rem)",
+            fontSize: "clamp(0.66rem, 2.2vw, 0.94rem)",
             color: "oklch(0.637 0.177 32.7 / 0.75)",
-            letterSpacing: "clamp(0.18em, 1.5vw, 0.55em)",
+            letterSpacing: "clamp(0.12em, 1vw, 0.3em)",
             textShadow: "1px 2px 6px rgba(90,28,8,0.18)",
-            width: "min(24rem, 100%)",
-            lineHeight: 1.8,
+            width: "min(34rem, 100%)",
+            lineHeight: 1.65,
           }}
         >
-          Nail · Brow · Beauty
+          {siteConfig.heroTitle}
           <br />
-          Gainesville
+          Nails · Brows · Beauty Rituals
         </p>
       </div>
 

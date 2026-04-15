@@ -6,6 +6,7 @@ import { SiteFooter } from "@/components/layout/site-footer";
 import { BrandLoader } from "@/components/layout/brand-loader";
 import { PageTransitionShell } from "@/components/layout/page-transition-shell";
 import { LenisProvider } from "@/lib/motion/lenis";
+import { siteConfig, toAbsoluteUrl, withBasePath } from "@/lib/site";
 
 const display = Cormorant_Garamond({
   subsets: ["latin"],
@@ -20,29 +21,58 @@ const body = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "LeCoquette Luxury Spa",
-  description:
-    "Warm-premium beauty rituals and luxury spa appointments designed to feel refined, personal, and intentionally elevated.",
-  metadataBase: new URL("https://lecoquetteluxspa.com"),
-  icons: {
-    icon: "/assets/branding/logo-dark.png",
-    apple: "/assets/branding/logo-dark.png",
+  title: siteConfig.metadataTitle,
+  description: siteConfig.metadataDescription,
+  metadataBase: new URL(siteConfig.siteUrl),
+  applicationName: siteConfig.name,
+  alternates: {
+    canonical: "/",
   },
+  icons: {
+    icon: withBasePath("/assets/branding/logo-dark.png"),
+    apple: withBasePath("/assets/branding/logo-dark.png"),
+  },
+  robots: siteConfig.isSiteUrlConfigured
+    ? {
+        index: true,
+        follow: true,
+        googleBot: {
+          index: true,
+          follow: true,
+          "max-image-preview": "large",
+          "max-snippet": -1,
+          "max-video-preview": -1,
+        },
+      }
+    : {
+        index: false,
+        follow: false,
+        googleBot: {
+          index: false,
+          follow: false,
+        },
+      },
   openGraph: {
-    title: "LeCoquette Luxury Spa",
-    description: "Every visit, a ritual. Warm-premium beauty and luxury spa appointments.",
-    url: "https://oscarmp7.github.io/lecoquetteweb-preview",
-    siteName: "LeCoquette",
+    title: siteConfig.metadataTitle,
+    description: siteConfig.metadataDescription,
+    url: toAbsoluteUrl("/"),
+    siteName: siteConfig.shortName,
     images: [
       {
-        url: "https://oscarmp7.github.io/lecoquetteweb-preview/assets/branding/Background2.png",
+        url: toAbsoluteUrl(siteConfig.ogImagePath),
         width: 1200,
         height: 630,
-        alt: "LeCoquette Luxury Spa Aesthetic",
+        alt: "LeCoquette luxury nail and beauty spa in Gainesville, Florida",
       },
     ],
     locale: "en_US",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteConfig.metadataTitle,
+    description: siteConfig.metadataDescription,
+    images: [toAbsoluteUrl(siteConfig.ogImagePath)],
   },
 };
 
@@ -58,7 +88,7 @@ export default function RootLayout({
         <BrandLoader />
         <SiteHeader />
         <PageTransitionShell>
-          <main>{children}</main>
+          {children}
         </PageTransitionShell>
         <SiteFooter />
       </body>

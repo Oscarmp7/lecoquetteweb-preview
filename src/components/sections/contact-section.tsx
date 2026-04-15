@@ -5,10 +5,12 @@ import { useGSAP } from "@gsap/react";
 import { ensureGsap } from "@/lib/motion/gsap";
 import { usePrefersReducedMotion } from "@/lib/motion/reduced-motion";
 import { getBookingLink } from "@/lib/booking/get-booking-link";
+import { siteConfig } from "@/lib/site";
 
 const CONTACT_DETAILS = [
-  { label: "Phone", value: "(786) 599-8161", href: "tel:+17865998161" },
-  { label: "Instagram", value: "@lecoquette_spa", href: "https://instagram.com/lecoquette_spa" },
+  { label: "Phone", value: siteConfig.phoneDisplay, href: `tel:${siteConfig.phoneHref}` },
+  { label: "Instagram", value: siteConfig.instagramHandle, href: siteConfig.instagramUrl },
+  { label: "Area", value: `${siteConfig.city}, ${siteConfig.region}` },
   { label: "Experience", value: "Luxury appointments by booking request" },
 ];
 
@@ -79,9 +81,9 @@ export function ContactSection() {
             color: "oklch(0.269 0.010 303.8)",
           }}
         >
-          Begin your
+          Book your
           <br />
-          <span style={{ color: "oklch(0.637 0.177 32.7)" }}>ritual.</span>
+          <span style={{ color: "oklch(0.637 0.177 32.7)" }}>Gainesville ritual.</span>
         </h2>
 
         <p
@@ -92,8 +94,8 @@ export function ContactSection() {
             color: "oklch(0.560 0.050 35)",
           }}
         >
-          Every detail considered, every visit elevated. Reserve your appointment
-          and step into the LeCoquette experience.
+          Reserve your luxury nail or beauty appointment in Gainesville, Florida,
+          and step into the LeCoquette experience through the most direct path.
         </p>
 
         <div className="ct-item mt-10">
@@ -102,7 +104,7 @@ export function ContactSection() {
             className="group relative inline-flex items-center gap-3 overflow-hidden px-1 pt-1 pb-2 font-display text-[1.2rem] tracking-[-0.02em] text-[oklch(0.637_0.177_32.7)] transition-colors hover:text-opacity-70"
         >
           <span className="relative">
-            Reserve on WhatsApp
+            {siteConfig.bookingLabel}
             <span className="absolute -bottom-1 left-0 h-[1.5px] w-full origin-right scale-x-0 bg-current transition-transform duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:origin-left group-hover:scale-x-100" />
           </span>
           <svg width="15" height="15" viewBox="0 0 14 14" fill="none" aria-hidden="true" className="transition-transform duration-500 group-hover:translate-x-1.5 pt-[2px]">

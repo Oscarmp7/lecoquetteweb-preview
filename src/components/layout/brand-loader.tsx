@@ -6,16 +6,18 @@ import { AnimatePresence, motion } from "framer-motion";
 const STORAGE_KEY = "lecoquette-loader-seen";
 
 export function BrandLoader() {
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    const hasSeen = window.sessionStorage.getItem(STORAGE_KEY);
-
-    if (hasSeen) {
-      return;
+  const [visible, setVisible] = useState(() => {
+    if (typeof window === "undefined") {
+      return false;
     }
 
-    setVisible(true);
+    return !window.sessionStorage.getItem(STORAGE_KEY);
+  });
+
+  useEffect(() => {
+    if (!visible) {
+      return;
+    }
 
     const timeout = window.setTimeout(() => {
       window.sessionStorage.setItem(STORAGE_KEY, "true");
@@ -23,7 +25,7 @@ export function BrandLoader() {
     }, 1250);
 
     return () => window.clearTimeout(timeout);
-  }, []);
+  }, [visible]);
 
   return (
     <AnimatePresence>
