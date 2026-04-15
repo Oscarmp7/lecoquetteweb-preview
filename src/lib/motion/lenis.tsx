@@ -11,7 +11,11 @@ export function LenisProvider() {
   useEffect(() => {
     ensureGsap();
 
-    if (reducedMotion) {
+    const supportsSmoothScroll =
+      typeof window !== "undefined" &&
+      window.matchMedia("(min-width: 768px) and (pointer: fine)").matches;
+
+    if (reducedMotion || !supportsSmoothScroll) {
       return;
     }
 

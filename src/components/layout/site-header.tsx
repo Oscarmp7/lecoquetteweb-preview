@@ -14,25 +14,32 @@ export function SiteHeader() {
   const headerRef = useRef<HTMLElement>(null);
   const [leftTone, setLeftTone] = useState<HeaderTone>("dark");
   const [rightTone, setRightTone] = useState<HeaderTone>("dark");
+  const toneRef = useRef({ left: "dark" as HeaderTone, right: "dark" as HeaderTone });
 
   const defaultTone = useMemo<HeaderTone>(() => {
     return pathname === "/" ? "dark" : "light";
   }, [pathname]);
 
   useEffect(() => {
+    toneRef.current = { left: defaultTone, right: defaultTone };
+
     const resolveToneAtPoint = (x: number, y: number): HeaderTone => {
       const headerNode = headerRef.current;
-      const elements = document.elementsFromPoint(x, y) as HTMLElement[];
+      let current = document.elementFromPoint(x, y) as HTMLElement | null;
 
-      for (const element of elements) {
-        if (headerNode?.contains(element)) continue;
+      while (current) {
+        if (headerNode?.contains(current)) {
+          current = current.parentElement;
+          continue;
+        }
 
-        const themedAncestor = element.closest<HTMLElement>("[data-header-theme]");
-        const tone = themedAncestor?.dataset.headerTheme;
+        const tone = current.dataset.headerTheme;
 
         if (tone === "light" || tone === "dark") {
           return tone;
         }
+
+        current = current.parentElement;
       }
 
       return defaultTone;
@@ -44,10 +51,19 @@ export function SiteHeader() {
       rafId = 0;
 
       const viewportWidth = window.innerWidth;
-      const sampleY = 32;
+      const sampleY = Math.max(24, (headerRef.current?.getBoundingClientRect().height ?? 64) / 2);
+      const nextLeftTone = resolveToneAtPoint(Math.min(88, viewportWidth * 0.18), sampleY);
+      const nextRightTone = resolveToneAtPoint(Math.max(viewportWidth - 72, viewportWidth * 0.84), sampleY);
 
-      setLeftTone(resolveToneAtPoint(Math.min(88, viewportWidth * 0.18), sampleY));
-      setRightTone(resolveToneAtPoint(Math.max(viewportWidth - 72, viewportWidth * 0.84), sampleY));
+      if (toneRef.current.left !== nextLeftTone) {
+        toneRef.current.left = nextLeftTone;
+        setLeftTone(nextLeftTone);
+      }
+
+      if (toneRef.current.right !== nextRightTone) {
+        toneRef.current.right = nextRightTone;
+        setRightTone(nextRightTone);
+      }
     };
 
     const requestUpdate = () => {

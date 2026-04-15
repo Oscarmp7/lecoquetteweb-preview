@@ -4,7 +4,6 @@ import "./globals.css";
 import { SiteHeader } from "@/components/layout/site-header";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { BrandLoader } from "@/components/layout/brand-loader";
-import { PageTransitionShell } from "@/components/layout/page-transition-shell";
 import { LenisProvider } from "@/lib/motion/lenis";
 import { siteConfig, toAbsoluteUrl, withBasePath } from "@/lib/site";
 
@@ -87,9 +86,7 @@ export default function RootLayout({
         <LenisProvider />
         <BrandLoader />
         <SiteHeader />
-        <PageTransitionShell>
-          {children}
-        </PageTransitionShell>
+        {children}
         <SiteFooter />
       </body>
     </html>

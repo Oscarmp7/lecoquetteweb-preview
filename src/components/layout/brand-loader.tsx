@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 const STORAGE_KEY = "lecoquette-loader-seen";
+const LOADER_DURATION_MS = 700;
 
 export function BrandLoader() {
   const [visible, setVisible] = useState(() => {
@@ -22,7 +23,7 @@ export function BrandLoader() {
     const timeout = window.setTimeout(() => {
       window.sessionStorage.setItem(STORAGE_KEY, "true");
       setVisible(false);
-    }, 1250);
+    }, LOADER_DURATION_MS);
 
     return () => window.clearTimeout(timeout);
   }, [visible]);
