@@ -17,13 +17,13 @@ export const siteConfig = {
   city: "Gainesville",
   region: "Florida",
   country: "US",
-  bookingLabel: "Reserve on WhatsApp",
+  bookingLabel: "Book Now",
   heroTitle: "Luxury Nail & Beauty Spa in Gainesville, Florida",
   heroDescription:
     "Luxury manicures, pedicures, brow services, and beauty rituals in Gainesville, Florida. A softer kind of luxury, by appointment.",
   metadataTitle: "Luxury Nail & Beauty Spa in Gainesville, FL | LeCoquette",
   metadataDescription:
-    "Luxury manicures, pedicures, brow services, and beauty rituals in Gainesville, Florida. Reserve your LeCoquette appointment on WhatsApp.",
+    "Luxury manicures, pedicures, brow services, and beauty rituals in Gainesville, Florida. Reserve your LeCoquette appointment online.",
   ogImagePath: "/assets/branding/Background2.png",
 } as const;
 

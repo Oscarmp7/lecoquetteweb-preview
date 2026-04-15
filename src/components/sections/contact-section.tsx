@@ -101,6 +101,8 @@ export function ContactSection() {
         <div className="ct-item mt-10">
           <a
             href={getBookingLink("contact-section")}
+            target="_blank"
+            rel="noopener noreferrer"
             className="group relative inline-flex items-center gap-3 overflow-hidden px-1 pt-1 pb-2 font-display text-[1.2rem] tracking-[-0.02em] text-[oklch(0.637_0.177_32.7)] transition-colors hover:text-opacity-70"
         >
           <span className="relative">

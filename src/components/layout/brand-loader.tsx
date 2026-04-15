@@ -7,18 +7,14 @@ const STORAGE_KEY = "lecoquette-loader-seen";
 const LOADER_DURATION_MS = 700;
 
 export function BrandLoader() {
-  const [visible, setVisible] = useState(() => {
-    if (typeof window === "undefined") {
-      return false;
-    }
-
-    return !window.sessionStorage.getItem(STORAGE_KEY);
-  });
+  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    if (!visible) {
+    if (window.sessionStorage.getItem(STORAGE_KEY)) {
       return;
     }
+
+    setVisible(true);
 
     const timeout = window.setTimeout(() => {
       window.sessionStorage.setItem(STORAGE_KEY, "true");
@@ -26,7 +22,7 @@ export function BrandLoader() {
     }, LOADER_DURATION_MS);
 
     return () => window.clearTimeout(timeout);
-  }, [visible]);
+  }, []);
 
   return (
     <AnimatePresence>

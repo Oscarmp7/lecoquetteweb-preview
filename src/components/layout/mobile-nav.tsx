@@ -163,6 +163,8 @@ export function MobileNav({ tone }: MobileNavProps) {
                     variant="ghost"
                     size="none"
                     className="mt-8 bg-transparent px-0 py-0 font-display text-[1.3rem] tracking-[-0.03em] capitalize text-[oklch(0.637_0.177_32.7)] shadow-none hover:bg-transparent hover:text-opacity-70"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     onClick={() => setOpen(false)}
                   >
                     Reserve an Appointment

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { AtSign, MapPin, MessageCircle, Phone } from "lucide-react";
+import { AtSign, ExternalLink, MapPin, Phone } from "lucide-react";
 import { ButtonLink } from "@/components/ui/button";
 import { getBookingLink } from "@/lib/booking/get-booking-link";
 import { LeCoquetteWordmark } from "@/components/ui/lecoquette-wordmark";
@@ -17,7 +17,7 @@ export function SiteFooter() {
         <p className="font-body mb-8 max-w-[40ch] text-[clamp(0.95rem,1.2vw,1.05rem)] leading-relaxed text-white/50">
           Luxury nail, brow, and beauty rituals in Gainesville, Florida, shaped for a softer and more intentional kind of luxury.
         </p>
-        <ButtonLink href={getBookingLink("footer")} variant="secondary" className="px-10 md:px-12">
+        <ButtonLink href={getBookingLink("footer")} variant="secondary" className="px-10 md:px-12" target="_blank" rel="noopener noreferrer">
           {siteConfig.bookingLabel}
         </ButtonLink>
       </div>
@@ -41,8 +41,8 @@ export function SiteFooter() {
             <a href={`tel:${siteConfig.phoneHref}`} className="flex w-fit items-center gap-3 transition-colors hover:text-white">
               <Phone size={14} strokeWidth={1.5} /> {siteConfig.phoneDisplay}
             </a>
-            <a href={getBookingLink("footer")} className="flex w-fit cursor-pointer items-center gap-3 transition-colors hover:text-white">
-              <MessageCircle size={14} strokeWidth={1.5} /> {siteConfig.bookingLabel}
+            <a href={getBookingLink("footer")} target="_blank" rel="noopener noreferrer" className="flex w-fit cursor-pointer items-center gap-3 transition-colors hover:text-white">
+              <ExternalLink size={14} strokeWidth={1.5} /> {siteConfig.bookingLabel}
             </a>
             <p className="flex w-fit items-center gap-3 transition-colors hover:text-white">
               <MapPin size={14} strokeWidth={1.5} /> Serving {siteConfig.city}, {siteConfig.region} by appointment
